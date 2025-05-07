@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(req: NextRequest) {
+  console.log('🧠 Middleware running:', req.nextUrl.pathname);
   const { pathname } = req.nextUrl;
 
   if (
@@ -18,4 +19,10 @@ export function middleware(req: NextRequest) {
     const locale = 'en';
     return NextResponse.redirect(new URL(`/${locale}${pathname}`, req.url));
   }
+
+  return NextResponse.next();
 }
+
+export const config = {
+  matcher: ['/((?!_next|api|favicon.ico|.*\\..*).*)'],
+};
