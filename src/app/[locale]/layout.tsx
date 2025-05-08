@@ -1,5 +1,7 @@
 // import { getDictionary } from '@/lib/i18n/getDictionary';
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
+
+import "@/styles/globals.scss";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -7,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'ru' }];
+  return [{ locale: "en" }, { locale: "ru" }];
 }
 
 export default async function RootLayout({
@@ -15,7 +17,7 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: 'en' | 'ru' }>;
+  params: Promise<{ locale: "en" | "ru" }>;
 }) {
   const { locale } = await params;
   // const dict = await getDictionary(params.locale);

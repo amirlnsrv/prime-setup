@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/public/fonts/Gilroy-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/public/fonts/Gilroy-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/public/fonts/Gilroy-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/public/fonts/Gilroy-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('/public/fonts/Roboto-Bold.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --zagol: #0A2463;
+    --osnov: #134397;
+    --cvet-fona: #EEEEEE;
+    --333: #d23216;
+    --illyuroz: #30ddd4;
+    --zadniy-fon: #e9e9e9;
+    --dop: #0051de;
+
+    --second-family: 'Gilroy-Bold', sans-serif;
+    --third-family: 'Gilroy-Medium', sans-serif;
+    --font4: 'Gilroy-Regular', sans-serif;
+    --font-family: 'Roboto', sans-serif;
+}
