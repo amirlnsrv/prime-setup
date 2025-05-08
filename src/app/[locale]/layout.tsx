@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
+import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -24,7 +25,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
