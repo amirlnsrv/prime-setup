@@ -1,8 +1,10 @@
+import './styles/global.scss';
+import { Services } from "@/companents/Services/Services";
 
 export default function Home() {
   return (
     <div>
-      <div className=""></div>
+      <Services/>
     </div>
   );
 }
