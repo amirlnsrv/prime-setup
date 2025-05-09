@@ -11,17 +11,15 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: 'en' | 'ru' }>;
+  params: Promise<{ locale: "en" | "ru" }>;
 }>) {
   const resolvedParams = await params; // Разрешаем params
   const locale = resolvedParams.locale;
   // const dict = await getDictionary(params.locale);
 
   return (
-    <html lang={locale}> {/* Динамически устанавливаем язык */}
-      <body>
-        {children}
-      </body>
+    <html lang={locale}>
+      <body>{children}</body>
     </html>
   );
 }
