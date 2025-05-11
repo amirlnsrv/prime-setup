@@ -1,6 +1,10 @@
 @use "./variable.scss";
 @use "./reset.scss";
 
+body {
+  background: var(--cvet-fona);
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
