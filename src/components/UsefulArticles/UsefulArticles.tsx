@@ -1,3 +1,4 @@
+import { UsefulCard } from '@/ui/UsefulCard'
 import styles from './UsefulArticles.module.scss'
 
 export default function UsefulArticles() {
@@ -7,11 +8,9 @@ export default function UsefulArticles() {
             <p>Stay up to date with the latest news on UAE business, visas, licenses and more.</p>
             <div className={styles.bg}>
                 <div className={styles.cards}>
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
+                    <UsefulCard />
                 </div>
-                <button>View all articles</button>
+                {/* <button>View all articles</button> */}
             </div>
         </section>
     )

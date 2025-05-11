@@ -6,25 +6,25 @@
   .top {
     overflow: hidden;
     background-image: url("/assets/images/pngwing.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 593px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 216px;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: clamp(100px, 20vw, 216px);
+    height: clamp(300px, 60vw, 593px);
 
     h1 {
       font-family: var(--second-family);
       font-weight: 400;
-      font-size: 46px;
+      font-size: clamp(24px, 5vw, 46px);
       text-align: center;
       color: var(--zagol);
       margin-bottom: 40px;
-      text-wrap: nowrap;
+      white-space: nowrap;
     }
 
     .slider {
@@ -48,13 +48,22 @@
     }
   }
 
-  .downborder {
-    background-image: url("/assets/images/downborder.svg");
-    height: 48px;
-    opacity: 0.68;
+  .downborderWrapper {
     width: 100%;
-    object-fit: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -1px;
   }
+
+  .downborderWrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
 }
 
 @keyframes scroll {
@@ -63,5 +72,33 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .logo {
+
+    img {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+
+    img {
+      max-width: 180px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+
+    img {
+      max-width: 120px;
+    }
   }
 }
