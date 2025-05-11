@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ClientCard } from "@/ui/ClientCard";
+import { RedButton } from "@/ui/RedButton";
 
 export default function SuccessShared() {
   const reviews = [1, 2, 3, 4, 5, 6, 7];
@@ -65,7 +66,8 @@ export default function SuccessShared() {
         <button className={`${styles.arrow} swiper-button-prev`}></button>
         <button className={`${styles.arrow} swiper-button-next`}></button>
       </div>
-      <button className={styles.button}>Leave a review</button>
+      {/* <button className={styles.button}>Leave a review</button> */}
+      <RedButton value="Leave a review" className={styles.button}/>
     </section>
   );
 }
