@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import styles from "./OurPartners.module.scss";
 import { yourCompanyLogos } from "@/mockData/mockData";
@@ -17,7 +18,16 @@ export default function OurPartners() {
           </div>
         </div>
       </div>
-      <div className={styles.downborder}></div>
+      <div className={styles.downborderWrapper}>
+        {/* <Image
+          src="/assets/images/downborder.svg"
+          alt="Down border"
+          fill
+          className={styles.downborderImage}
+          priority
+        /> */}
+         <img src="/assets/images/downborder.svg" alt="Down border" />
+      </div>
     </section>
   );
 }

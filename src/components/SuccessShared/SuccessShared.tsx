@@ -18,7 +18,7 @@ export default function SuccessShared() {
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
-          slidesPerView={3}
+          slidesPerView={1}
           slidesPerGroup={1}
           className={styles.swiper}
           navigation={{
@@ -31,9 +31,26 @@ export default function SuccessShared() {
             clickable: true,
           }}
           breakpoints={{
-            0: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            0: {
+              slidesPerView: 1,
+              centeredSlides: true,
+              spaceBetween: 10
+            },
+            640: {
+              spaceBetween: 20,
+              slidesPerView: 1,
+              centeredSlides: true
+            },
+            768: {
+              spaceBetween: 25,
+              slidesPerView: 2,
+              centeredSlides: false
+            },
+            1024: {
+              spaceBetween: 30,
+              slidesPerView: 3,
+              centeredSlides: false
+            },
           }}
         >
           {reviews.map((_, i) => (
