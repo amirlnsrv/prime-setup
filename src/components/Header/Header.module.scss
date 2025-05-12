@@ -1,6 +1,11 @@
 .header {
 	padding: 31px 0;
-	background-color: var(--osnov);
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: transparent;
 
 	&Inner {
 		display: flex;
@@ -85,8 +90,10 @@
 	.header {
 		padding: 10.57px 0;
 		background-color: var(--osnov);
+		position: fixed;
 
 		&Inner {
+			position: static;
 			.headerBtn {
 				display: none;
 			}
