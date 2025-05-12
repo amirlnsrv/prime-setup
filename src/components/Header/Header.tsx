@@ -17,15 +17,15 @@ export const Header = () => {
             <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           </div>
           <nav className={styles.nav}>
-            <Link href="#">About Us</Link>
-            <Link href="#">Services</Link>
-            <Link href="#">Blog</Link>
+            <Link href="#">О нас</Link>
+            <Link href="#">Услуги</Link>
+            <Link href="#">Блог</Link>
             <Link href="#">FAQ</Link>
-            <Link href="#">Contacts</Link>
+            <Link href="#">Контакты</Link>
           </nav>
           <div className={styles.btns}>
             <LanguageSelector />
-            <Button value="Leave a request" className={styles.headerBtn} />
+            <Button value="Оставить заявку" className={styles.headerBtn} />
             <BurgerMenu />
           </div>
         </div>
