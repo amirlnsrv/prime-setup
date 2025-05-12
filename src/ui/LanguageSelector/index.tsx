@@ -10,7 +10,7 @@ const languages = [
 ];
 
 const LanguageSelector = () => {
-  const [selectedLang, setSelectedLang] = useState("en");
+  const [selectedLang, setSelectedLang] = useState("ru");
   const [open, setOpen] = useState(false);
 
   return (

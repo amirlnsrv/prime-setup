@@ -23,19 +23,19 @@ export const BurgerMenu = () => {
         <nav className={styles.menuContent}>
           <ul>
             <li className={styles.menuItem}>
-              <Link href="#">About Us</Link>
+              <Link href="#">О нас</Link>
             </li>
             <li className={styles.menuItem}>
-              <Link href="#">Services</Link>
+              <Link href="#">Услуги</Link>
             </li>
             <li className={styles.menuItem}>
-              <Link href="#">Blog</Link>
+              <Link href="#">Блог</Link>
             </li>
             <li className={styles.menuItem}>
               <Link href="#">FAQ</Link>
             </li>
             <li className={styles.menuItem}>
-              <Link href="#">Contacts</Link>
+              <Link href="#">Контакты</Link>
             </li>
           </ul>
         </nav>
