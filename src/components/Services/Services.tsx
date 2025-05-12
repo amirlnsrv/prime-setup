@@ -1,4 +1,4 @@
-import  {icon}  from "../../mockData/mockData";
+import  {icon}  from "../../mockData/tempfile";
 import stylle from "./Services.module.scss";
 
 export function Services() {

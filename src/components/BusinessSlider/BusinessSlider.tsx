@@ -8,8 +8,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import styles from "./BusinessSlider.module.scss";
-import { BusinessSlider } from "@/mockData/mockData";
 import Image from "next/image";
+import { BusinessSlider } from "@/mockData/tempfile";
 
 export const BusinessSwiper = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
