@@ -6,7 +6,7 @@ import { PrimaryButton } from "@/ui/PrimaryButton";
 
 // Swiper components and modules
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 // Swiper styles
 import 'swiper/css';
@@ -31,8 +31,7 @@ export default function UsefulArticles() {
             clickable: true,
             enabled: true,
           }}
-          navigation={true}
-          modules={[Pagination, Navigation, Autoplay]}
+          modules={[Pagination, Autoplay]}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,

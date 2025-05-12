@@ -13,7 +13,7 @@
   .txt {
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 22%;
     transform: translate(-50%);
     text-wrap: nowrap;
     font-family: var(--font3);
@@ -28,7 +28,7 @@
     position: absolute;
     z-index: 1;
     bottom: -100px;
-    right: -192%;
+    right: -195%;
     width: 200%;
     transform: skewX(-30deg);
     background: var(--333);
@@ -47,7 +47,7 @@
   }
   &::before {
     left: 50%;
-    top: 25%;
+    top: 22%;
     transform: translate(-50%);
     position: absolute;
     text-wrap: nowrap;
