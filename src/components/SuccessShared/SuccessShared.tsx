@@ -15,7 +15,6 @@ export default function SuccessShared() {
   return (
     <section className={styles.success__shared}>
       <h1>Успехи, которыми делятся наши клиенты</h1>
-      <p>Будьте в курсе последних новостей о бизнесе в ОАЭ, визах, лицензиях и многом другом.</p>
       <div className={styles.client__cards}>
         <Swiper
           modules={[Navigation, Pagination]}

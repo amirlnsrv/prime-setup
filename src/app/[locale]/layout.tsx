@@ -1,4 +1,3 @@
-// import { getDictionary } from '@/lib/i18n/getDictionary';
 import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
@@ -18,13 +17,14 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: "en" | "ru" }>;
+  params: { locale: "en" | "ru" };
 }) {
-  const { locale } = await params;
-  // const dict = await getDictionary(params.locale);
+  const locale = params.locale;
+  // const dict = await getDictionary(locale);
 
   return (
     <html lang={locale}>
+      {/* Динамически устанавливаем язык */}
       <body>
         <Header />
         {children}

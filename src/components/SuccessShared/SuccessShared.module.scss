@@ -25,6 +25,8 @@
     text-align: center;
     color: var(--zagol);
     max-width: 800px;
+    margin-bottom: 40px;
+
 
     @media (min-width: 768px) {
       font-size: 38px;
@@ -32,28 +34,6 @@
 
     @media (min-width: 1024px) {
       font-size: 46px;
-    }
-  }
-
-  p{
-    font-family: var(--third-family);
-    font-weight: 400;
-    font-size: 24px;
-    max-width: 690px;
-    line-height: 117%;
-    text-align: center;
-    color: #000;
-    margin-bottom: 40px;
-    margin-top: 20px;
-
-    @media (max-width: 768px) {
-      font-size: 14px;
-      margin-bottom: 50px;
-    }
-
-    @media (max-width: 1024px) {
-      font-size: 16px;
-      margin-bottom: 60px;
     }
   }
 

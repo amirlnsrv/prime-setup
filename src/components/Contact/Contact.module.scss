@@ -1,0 +1,128 @@
+.contactSection {
+  width: 1440px;
+  padding: 105px 0;
+  
+}
+
+.container {
+  width: 1240px;
+  height: 553px;
+  display: flex;
+  gap: 96px;
+  max-width: 64rem;
+  margin: 0 auto;
+  }
+
+.left{
+width: 555px;
+height: 436px;
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+.title{
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 46px;
+line-height: 109%;
+color: var(--333);
+}
+.description{
+  font-family: var(--third-family);
+font-weight: 400;
+font-size: 22px;
+color: #000;
+}
+.infoBlock{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hoursTitle{
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 26px;
+line-height: 135%;
+color: var(--zagol);
+}
+.contactLinks{
+  display: flex;
+  flex-direction: column;
+}
+.contactLinks p{
+  border-radius: 30px;
+padding: 5px 10px;
+width: 315px;
+height: 50px;
+color: var(--zagol);
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 26px;
+line-height: 135%;
+color: var(--zagol);
+margin-top: 5px;
+}
+.tel{
+  display: flex;
+}
+.email{
+  display: flex;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  width: 589px;
+ height: 456px;
+}
+.row{
+display: flex;
+}
+.input{
+  border-radius: 7px;
+padding: 15px 23px;
+width: 284px;
+height: 55px;
+background: #fbf3ec;
+}
+.inputFull{
+  border-radius: 7px;
+padding: 15px 23px;
+width: 589px;
+height: 55px;
+background: #fbf3ec;
+font-family: var(--font6);
+font-weight: 300;
+font-size: 14px;
+line-height: 107%;
+letter-spacing: 0.02em;
+color: #8f8f8f;
+}
+.textarea{
+  border-radius: 7px;
+padding: 15px 23px;
+width: 589px;
+height: 147px;
+background: #fbf3ec;
+}
+.submit{
+border-radius: 10px;
+padding: 20px;
+width: 180px;
+height: 62px;
+font-family: var(--font3);
+font-weight: 700;
+font-size: 24px;
+text-align: center;
+color: #fff;
+background: var(--333);
+}
+.inp{
+  font-family: var(--third-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 83%;
+letter-spacing: 0.01em;
+color: #000;
+}
+
