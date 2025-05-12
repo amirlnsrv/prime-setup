@@ -1,4 +1,6 @@
 import { BusinessSetup } from "@/components/BusinessSetup";
+import { Contact } from "@/components/Contact/Contact";
+import { FAQ } from "@/components/FAQ";
 import { Hero } from "@/components/Hero";
 import { OurPartners } from "@/components/OurPartners";
 import { SuccessShared } from "@/components/SuccessShared";
@@ -13,6 +15,9 @@ export default function Home() {
       <OurPartners />
       <SuccessShared />
       <UsefulArticles />
+      <FAQ />
+      <Contact />
+      <BusinessSetup />
     </section>
   );
 }
