@@ -9,7 +9,7 @@ const languages = [
   { code: "ru", label: "Ru" },
 ];
 
-export const LanguageSelector = () => {
+const LanguageSelector = () => {
   const [selectedLang, setSelectedLang] = useState("en");
   const [open, setOpen] = useState(false);
 
@@ -40,3 +40,5 @@ export const LanguageSelector = () => {
     </div>
   );
 };
+
+export default LanguageSelector;

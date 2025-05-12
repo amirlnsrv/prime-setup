@@ -1,8 +1,10 @@
 import Link from "next/link";
 import styles from "./Header.module.scss";
-import { LanguageSelector } from "@/ui/LanguageSelector";
 import { Button } from "@/ui/Button";
 import { BurgerMenu } from "@/ui/BurgerMenu";
+import dynamic from "next/dynamic";
+
+const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"));
 
 export const Header = () => {
   return (
