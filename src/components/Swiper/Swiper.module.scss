@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // position: relative;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 874px;
+    width: 100%;
+    background-image: url("/assets/images/Swiper.png");
+    flex-direction: column;
+  }
