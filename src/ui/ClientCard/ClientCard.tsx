@@ -20,11 +20,11 @@ export default function ClientCard() {
         of Letraset sheets containing Lorem
       </p>
       <div className={styles.stars}>
-        <Image src={star} alt="star" />
-        <Image src={star} alt="star" />
-        <Image src={star} alt="star" />
-        <Image src={star} alt="star" />
-        <Image src={star} alt="star" />
+        <Image className={styles.star} src={star} alt="star" />
+        <Image className={styles.star} src={star} alt="star" />
+        <Image className={styles.star} src={star} alt="star" />
+        <Image className={styles.star} src={star} alt="star" />
+        <Image className={styles.star} src={star} alt="star" />
       </div>
     </div>
   );

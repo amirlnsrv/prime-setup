@@ -6,6 +6,10 @@
   position: relative;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 
+  @media (max-width: 450px) {
+    width: 290px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -27,6 +31,11 @@
       width: 88px;
       height: 88px;
       background: #c4c4c4;
+
+      @media (max-width: 450px) {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     h2 {
@@ -36,6 +45,10 @@
       text-transform: capitalize;
       text-align: center;
       color: #265982;
+
+      @media (max-width: 450px) {
+        font-size: 25px;
+      }
     }
   }
 
@@ -54,6 +67,18 @@
       font-size: 16px;
       margin: 25px 0 60px;
       -webkit-line-clamp: 6;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 10px;
+    }
+  }
+
+  .stars{
+    .star{
+      @media (max-width: 450px) {
+        width: 20px;
+      }
     }
   }
 }

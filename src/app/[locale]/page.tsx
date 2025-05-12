@@ -1,6 +1,6 @@
 import { OurPartners } from "@/components/OurPartners";
-import { UsefulArticles } from "@/components/UsefulArticles";
 import { SuccessShared } from "@/components/SuccessShared";
+import { UsefulArticles } from "@/components/UsefulArticles";
 
 export default function Home() {
   return (

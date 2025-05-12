@@ -9,13 +9,12 @@ export default function UsefulCard() {
     <div className={styles.card}>
       <div className={styles.picture}></div>
       <div className={styles.content}>
-        <h2>How to open a company in Dubai: Step-by-step instructions</h2>
+        <h2>Как открыть компанию в Дубае: Пошаговая инструкция</h2>
         <p>
-          Starting a business in Dubai is easy. We tell you where to start, what
-          documents you need and how long the registration process takes.
+        Открытие бизнеса в Дубае — это просто. Рассказываем, с чего начать, какие документы нужны и сколько времени занимает процесс регистрации.
         </p>
           <Link href={"#"} className={styles.more}>
-            Read more <Image src={arrow} alt="arrow" />
+          Читать далее <Image src={arrow} alt="arrow" />
           </Link>
       </div>
       <Image src={elipse} alt="elipse" className={styles.elipse_right}/>

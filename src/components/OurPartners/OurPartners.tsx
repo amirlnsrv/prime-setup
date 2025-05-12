@@ -7,7 +7,7 @@ export default function OurPartners() {
   return (
     <section className={styles.ourPartners}>
       <div className={styles.top}>
-        <h1>Our partners</h1>
+        <h1>Наши партнеры</h1>
         <div className={styles.slider}>
           <div className={styles.track}>
             {[...yourCompanyLogos, ...yourCompanyLogos].map((logo, index) => (
@@ -19,13 +19,6 @@ export default function OurPartners() {
         </div>
       </div>
       <div className={styles.downborderWrapper}>
-        {/* <Image
-          src="/assets/images/downborder.svg"
-          alt="Down border"
-          fill
-          className={styles.downborderImage}
-          priority
-        /> */}
          <img src="/assets/images/downborder.svg" alt="Down border" />
       </div>
     </section>
