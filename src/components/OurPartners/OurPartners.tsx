@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import styles from "./OurPartners.module.scss";
 import { yourCompanyLogos } from "@/mockData/mockData";
@@ -6,7 +7,7 @@ export default function OurPartners() {
   return (
     <section className={styles.ourPartners}>
       <div className={styles.top}>
-        <h1>Our partners</h1>
+        <h1>Наши партнеры</h1>
         <div className={styles.slider}>
           <div className={styles.track}>
             {[...yourCompanyLogos, ...yourCompanyLogos].map((logo, index) => (
@@ -17,7 +18,9 @@ export default function OurPartners() {
           </div>
         </div>
       </div>
-      <div className={styles.downborder}></div>
+      <div className={styles.downborderWrapper}>
+         <img src="/assets/images/downborder.svg" alt="Down border" />
+      </div>
     </section>
   );
 }

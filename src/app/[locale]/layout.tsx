@@ -1,7 +1,7 @@
-// import { getDictionary } from '@/lib/i18n/getDictionary';
 import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
+import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -17,14 +17,18 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: "en" | "ru" }>;
+  params: { locale: "en" | "ru" };
 }) {
-  const { locale } = await params;
-  // const dict = await getDictionary(params.locale);
+  const locale = params.locale;
+  // const dict = await getDictionary(locale);
 
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      {/* Динамически устанавливаем язык */}
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
