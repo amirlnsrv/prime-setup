@@ -1,0 +1,124 @@
+.faq {
+  background-color: var(--zadniy-fon);
+  width: 100%;
+  padding-top: 140px;
+  // padding-bottom: 140px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--zagol);
+}
+.subtitle {
+  margin-bottom: 70px;
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: center;
+  color: #000;
+}
+.faqItemExpanded {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.faqItem {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+.questionBlock {
+  border-left: 5px solid var(--dop);
+  border-radius: 5px;
+  padding: 25px 35px;
+  // width: 1084px;
+  width: 100%;
+  height: 95px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.iconBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 25px 30px;
+  width: 95px;
+  height: 95px;
+  background-color: white;
+}
+.answerWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.answerVisible {
+  max-height: 200px;
+  opacity: 1;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+  // width: 1084px;
+  width: 100%;
+  height: 95px;
+}
+.answerHidden {
+  max-height: 0;
+  opacity: 0;
+}
+.answer {
+  border-left: 5px solid var(--dop);
+  border-radius: 5px;
+  padding: 25px 35px;
+  width: 100%;
+  // width: 1084px;
+  height: 95px;
+}
+.icon {
+  transition: transform 0.3s ease;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.question {
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: default;
+  background-color: var(--second-family);
+}
+.moreBtn {
+  margin: 0 auto;
+  background: transparent;
+  border: 2px solid #e53935;
+  color: #e53935;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.moreBtn:hover {
+  background: #e53935;
+  color: white;
+}

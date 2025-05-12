@@ -1,38 +1,15 @@
-import FAQHeader from "@/components/FAQHead";
-import FAQItem from "@/components/FAQItem";
+import { OurPartners } from "@/components/OurPartners";
+import { FAQ } from "@/components/FAQ";
+import { Contact } from "@/components/Contact/Contact";
+import { BusinessSetup } from "@/components/BusinessSetup";
 
 export default function Home() {
   return (
     <div>
-      <FAQHeader />
-      <FAQItem
-        question="Какие документы нужны для открытия бизнеса?"
-        answer="Паспорт, банковская справка, резюме, фото."
-      />
-      <FAQItem
-        question="Какие документы нужны для открытия бизнеса?"
-        answer="Паспорт, банковская справка, резюме, фото."
-      />
-      <FAQItem
-        question="Какие документы нужны для открытия бизнеса?"
-        answer="Паспорт, банковская справка, резюме, фото."
-      />
-      <FAQItem
-        question="Какие документы нужны для открытия бизнеса?"
-        answer="Паспорт, банковская справка, резюме, фото."
-      />
-      <FAQItem
-        question="Какие документы нужны для открытия бизнеса?"
-        answer="Паспорт, банковская справка, резюме, фото."
-      />
-      <FAQItem
-        question="Какие документы нужны для открытия бизнеса?"
-        answer="Паспорт, банковская справка, резюме, фото."
-      />
-      <FAQItem
-        question="Какие документы нужны для открытия бизнеса?"
-        answer="Паспорт, банковская справка, резюме, фото."
-      />
+      <OurPartners />
+      <FAQ />
+      {/* <Contact />
+      <BusinessSetup /> */}
     </div>
   );
 }
