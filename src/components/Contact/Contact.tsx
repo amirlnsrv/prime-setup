@@ -3,90 +3,96 @@ import styles from "./Contact.module.scss";
 
 export function Contact() {
   return (
-    <section className={styles.contactSection}>
-      <div className={styles.container}>
-        <div className={styles.left}>
-          <h2 className={styles.title}>Start your journey to the UAE today</h2>
-          <p className={styles.description}>
-            We are here to answer your questions and help with starting a
-            business in the UAE.
-          </p>
+    <div>
+      <div className={styles.rightLine}></div>
+      <div className={styles.contactSection}>
+        <div className={styles.container}>
+          <div className={styles.left}>
+            <h2 className={styles.title}>
+              Начните свой путь в ОАЭ уже сегодня
+            </h2>
+            <p className={styles.description}>
+              Мы готовы ответить на ваши вопросы и помочь с открытием бизнеса в
+              ОАЭ.
+            </p>
 
-          <div className={styles.infoBlock}>
-            <p className={styles.hoursTitle}>Working hours</p>
-            <p>Monday to Friday: 8:30 AM – 5:30 PM</p>
-            <p>Saturday: 10:00 AM – 2:00 PM</p>
+            <div className={styles.infoBlock}>
+              <h3 className={styles.hoursTitle}>Рабочие часы</h3>
+              <p>С понедельника по пятницу с 8:30 до 17:30</p>
+              <p>Суббота 10:00 – 14:00</p>
+            </div>
+
+            <div className={styles.contactLinks}>
+              <div className={styles.tel}>
+                <img src="/assets/icons/Component.svg" alt="logo" />
+                <p>
+                  <a>info.xyz@gmail.com</a>
+                </p>
+              </div>
+              <div className={styles.email}>
+                <img src="/assets/icons/Group.svg" alt="tel" />
+                <p>
+                  <a>+996 476-924</a>
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className={styles.contactLinks}>
-            <div className={styles.tel}>
-              <img src="/assets/icons/Component.svg" alt="logo" />
-              <p>
-                <a href="mailto:info.xyz@gmail.com">info.xyz@gmail.com</a>
-              </p>
+          <form className={styles.form}>
+            <div className={styles.row}>
+              <br />
+              <label className={styles.inp}>
+                Имя
+                <input
+                  type="text"
+                  placeholder="Введите полное имя"
+                  className={styles.input}
+                  name="firstName"
+                />
+              </label>
+              <label className={styles.inp}>
+                Фамилия
+                <input
+                  type="text"
+                  placeholder="Введите полную фамилию"
+                  className={styles.input}
+                  name="lastName"
+                />
+              </label>
             </div>
-            <div className={styles.email}>
-              <img src="/assets/icons/Group.svg" alt="tel" />
-              <p>
-                <a href="tel:+996476924">+996 476-924</a>
-              </p>
-            </div>
-          </div>
+            <label className={styles.inp}>
+              Адресс электронной почты
+              <input
+                type="email"
+                placeholder="Введите адресс электронной почты"
+                className={styles.inputFull}
+                name="email"
+              />
+            </label>
+            <label className={styles.inp}>
+              Номер телефона
+              <input
+                type="tel"
+                placeholder="Введите номер телефона"
+                className={styles.inputFull}
+                name="phone"
+              />
+            </label>
+            <label className={styles.inp}>
+              Чем мы можем помочь?
+              <textarea
+                placeholder="Введите ваше сообщение"
+                className={styles.textarea}
+                name="message"
+              ></textarea>
+            </label>
+            <button type="submit" className={styles.submit}>
+              Send
+            </button>
+          </form>
         </div>
-
-        <form className={styles.form}>
-          <div className={styles.row}>
-            <br />
-            <label className={styles.inp}>
-              First Name
-              <input
-                type="text"
-                placeholder="Enter full name"
-                className={styles.input}
-                name="firstName"
-              />
-            </label>
-            <label className={styles.inp}>
-              Last Name
-              <input
-                type="text"
-                placeholder="Enter full surname"
-                className={styles.input}
-                name="lastName"
-              />
-            </label>
-          </div>
-          <label className={styles.inp}>
-            Email Address
-            <input
-              type="email"
-              placeholder="Enter email address"
-              className={styles.inputFull}
-              name="email"
-            />
-          </label>
-          <label className={styles.inp}>
-            Phone Number
-            <input
-              type="tel"
-              placeholder="Enter phone number"
-              className={styles.inputFull}
-              name="phone"
-            />
-          </label>
-          <label className={styles.inp}>
-            How can we help?
-            <textarea
-              placeholder="Enter your message"
-              className={styles.textarea}
-              name="message"
-            ></textarea>
-          </label>
-          <button type="submit" className={styles.submit}>
-            Send
-          </button>
-        </form>
       </div>
-    </section>
+      <div className={styles.leftLine}></div>
+    </div>
   );
 }
