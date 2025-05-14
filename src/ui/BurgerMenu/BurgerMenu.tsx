@@ -19,27 +19,25 @@ export const BurgerMenu = () => {
         <span></span>
       </div>
 
-      {isOpen && (
-        <nav className={styles.menuContent}>
-          <ul>
-            <li className={styles.menuItem}>
-              <Link href="#">О нас</Link>
-            </li>
-            <li className={styles.menuItem}>
-              <Link href="#">Услуги</Link>
-            </li>
-            <li className={styles.menuItem}>
-              <Link href="#">Блог</Link>
-            </li>
-            <li className={styles.menuItem}>
-              <Link href="#">FAQ</Link>
-            </li>
-            <li className={styles.menuItem}>
-              <Link href="#">Контакты</Link>
-            </li>
-          </ul>
-        </nav>
-      )}
+      <nav className={`${styles.menuContent} ${isOpen ? styles.opened : ""}`}>
+        <ul>
+          <li className={styles.menuItem}>
+            <Link href="#">О нас</Link>
+          </li>
+          <li className={styles.menuItem}>
+            <Link href="#">Услуги</Link>
+          </li>
+          <li className={styles.menuItem}>
+            <Link href="#">Блог</Link>
+          </li>
+          <li className={styles.menuItem}>
+            <Link href="#">FAQ</Link>
+          </li>
+          <li className={styles.menuItem}>
+            <Link href="#">Контакты</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
