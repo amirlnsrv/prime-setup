@@ -18,6 +18,10 @@
 	gap: 9.17px;
 }
 
+.toggle * {
+	transition: all 0.4s ease-in-out;
+}
+
 .toggle:hover * {
 	stroke: #acacac;
 	color: #acacac;
@@ -27,6 +31,8 @@
 	position: absolute;
 	width: 100%;
 	top: 100%;
+	max-height: 0;
+	overflow: hidden;
 	left: 0;
 	margin-top: 4px;
 	z-index: 10;
@@ -34,6 +40,11 @@
 	flex-direction: column;
 	gap: 5px;
 	align-items: center;
+	transition: all 0.4s ease-in-out;
+}
+
+.menu.open {
+	max-height: 300px;
 }
 
 .item {
@@ -46,6 +57,7 @@
 	line-height: 100%;
 	text-align: center;
 	color: #120071;
+	transition: all 0.3s ease-in-out;
 
 	&:hover {
 		background: rgba(255, 255, 255, 0.7);

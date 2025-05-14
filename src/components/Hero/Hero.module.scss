@@ -1,12 +1,5 @@
 .hero {
-	position: relative;
-	top: 0;
-	left: 0;
 	height: 100vh;
-	background-image: url("/assets/images/heroBg.jpg");
-	background-position: 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
 
 	.inner {
 		height: 100vh;
@@ -30,16 +23,52 @@
 			color: #fff;
 		}
 
-		.btn {
-			padding: 17px 25px 16px;
+		.fancyButton {
 			font-size: 24px;
 			max-width: 350px;
 			text-wrap: nowrap;
+			position: relative;
+			padding: 17px 25px 16px;
+			border: none;
+			background: linear-gradient(to left, #fff 50%, var(--333) 50%);
+			background-size: 200% 100%;
+			background-position: right;
+			transition: background-position 0.5s ease;
+			overflow: hidden;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-			&:hover {
-				background-color: var(--333);
-				color: #fff;
-			}
+		.fancyButton:hover {
+			background-position: left;
+		}
+
+		.fancyButton::before {
+			content: "Бесплатная консультация";
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: left 0.5s ease;
+		}
+
+		.fancyButton:hover::before {
+			opacity: 1;
+		}
+
+		.fancyButton:hover span {
+			opacity: 0;
+		}
+
+		.fancyButton span {
+			transition: opacity 0.3s ease-in-out;
 		}
 	}
 }
@@ -57,7 +86,7 @@
 				font-weight: 400;
 				font-size: 13px;
 			}
-			.btn {
+			.fancyButton {
 				max-width: 200px;
 				padding: 8px 12px;
 				font-size: 14px;
