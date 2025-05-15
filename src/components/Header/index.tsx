@@ -35,11 +35,11 @@ export default function Header() {
             <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           </div>
           <nav className={styles.nav}>
-            <Link href="/">О нас</Link>
+            <Link href="#">О нас</Link>
             <Link href="/services">Услуги</Link>
             <Link href="/blog">Блог</Link>
-            <Link href="/">FAQ</Link>
-            <Link href="/">Контакты</Link>
+            <Link href="#">FAQ</Link>
+            <Link href="#">Контакты</Link>
           </nav>
           <div className={styles.btns}>
             <LanguageSelector />
