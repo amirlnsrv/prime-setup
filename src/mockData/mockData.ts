@@ -6,9 +6,7 @@ import companyPurple from "../../public/assets/images/companyPurple.svg";
 import companyOrange from "../../public/assets/images/companyOrange.svg";
 // -----------------------------------------------------------
 
-import medal from '../../public/assets/icons/Component.svg'
-import puzzule from '../../public/assets/icons/puzzule.svg'
-// import handshake from '../../public/assets/icons/handshake.svg'
+
 
 import img1 from '../../public/assets/icons/img1.svg'
 import img2 from '../../public/assets/icons/img2.svg'
@@ -26,10 +24,21 @@ import companets5 from '../../public/assets/icons/Frame 34092 (8).svg'
 import companets6 from '../../public/assets/icons/Component 1 (3).png'
 import companets7 from '../../public/assets/icons/Component 1 (9).svg'
 import companents8 from '../../public/assets/icons/Component 1 (10).svg'
-
-
-
-
+// ------------------------------------------------------------------------
+import medal from '../../public/assets/icon/medalll.svg'
+import puzzule from '../../public/assets/icons/puzzule.svg'
+import handshake from '../../public/assets/icons/handshake.svg'
+import tame from '../../public/assets/icon/tame.svg'
+import lisen from '../../public/assets/icon/lisen.svg'
+import confidence from '../../public/assets/icon/confidence.svg'
+// ------------------------------------
+import medal2 from '../../public/assets/icon/medal2.svg'
+import puzzule2 from '../../public/assets/icon/puzzule2.svg'
+import handshake2 from '../../public/assets/icon/hund2.svg'
+import tame2 from '../../public/assets/icon/tame2.svg'
+import lisen2 from '../../public/assets/icon/lisen2.svg'
+import confidence2 from '../../public/assets/icon/confid.svg'
+// import { icon } from "./tempfile";
 
 
 
@@ -51,37 +60,42 @@ export const mockdataIcon = [
   {
     id: 1,
     icon: medal,
-
+    icon2: medal2,
     title: "15 лет опыта",
     description: "С 2009 года успешно помогаем компаниям выходить на рынок ОАЭ.",
   },
   {
     id: 2,
     icon: puzzule,
+    icon2: puzzule2,
     title: "Комплексные решения",
     description: "Все услуги для бизнеса в одном месте — от лицензии до банковского счёта.",
   },
   {
     id: 3,
-    icon: companyGreen,
+    icon: handshake,
+    icon2: handshake2,
     title: "Персональный подход",
     description: "Решения, которые учитывают особенности вашего бизнеса и целей.",
   },
   {
     id: 4,
-    icon: companyGreen,
+    icon: tame,
+    icon2: tame2,
     title: "Быстрая регистрация",
     description: "Открытие бизнеса в кратчайшие сроки — от 48 часов.",
   },
   {
     id: 5,
-    icon: companyGreen,
+    icon: lisen,
+    icon2: lisen2,
     title: "Поддержка 24/7",
     description: "Оперативная помощь и консультации в любое время.",
   },
   {
     id: 6,
-    icon: companyGreen,
+    icon: confidence,
+    icon2: confidence2,
     title: "Надёжные партнёры",
     description: "Банки, госорганы и сервисы — для вашего удобства и безопасности.",
   },
