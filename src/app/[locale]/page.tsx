@@ -1,19 +1,44 @@
+import { BusinessSetup } from "@/components/BusinessSetup";
+import { Contact } from "@/components/Contact/Contact";
 import { FAQ } from "@/components/FAQ";
+import { Benefits } from "@/components/Benefits";
+import { Hero } from "@/components/Hero";
 import { OurPartners } from "@/components/OurPartners";
 import { SuccessShared } from "@/components/SuccessShared";
-import { UsefulArticles } from "@/components/UsefulArticles";
+
+import { Services } from "@/components/Services/Services";
+
 import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
-import { BusinessSetup } from "@/components/BusinessSetup";
+import { UsefulArticles } from "@/components/UsefulArticles";
+import { Swiper } from "@/components/Swiper/Swiper";
 
 export default function Home() {
   return (
-    <section>
-      <Hero />
+    <>
+      <Hero
+        imgUrl="/assets/images/heroBg.jpg"
+        title="Ваш бизнес в надёжных руках"
+        subtitle="Комплексные услуги по регистрации бизнеса, лицензированию и сопровождению в ОАЭ"
+        inlineStyles={{
+          inner: {
+            maxWidth: "608px",
+          },
+          content: {
+            textAlign: "left",
+            alignItems: "flex-start",
+          },
+        }}
+      />
       <WhyPrimeSetup />
+      <Benefits/>
+      <Services />
+      <Swiper/>
       <OurPartners />
+      <SuccessShared />
+      <UsefulArticles />
       <FAQ />
       <Contact />
       <BusinessSetup />
-    </section>
+    </>
   );
 }
