@@ -20,13 +20,13 @@ export function Services() {
   <div key={item.id} className={stylle.card}>
   <div className={stylle.cardInner}>
     <div className={stylle.cardFront}>
-      <Image src={item.img} alt={item.title} className={stylle.icon} width={48} height={48} />
+      <img src={item.img} alt={item.title} className={stylle.icon} width={48} height={48} />
       <h5 className={stylle.title}>{item.title}</h5>
     </div>
 
     <div className={stylle.cardBack}>
       <div className={stylle.iconWrap}>
-        <Image src={item.img} alt={item.title} className={stylle.icon} width={48} height={48} />
+        <img src={item.img} alt={item.title} className={stylle.icon} width={48} height={48} />
       </div>
       <h4 className={stylle.subTitle}>{item.description}</h4>
       <button className={stylle.cardBtn}>Learn More</button>

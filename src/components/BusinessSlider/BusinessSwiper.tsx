@@ -98,7 +98,7 @@ export const BusinessSwiper = () => {
                       />
                     </svg>
                   </div> */}
-                  <Image
+                  <img
                     src={item.imag}
                     alt={item.title}
                     className={styles.imgSwiper}

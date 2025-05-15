@@ -1,44 +1,44 @@
-import companyBlack from "../../public/assets/images/companyBlack.svg";
-import companyYellow from "../../public/assets/images/companyYellow.svg";
-import companyPink from "../../public/assets/images/companyPink.svg";
-import companyGreen from "../../public/assets/images/companyGreen.svg";
-import companyPurple from "../../public/assets/images/companyPurple.svg";
-import companyOrange from "../../public/assets/images/companyOrange.svg";
+const companyBlack = "/assets/images/companyBlack.svg";
+const companyYellow = "/assets/images/companyYellow.svg";
+const companyPink = "/assets/images/companyPink.svg";
+const companyGreen = "/assets/images/companyGreen.svg";
+const companyPurple = "/assets/images/companyPurple.svg";
+const companyOrange = "/assets/images/companyOrange.svg";
 // -----------------------------------------------------------
 
 
 
-import img1 from '../../public/assets/icons/img1.svg'
-import img2 from '../../public/assets/icons/img2.svg'
-import img3 from '../../public/assets/icons/img3.svg'
-import img4 from '../../public/assets/icons/img4.svg'
-import img5 from '../../public/assets/icons/img5.svg'
-// import { title } from "process";
+const img1 = '/assets/icons/img1.svg'
+const img2 = '/assets/icons/img2.svg'
+const img3 = '/assets/icons/img3.svg'
+const img4 = '/assets/icons/img4.svg'
+const img5 = '/assets/icons/img5.svg'
+// const { title } = "process";
 
 // -----------------------------------------------------------------
-import notes from '../../public/assets/icons/notes.svg'
-import companents2 from '../../public/assets/icons/Component 1 (6).svg'
-import companents3 from '../../public/assets/icons/Component 1 (7).svg'
-import companets4 from '../../public/assets/icons/Component 1 (8).svg'
-import companets5 from '../../public/assets/icons/Frame 34092 (8).svg'
-import companets6 from '../../public/assets/icons/Component 1 (3).png'
-import companets7 from '../../public/assets/icons/Component 1 (9).svg'
-import companents8 from '../../public/assets/icons/Component 1 (10).svg'
+const notes = '/assets/icons/notes.svg'
+const companents2 = '/assets/icons/Component 1 (6).svg'
+const companents3 = '/assets/icons/Component 1 (7).svg'
+const companets4 = '/assets/icons/Component 1 (8).svg'
+const companets5 = '/assets/icons/Frame 34092 (8).svg'
+const companets6 = '/assets/icons/Component 1 (3).png'
+const companets7 = '/assets/icons/Component 1 (9).svg'
+const companents8 = '/assets/icons/Component 1 (10).svg'
 // ------------------------------------------------------------------------
-import medal from '../../public/assets/icon/medalll.svg'
-import puzzule from '../../public/assets/icons/puzzule.svg'
-import handshake from '../../public/assets/icons/handshake.svg'
-import tame from '../../public/assets/icon/tame.svg'
-import lisen from '../../public/assets/icon/lisen.svg'
-import confidence from '../../public/assets/icon/confidence.svg'
+const medal = '/assets/icon/medalll.svg'
+const puzzule = '/assets/icons/puzzule.svg'
+const handshake = '/assets/icons/handshake.svg'
+const tame = '/assets/icon/tame.svg'
+const lisen = '/assets/icon/lisen.svg'
+const confidence = '/assets/icon/confidence.svg'
 // ------------------------------------
-import medal2 from '../../public/assets/icon/medal2.svg'
-import puzzule2 from '../../public/assets/icon/puzzule2.svg'
-import handshake2 from '../../public/assets/icon/hund2.svg'
-import tame2 from '../../public/assets/icon/tame2.svg'
-import lisen2 from '../../public/assets/icon/lisen2.svg'
-import confidence2 from '../../public/assets/icon/confid.svg'
-// import { icon } from "./tempfile";
+const medal2 = '/assets/icon/medal2.svg'
+const puzzule2 = '/assets/icon/puzzule2.svg'
+const handshake2 = '/assets/icon/hund2.svg'
+const tame2 = '/assets/icon/tame2.svg'
+const lisen2 = '/assets/icon/lisen2.svg'
+const confidence2 = '/assets/icon/confid.svg'
+// const { icon } = "./tempfile";
 
 
 

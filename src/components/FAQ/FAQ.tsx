@@ -74,7 +74,7 @@ export function FAQ() {
               </div>
             ))}
           </div>
-          <Button />
+          {/* <Button /> */}
         </div>
       </div>
     </section>

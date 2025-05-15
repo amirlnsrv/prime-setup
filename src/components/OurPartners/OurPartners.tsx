@@ -13,7 +13,7 @@ export function OurPartners() {
           <div className={styles.track}>
             {[...yourCompanyLogos, ...yourCompanyLogos].map((logo, index) => (
               <div className={styles.logo} key={index}>
-                <Image src={logo} alt={`Logo ${index}`} />
+                <img src={logo} alt={`Logo ${index}`} />
               </div>
             ))}
           </div>
