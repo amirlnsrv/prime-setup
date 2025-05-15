@@ -30,9 +30,9 @@ export default function Home() {
         }}
       />
       <WhyPrimeSetup />
-      <Benefits />
+      <Benefits/>
       <Services />
-      <Swiper />
+      <Swiper/>
       <OurPartners />
       <SuccessShared />
       <UsefulArticles />
