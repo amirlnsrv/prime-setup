@@ -20,23 +20,21 @@ const LanguageSelector = () => {
         <HeaderArrow className={styles.arrowIcon} />
       </button>
 
-      {open && (
-        <ul className={styles.menu}>
-          {languages.map((lang) => (
-            <li key={lang.code}>
-              <button
-                onClick={() => {
-                  setSelectedLang(lang.code);
-                  setOpen(false);
-                }}
-                className={styles.item}
-              >
-                {lang.label}
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul className={`${styles.menu} ${open ? styles.open : ""}`}>
+        {languages.map((lang) => (
+          <li key={lang.code}>
+            <button
+              onClick={() => {
+                setSelectedLang(lang.code);
+                setOpen(false);
+              }}
+              className={styles.item}
+            >
+              {lang.label}
+            </button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

@@ -66,7 +66,6 @@ export default function SuccessShared() {
         <button className={`${styles.arrow} swiper-button-prev`}></button>
         <button className={`${styles.arrow} swiper-button-next`}></button>
       </div>
-      {/* <button className={styles.button}>Leave a review</button> */}
       <PrimaryButton value="Оставить отзыв" className={styles.button} />
     </section>
   );

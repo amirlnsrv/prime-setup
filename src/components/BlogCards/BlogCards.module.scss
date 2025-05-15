@@ -1,0 +1,100 @@
+.blogCards {
+  padding: 140px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 46px;
+    text-align: center;
+    color: var(--zagol);
+  }
+
+  .filter {
+    display: flex;
+    max-width: 1116px;
+    width: 85%;
+    margin: 60px 0 100px;
+
+    .input {
+      &::placeholder {
+        color: #8b8b8b;
+        opacity: 1;
+      }
+
+      border-radius: 10px 0 0 10px;
+      width: 100%;
+      min-width: 200px;
+      height: 83px;
+      font-family: var(--font4);
+      font-weight: 400;
+      font-size: 19px;
+      color: #000;
+      padding-left: 30px;
+      border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+      border-left: 3px solid rgba(0, 0, 0, 0.25);
+      border-top: 3px solid rgba(0, 0, 0, 0.25);
+    }
+
+    .search {
+      border-radius: 0 10px 10px 0;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      padding: 30px 20px;
+      width: 155px;
+      height: 83px;
+      background: var(--333);
+
+      span {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 26px;
+        color: #fff;
+      }
+    }
+  }
+
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+    row-gap: 40px;
+    column-gap: 24px;
+  }
+
+  .pagination {
+    padding: 70px 0 260px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    button {
+      background: none;
+    }
+
+    .prev {
+      font-family: var(--font4);
+      font-weight: 400;
+      font-size: 22px;
+      color: #454545;
+    }
+
+    .next {
+      font-family: var(--font4);
+      font-weight: 400;
+      font-size: 22px;
+      color: var(--osnov);
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      height: 50px;
+
+      .arrow {
+        padding-top: 3px;
+      }
+    }
+  }
+}

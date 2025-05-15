@@ -5,7 +5,6 @@
 	left: 0;
 	top: 0;
 	width: 100%;
-	background-color: transparent;
 
 	&Inner {
 		display: flex;
@@ -19,6 +18,7 @@
 			justify-content: center;
 			align-items: center;
 			gap: 1.59px;
+			cursor: pointer;
 
 			img {
 				width: 44px;
@@ -55,6 +55,7 @@
 				font-weight: 700;
 				font-size: 18px;
 				color: #fff;
+				transition: all 0.4s ease-in-out;
 
 				&:hover {
 					color: #acacac;
@@ -67,13 +68,26 @@
 			align-items: center;
 			gap: 28px;
 
-			.headerBtn:hover {
-				border: 1px solid rgba(255, 255, 255, 0.8);
-				background: rgba(255, 255, 255, 0.2);
-				color: rgba(255, 255, 255, 0.8);
+			.headerBtn {
+				transition: all 0.4s ease-in-out;
+
+				&:hover {
+					border: 1px solid rgba(255, 255, 255, 0.8);
+					background: rgba(255, 255, 255, 0.2);
+					color: rgba(255, 255, 255, 0.8);
+				}
 			}
 		}
 	}
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+.scrolled {
+	position: fixed;
+	background-color: var(--osnov);
 }
 
 @media (max-width: 1070px) {

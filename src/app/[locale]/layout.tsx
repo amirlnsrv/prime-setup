@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
 import { Header } from "@/components/Header";
-import { FooterSection } from "@/components/FooterSection";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -12,6 +11,8 @@ export const metadata: Metadata = {
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "ru" }];
 }
+
+const Header = dynamic(() => import("@/components/Header"));
 
 export default async function RootLayout({
   children,
@@ -27,9 +28,9 @@ export default async function RootLayout({
     <html lang={locale}>
       {/* Динамически устанавливаем язык */}
       <body>
+        <Telegram />
         <Header />
         {children}
-        <FooterSection />
       </body>
     </html>
   );

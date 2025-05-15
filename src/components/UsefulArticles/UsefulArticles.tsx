@@ -4,17 +4,15 @@ import { UsefulCard } from "@/ui/UsefulCard";
 import styles from "./UsefulArticles.module.scss";
 import { PrimaryButton } from "@/ui/PrimaryButton";
 
-// Swiper components and modules
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 
-// Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 export default function UsefulArticles() {
-  const cards = [1, 2, 3]; // Your card data
+  const cards = [1, 2, 3];
 
   return (
     <section className={styles.usefulArticles}>
@@ -24,9 +22,8 @@ export default function UsefulArticles() {
       </p>
       <div className={styles.bg}>
         <Swiper
-          slidesPerView={1}
-          spaceBetween={20}
-          centeredSlides={true}
+           slidesPerView="auto"
+          spaceBetween={30}
           pagination={{
             clickable: true,
             enabled: true,
@@ -68,7 +65,7 @@ export default function UsefulArticles() {
           ))}
         </Swiper>
 
-        <PrimaryButton value={"Смотреть все статьи"} className={styles.btn} />
+        <PrimaryButton url="/blog" value={"Смотреть все статьи"} className={styles.btn} />
       </div>
     </section>
   );
