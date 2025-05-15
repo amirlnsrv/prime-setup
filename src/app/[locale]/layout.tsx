@@ -26,7 +26,7 @@ export default async function RootLayout({
     <html lang={locale}>
       {/* Динамически устанавливаем язык */}
       <body>
-        <Header />
+        {/* <Header /> */}
         {children}
       </body>
     </html>
