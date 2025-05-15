@@ -9,14 +9,12 @@ import { SuccessShared } from "@/components/SuccessShared";
 import { Services } from "@/components/Services/Services";
 
 import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
-import { Telegram } from "@/ui/Telegram";
 import { UsefulArticles } from "@/components/UsefulArticles";
 import { Swiper } from "@/components/Swiper/Swiper";
 
 export default function Home() {
   return (
     <>
-    <Telegram />
       <Hero
         imgUrl="/assets/images/heroBg.jpg"
         title="Ваш бизнес в надёжных руках"
