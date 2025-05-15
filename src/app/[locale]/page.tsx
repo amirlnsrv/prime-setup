@@ -14,8 +14,8 @@ import { Telegram } from "@/ui/Telegram";
 
 export default function Home() {
   return (
-    <section>
-      <Telegram />
+    <>
+    <Telegram />
       <Hero />
       <WhyPrimeSetup />
       <OurPartners />
@@ -24,6 +24,6 @@ export default function Home() {
       <FAQ />
       <Contact />
       <BusinessSetup />
-    </section>
+    </>
   );
 }

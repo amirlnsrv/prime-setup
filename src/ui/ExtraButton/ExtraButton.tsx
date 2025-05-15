@@ -6,5 +6,9 @@ type Props = {
 };
 
 export const ExtraButton = ({ className, value }: Props) => {
-  return <button className={`${styles.button} ${className}`}>{value}</button>;
+  return (
+    <button className={`${styles.button} ${className}`}>
+      <span>{value}</span>
+    </button>
+  );
 };
