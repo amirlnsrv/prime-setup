@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { FooterSection } from "@/components/FooterSection";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -29,7 +29,7 @@ export default async function RootLayout({
       <body>
         <Header />
         {children}
-        <Footer />
+        <FooterSection />
       </body>
     </html>
   );

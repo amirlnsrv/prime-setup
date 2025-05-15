@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./OurPartners.module.scss";
 import { yourCompanyLogos } from "@/mockData/mockData";
 
-export default function OurPartners() {
+export function OurPartners() {
   return (
     <section className={styles.ourPartners}>
       <div className={styles.top}>

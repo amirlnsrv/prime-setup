@@ -1,25 +1,34 @@
-import styles from "./Footer.module.scss";
-import Image from "next/image";
+"use client";
+import styles from "./FooterBottom.module.scss";
 import Link from "next/link";
 
-export function Footer() {
+export function FooterBottom() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footerContainer}>
       <div className={styles.content}>
         <div className={styles.column}>
-          <Image src="/logo.svg" alt="PRIME SETUP" width={120} height={40} />
+          <img src="/assets/icons/logo.svg" alt="logo" />
+          <p className={styles.logoTitle}>PRIME SETUP</p>
+          <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           <p className={styles.description}>
             Комплексные решения для регистрации и поддержки бизнеса в ОАЭ.
           </p>
+
           <div className={styles.socials}>
             <a href="#">
-              <img src="/icons/fb.svg" alt="FB" />
+              <img src="/assets/icons/Facebook-Icon.svg" alt="Facebook" />
             </a>
             <a href="#">
-              <img src="/icons/tg.svg" alt="TG" />
+              <img src="/assets/icons/Twitter-Icon.svg" alt="Twitter" />
             </a>
             <a href="#">
-              <img src="/icons/wa.svg" alt="WA" />
+              <img src="/assets/icons/Instagram-Icon.svg" alt="Instagram" />
+            </a>
+            <a href="#">
+              <img src="/assets/icons/Linkedin-Icon.svg" alt="Linkedin" />
+            </a>
+            <a href="#">
+              <img src="/assets/icons/Youtube-Icon.svg" alt="Youtube" />
             </a>
           </div>
         </div>
@@ -49,11 +58,15 @@ export function Footer() {
           <h4>Рабочие часы</h4>
           <p>Пн-Пт: 8:30–17:30</p>
           <p>Суббота: 10:00–14:00</p>
+        </div>
+
+        <div className={styles.column}>
           <h4>Свяжитесь с нами</h4>
           <p>info.xyz@gmail.com</p>
           <p>+996 470-926</p>
         </div>
       </div>
+
       <div className={styles.copyright}>
         ©2025 PRIME SETUP. Все права защищены.
       </div>

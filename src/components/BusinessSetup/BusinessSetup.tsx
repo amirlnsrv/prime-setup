@@ -1,5 +1,4 @@
 import styles from "./BusinessSetup.module.scss";
-// import Image from "next/image";
 import Link from "next/link";
 
 export function BusinessSetup() {

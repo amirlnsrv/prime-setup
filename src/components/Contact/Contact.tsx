@@ -3,7 +3,7 @@ import styles from "./Contact.module.scss";
 
 export function Contact() {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div className={styles.rightLine}></div>
       <div className={styles.contactSection}>
         <div className={styles.container}>
@@ -12,27 +12,27 @@ export function Contact() {
               Начните свой путь в ОАЭ уже сегодня
             </h2>
             <p className={styles.description}>
-              Мы готовы ответить на ваши вопросы и помочь с открытием бизнеса в
+              Мы готовы ответить на ваши вопросы и помочь c открытием бизнеса в
               ОАЭ.
             </p>
 
             <div className={styles.infoBlock}>
               <h3 className={styles.hoursTitle}>Рабочие часы</h3>
-              <p>С понедельника по пятницу с 8:30 до 17:30</p>
-              <p>Суббота 10:00 – 14:00</p>
+              <p>C понедельника по пятницу c 8:30 до 17:30</p>
+              <p>Суббота 10:00 - 14:00</p>
             </div>
 
             <div className={styles.contactLinks}>
               <div className={styles.tel}>
                 <img src="/assets/icons/Component.svg" alt="logo" />
                 <p>
-                  <a>info.xyz@gmail.com</a>
+                  <a href="#">info.xyz@gmail.com</a>
                 </p>
               </div>
               <div className={styles.email}>
                 <img src="/assets/icons/Group.svg" alt="tel" />
                 <p>
-                  <a>+996 476-924</a>
+                  <a href="#">+996 476-924</a>
                 </p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export function Contact() {
               </label>
             </div>
             <label className={styles.inp}>
-              Адресс электронной почты
+              Адрес электронной почты
               <input
                 type="email"
                 placeholder="Введите адресс электронной почты"

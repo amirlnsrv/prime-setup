@@ -1,0 +1,24 @@
+// components/Hero.tsx
+import Image from 'next/image';
+import styles from './Hero.module.scss'; // Импортируем модульный SCSS
+
+// Функциональный компонент Hero
+function Hero() {
+  return (
+    <section className={styles.hero}>
+      <div className={styles.overlay}>
+        <h1 className={styles.title}>Welcome to Our Website!</h1>
+        <p className={styles.subtitle}>Discover amazing content.</p>
+      </div>
+      <Image
+        src="/images/hero.jpg"       // Путь к изображению из папки public
+        alt="Hero Image"              // Альтернативный текст
+        layout="fill"                 // Заполнение контейнера
+        objectFit="cover"             // Обеспечивает обрезку изображения по контейнеру
+        className={styles.image}      // Применяем стили
+      />
+    </section>
+  );
+}
+
+export default Hero;
