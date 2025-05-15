@@ -1,6 +1,7 @@
 import { BusinessSetup } from "@/components/BusinessSetup";
 import { Contact } from "@/components/Contact/Contact";
 import { FAQ } from "@/components/FAQ";
+import { Benefits } from "@/components/Benefits";
 import { Hero } from "@/components/Hero";
 import { OurPartners } from "@/components/OurPartners";
 import { SuccessShared } from "@/components/SuccessShared";
@@ -9,7 +10,7 @@ import { Services } from "@/components/Services/Services";
 
 import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
 import { UsefulArticles } from "@/components/UsefulArticles";
-
+import { Swiper } from "@/components/Swiper/Swiper";
 
 export default function Home() {
   return (
@@ -29,7 +30,9 @@ export default function Home() {
         }}
       />
       <WhyPrimeSetup />
+      <Benefits/>
       <Services />
+      <Swiper/>
       <OurPartners />
       <SuccessShared />
       <UsefulArticles />
