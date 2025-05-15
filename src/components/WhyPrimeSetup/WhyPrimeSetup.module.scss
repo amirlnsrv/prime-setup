@@ -1,0 +1,72 @@
+.whyPrimeSetup {
+	padding: 160px 0 128px;
+
+	.inner {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.title {
+			max-width: 728px;
+			font-family: var(--second-family);
+			font-weight: 400;
+			font-size: 46px;
+			line-height: 109%;
+			color: var(--zagol);
+			margin-bottom: 20px;
+		}
+		.subtitle {
+			margin-bottom: 40px;
+			font-family: var(--third-family);
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 117%;
+			color: #000;
+			max-width: 882px;
+		}
+		.btn {
+			width: 320px;
+			height: 62px;
+			padding: 16px 32px 15px;
+			&::before {
+				content: "Узнать больше о нас";
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.whyPrimeSetup {
+		padding: 55.27px 0 42px;
+
+		.inner {
+			.title {
+				font-size: 22px;
+				line-height: 109%;
+				margin-bottom: 8px;
+			}
+			.subtitle {
+				font-size: 14px;
+				line-height: 114%;
+				margin-bottom: 20px;
+			}
+			.btn {
+				width: 189px;
+				height: 38px;
+				padding: 10px 14px 9px;
+				border: 2px solid var(--333);
+				border-radius: 5px;
+
+				&::before {
+					font-size: 16px;
+				}
+
+				span {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

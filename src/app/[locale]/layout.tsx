@@ -1,5 +1,9 @@
-// import { getDictionary } from '@/lib/i18n/getDictionary';
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
+
+import "@/styles/globals.scss";
+import dynamic from "next/dynamic";
+import { Telegram } from "@/ui/Telegram";
+import { FooterSection } from "@/components/FooterSection";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -7,22 +11,30 @@ export const metadata: Metadata = {
 };
 
 export async function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'ru' }];
+  return [{ locale: "en" }, { locale: "ru" }];
 }
+
+const Header = dynamic(() => import("@/components/Header"));
 
 export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: 'en' | 'ru' }>;
+  params: { locale: "en" | "ru" };
 }) {
-  const { locale } = await params;
-  // const dict = await getDictionary(params.locale);
+  const locale = params.locale;
+  // const dict = await getDictionary(locale);
 
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      {/* Динамически устанавливаем язык */}
+      <body>
+        <Telegram />
+        <Header />
+        <main>{children}</main>
+        <FooterSection />
+      </body>
     </html>
   );
 }

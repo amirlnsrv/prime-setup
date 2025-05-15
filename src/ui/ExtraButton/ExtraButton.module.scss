@@ -1,0 +1,62 @@
+.button {
+	font-family: var(--font-family);
+	font-weight: 700;
+	border: 1px solid transparent;
+	color: var(--osnov);
+	background-color: #fff;
+	border-radius: 10px;
+	font-size: 24px;
+	max-width: 350px;
+	text-wrap: nowrap;
+	position: relative;
+	padding: 15px 24px;
+	border: none;
+	background: linear-gradient(to left, #fff 50%, var(--333) 50%);
+	background-size: 200% 100%;
+	background-position: right;
+	transition: background-position 0.5s ease;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button:hover {
+	background-position: left;
+}
+
+.button::before {
+	content: "Бесплатная консультация";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: left 0.5s ease;
+}
+
+.button:hover::before {
+	opacity: 1;
+}
+
+.button:hover span {
+	opacity: 0;
+}
+
+.button span {
+	transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+	.button {
+		max-width: 200px;
+		padding: 8px 12px;
+		font-size: 14px;
+		border-radius: 5px;
+	}
+}

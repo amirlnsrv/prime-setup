@@ -1,0 +1,39 @@
+.section {
+    width: 100%;
+    padding: 0 15px;
+    height: 874px;
+    position: relative;
+    margin-top: 53px;
+    margin-bottom: 47px;
+  }
+  .content {
+    width: 100%;
+    max-height: auto;
+    height: 100%;
+    position: relative;
+  }
+  .img {
+    width: 100%;
+    max-height: 1600px;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+  }
+  .swiperWrapper {
+    width: 100%;
+    height: 100%;
+    padding: 90px;
+  }
+
+  @media (max-width: 936px) {
+    .swiperWrapper {
+      padding: 30px;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .swiperWrapper {
+      padding: 10;
+    }
+  }
+

@@ -1,0 +1,104 @@
+.ourPartners {
+  width: 100%;
+  padding: 50px 0 150px;
+  position: relative;
+
+  .top {
+    overflow: hidden;
+    background-image: url("/assets/images/pngwing.svg");
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: clamp(100px, 20vw, 216px);
+    height: clamp(300px, 60vw, 593px);
+
+    h1 {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: clamp(24px, 5vw, 46px);
+      text-align: center;
+      color: var(--zagol);
+      margin-bottom: 40px;
+      white-space: nowrap;
+    }
+
+    .slider {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .track {
+      display: flex;
+      width: fit-content;
+      animation: scroll 20s linear infinite;
+      column-gap: 60px;
+    }
+
+    .logo {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+  }
+
+  .downborderWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -1px;
+  }
+
+  .downborderWrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .logo {
+
+    img {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+
+    img {
+      max-width: 180px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+
+    img {
+      max-width: 120px;
+    }
+  }
+}
