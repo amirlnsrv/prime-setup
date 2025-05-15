@@ -1,74 +1,51 @@
 .hero {
 	height: 100vh;
+	position: relative;
 
 	.inner {
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 30px;
-		max-width: 608px;
+		align-items: center;
 
-		.title {
-			font-family: var(--second-family);
-			font-size: 65px;
-			line-height: 108%;
-			color: #fff;
-		}
-
-		.subtitle {
-			font-family: var(--third-family);
-			font-weight: 400;
-			font-size: 26px;
-			color: #fff;
-		}
-
-		.fancyButton {
-			font-size: 24px;
-			max-width: 350px;
-			text-wrap: nowrap;
-			position: relative;
-			padding: 17px 25px 16px;
-			border: none;
-			background: linear-gradient(to left, #fff 50%, var(--333) 50%);
-			background-size: 200% 100%;
-			background-position: right;
-			transition: background-position 0.5s ease;
-			overflow: hidden;
-			cursor: pointer;
+		.content {
 			display: flex;
+			flex-direction: column;
 			align-items: center;
-			justify-content: center;
-		}
+			text-align: center;
+			gap: 30px;
+			max-width: 1091px;
 
-		.fancyButton:hover {
-			background-position: left;
-		}
+			.title {
+				font-family: var(--second-family);
+				font-size: 65px;
+				line-height: 108%;
+				color: #fff;
+			}
 
-		.fancyButton::before {
-			content: "Бесплатная консультация";
-			position: absolute;
-			opacity: 0;
-			top: 0;
-			height: 100%;
-			width: 100%;
-			color: white;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			transition: left 0.5s ease;
+			.subtitle {
+				font-family: var(--third-family);
+				font-weight: 400;
+				font-size: 26px;
+				color: #fff;
+			}
 		}
+	}
+}
 
-		.fancyButton:hover::before {
-			opacity: 1;
-		}
-
-		.fancyButton:hover span {
-			opacity: 0;
-		}
-
-		.fancyButton span {
-			transition: opacity 0.3s ease-in-out;
+@media (max-width: 960px) {
+	.hero {
+		.inner {
+			.content {
+				gap: 15px;
+				.title {
+					font-size: 48px;
+				}
+				.subtitle {
+					font-size: 24px;
+				}
+			}
 		}
 	}
 }
@@ -76,21 +53,27 @@
 @media (max-width: 600px) {
 	.hero {
 		.inner {
-			max-width: 292px;
-			gap: 11.19px;
-			.title {
-				font-size: 26px;
-				line-height: 100%;
-			}
-			.subtitle {
-				font-weight: 400;
-				font-size: 13px;
-			}
-			.fancyButton {
-				max-width: 200px;
-				padding: 8px 12px;
-				font-size: 14px;
-				border-radius: 5px;
+			max-width: 339px !important;
+
+			.content {
+				text-align: left;
+				align-items: flex-start;
+				gap: 11.19px;
+
+				.title {
+					font-size: 24px;
+					line-height: 108%;
+				}
+				.subtitle {
+					font-weight: 400;
+					font-size: 13px;
+				}
+				.fancyButton {
+					max-width: 200px;
+					padding: 8px 12px;
+					font-size: 14px;
+					border-radius: 5px;
+				}
 			}
 		}
 	}

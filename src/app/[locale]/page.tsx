@@ -10,7 +10,20 @@ import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero
+        imgUrl="/assets/images/heroBg.jpg"
+        title="Ваш бизнес в надёжных руках"
+        subtitle="Комплексные услуги по регистрации бизнеса, лицензированию и сопровождению в ОАЭ"
+        inlineStyles={{
+          inner: {
+            maxWidth: "608px",
+          },
+          content: {
+            textAlign: "left",
+            alignItems: "flex-start",
+          },
+        }}
+      />
       <WhyPrimeSetup />
       <OurPartners />
       <SuccessShared />
