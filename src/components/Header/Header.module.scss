@@ -5,7 +5,6 @@
 	left: 0;
 	top: 0;
 	width: 100%;
-	background-color: transparent;
 
 	&Inner {
 		display: flex;
@@ -79,6 +78,15 @@
 			}
 		}
 	}
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+.scrolled {
+	position: fixed;
+	background-color: var(--osnov);
 }
 
 @media (max-width: 1070px) {
