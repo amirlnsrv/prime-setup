@@ -13,8 +13,8 @@
   .txt {
     position: absolute;
     left: 50%;
-    top: 22%;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-wrap: nowrap;
     font-family: var(--font3);
     font-weight: 700;

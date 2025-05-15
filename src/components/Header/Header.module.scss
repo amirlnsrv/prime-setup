@@ -1,6 +1,10 @@
 .header {
 	padding: 31px 0;
-	background-color: var(--osnov);
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
 
 	&Inner {
 		display: flex;
@@ -50,6 +54,7 @@
 				font-weight: 700;
 				font-size: 18px;
 				color: #fff;
+				transition: all 0.4s ease-in-out;
 
 				&:hover {
 					color: #acacac;
@@ -62,13 +67,26 @@
 			align-items: center;
 			gap: 28px;
 
-			.headerBtn:hover {
-				border: 1px solid rgba(255, 255, 255, 0.8);
-				background: rgba(255, 255, 255, 0.2);
-				color: rgba(255, 255, 255, 0.8);
+			.headerBtn {
+				transition: all 0.4s ease-in-out;
+
+				&:hover {
+					border: 1px solid rgba(255, 255, 255, 0.8);
+					background: rgba(255, 255, 255, 0.2);
+					color: rgba(255, 255, 255, 0.8);
+				}
 			}
 		}
 	}
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+.scrolled {
+	position: fixed;
+	background-color: var(--osnov);
 }
 
 @media (max-width: 1070px) {
@@ -85,6 +103,7 @@
 	.header {
 		padding: 10.57px 0;
 		background-color: var(--osnov);
+		position: fixed;
 
 		&Inner {
 			.headerBtn {
