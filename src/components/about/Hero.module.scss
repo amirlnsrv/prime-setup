@@ -11,11 +11,11 @@ function Hero() {
         <p className={styles.subtitle}>Discover amazing content.</p>
       </div>
       <Image
-        src="/images/hero.jpg"       // Путь к изображению из папки public
-        alt="Hero Image"              // Альтернативный текст
-        layout="fill"                 // Заполнение контейнера
-        objectFit="cover"             // Обеспечивает обрезку изображения по контейнеру
-        className={styles.image}      // Применяем стили
+        src="/images/hero.jpg"       
+        alt="Hero Image"             
+        layout="fill"                 
+        objectFit="cover"         
+        className={styles.image}      
       />
     </section>
   );

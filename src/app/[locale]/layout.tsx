@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
-import { Header } from "@/components/Header";
+import dynamic from "next/dynamic";
+import { Telegram } from "@/ui/Telegram";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -30,7 +31,7 @@ export default async function RootLayout({
       <body>
         <Telegram />
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
