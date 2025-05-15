@@ -13,7 +13,7 @@ import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
 
 export default function Home() {
   return (
-    <section>
+    <>
       <Hero />
       <WhyPrimeSetup /> 
       <Services/>
@@ -23,6 +23,6 @@ export default function Home() {
       <FAQ />
       <Contact />
       <BusinessSetup />
-    </section>
+    </>
   );
 }
