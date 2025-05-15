@@ -24,9 +24,10 @@ export default function UsefulArticles() {
       </p>
       <div className={styles.bg}>
         <Swiper
-          slidesPerView={1}
-          spaceBetween={20}
-          centeredSlides={true}
+          // slidesPerView={1}
+           slidesPerView="auto"
+          spaceBetween={30}
+          // centeredSlides={true}
           pagination={{
             clickable: true,
             enabled: true,
@@ -68,7 +69,7 @@ export default function UsefulArticles() {
           ))}
         </Swiper>
 
-        <PrimaryButton value={"Смотреть все статьи"} className={styles.btn} />
+        <PrimaryButton url="/blog" value={"Смотреть все статьи"} className={styles.btn} />
       </div>
     </section>
   );
