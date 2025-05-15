@@ -1,12 +1,17 @@
-import Image from 'next/image'
-import styles from './Telegram.module.scss'
-import telegram from '../../../public/assets/icons/telegram.svg'
+/* eslint-disable @next/next/no-img-element */
+import styles from "./Telegram.module.scss";
 
 export default function Telegram() {
-    return(
-        <button className={styles.tg}>
-            <Image className={styles.telegramIcon} src={telegram} alt='tg'/>
-            <p>Нужна помощь? <br /> Свяжитесь с нами по чату</p>
-        </button>
-    )    
+  return (
+    <button className={styles.tg}>
+      <img
+        className={styles.telegramIcon}
+        src="/assets/icons/telegram.svg"
+        alt="tg"
+      />
+      <p>
+        Нужна помощь? <br /> Свяжитесь с нами по чату
+      </p>
+    </button>
+  );
 }

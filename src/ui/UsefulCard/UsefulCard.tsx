@@ -1,8 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import styles from "./UsefulCard.module.scss";
-import arrow from "../../../public/assets/icons/rightArrow.svg";
-import Image from "next/image";
-import elipse from "../../../public/assets/images/elipse.svg";
 
 export default function UsefulCard() {
   return (
@@ -14,12 +12,12 @@ export default function UsefulCard() {
         Открытие бизнеса в Дубае — это просто. Рассказываем, с чего начать, какие документы нужны и сколько времени занимает процесс регистрации.
         </p>
           <Link href={"#"} className={styles.more}>
-          Читать далее <Image className={styles.arrow} src={arrow} alt="arrow" />
+          Читать далее <img className={styles.arrow} src="/assets/icons/rightArrow.svg" alt="arrow" />
           </Link>
       </div>
-      <Image src={elipse} alt="elipse" className={styles.elipse_right}/>
-      <Image src={elipse} alt="elipse" className={styles.elipse_bottom}/>
-      <Image src={elipse} alt="elipse" className={styles.elipse_left}/>
+      <img src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_right}/>
+      <img src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_bottom}/>
+      <img src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_left}/>
     </div>
   );
 }
