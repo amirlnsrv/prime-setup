@@ -5,7 +5,7 @@ import { useState } from "react";
 import styles from "./BurgerMenu.module.scss";
 import Link from "next/link";
 
-export const BurgerMenu = () => {
+export default function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -25,7 +25,7 @@ export const BurgerMenu = () => {
             <Link href="#">О нас</Link>
           </li>
           <li className={styles.menuItem}>
-            <Link href="#">Услуги</Link>
+            <Link href="/services">Услуги</Link>
           </li>
           <li className={styles.menuItem}>
             <Link href="#">Блог</Link>
@@ -40,4 +40,4 @@ export const BurgerMenu = () => {
       </nav>
     </div>
   );
-};
+}

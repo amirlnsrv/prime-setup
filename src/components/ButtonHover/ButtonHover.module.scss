@@ -1,0 +1,108 @@
+.cardBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .cardBtn {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+  
+  .cardBtn {
+    border-radius: 8px;
+    width: 280px;
+    height: 41px;
+    background: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: #1149e7;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cardBtn:hover {
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #fff;
+  }
+
+
+  .checkBtn {
+    width: 350px;
+    height: 62px;
+    font-family: var(--font3);
+    font-weight: bold;
+    font-size: 26px;
+    color: #d8351c;
+    border: 4px solid #d8351c;
+    border-radius: 16px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+  margin-top: 55px;
+  }
+  
+  .checkBtn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #d8351c;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+  }
+  
+  .checkBtn:hover::before {
+    width: 100%;
+    height: 100%;
+    clip-path: none;
+  }
+  
+  .checkBtn:hover {
+    color: white;
+  }
+  .checkBtnn{
+    display: none;
+  }
+
+
+  @media(max-width:390px){
+
+    .checkBtnn{
+      display: block;
+      width: 295px;
+  height: 38px;
+  background-color: #D23216;
+  margin-top: 30px;
+  border: none;
+  font-family: var(--font3);
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+    }
+    .checkBtn{
+  display: none;
+    }
+  }
+
+
+  @media(max-width:360px){
+    .checkBtn {
+      width: 250px;
+      height: 62px;}
+  }
