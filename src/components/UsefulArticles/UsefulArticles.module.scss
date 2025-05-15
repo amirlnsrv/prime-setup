@@ -49,13 +49,13 @@
         content: "Смотреть все статьи";
       }
 
-      @media (max-width: 800px) {
+      @media (max-width: 850px) {
         position: relative;
         bottom: -100px;
       }
     }
 
-    @media (max-width: 800) {
+    @media (max-width: 850) {
       background: linear-gradient(
         to bottom,
         var(--cvet-fona) 0%,
@@ -79,7 +79,7 @@
       background: var(--osnov);
       border-radius: 0 0 50px 50px;
 
-      @media (max-width: 800) {
+      @media (max-width: 850) {
         bottom: 65px;
       }
     }
@@ -92,9 +92,14 @@
 }
 
 .swiperContainer {
+  max-width: 1290px;
   width: 100%;
   padding: 20px 0;
   margin: 0 auto;
+
+  @media (max-width: 1265px) {
+    max-width: 800px;
+  }
 
   // Стили для пагинации (точек)
   :global(.swiper-pagination) {
@@ -117,6 +122,8 @@
 }
 
 .swiperSlide {
+  width: 320px;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
 }

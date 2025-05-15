@@ -10,7 +10,7 @@
   z-index: 1;
   transition-delay: 0.3s;
 
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     transform: scale(0.9);
   }
 
@@ -59,6 +59,11 @@
     transition: all 0.6s ease-in-out;
     position: absolute;
     left: -80px;
+  }
+
+  &:hover .arrow{
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
   }
 
   .picture {
@@ -122,7 +127,13 @@
       display: flex;
       align-items: center;
       column-gap: 10px;
-      bottom: -55px;
+      bottom: -60px;
+
+      &:hover{
+        transition: all 0.3s ease-in-out;
+        filter: brightness(0.8);
+        text-decoration: underline;
+      }
     }
   }
 
@@ -153,5 +164,36 @@
     top: 15%;
     left: -150px;
     z-index: 0;
+  }
+
+  .arrow{
+    transition-delay: 0.3s;
+  }
+}
+
+@keyframes jellyMoveBottomOnly {
+  0% {
+    top: 80%;
+    right: 20px;
+  }
+  25% {
+    top: 81%;
+    right: 85px;
+  }
+  50% {
+    top: 82%;
+    right: 105px;
+  }
+  70% {
+    top: 82.3%;
+    right: 98px;
+  }
+  85% {
+    top: 82%;
+    right: 100px;
+  }
+  100% {
+    top: 82%;
+    right: 100px;
   }
 }
