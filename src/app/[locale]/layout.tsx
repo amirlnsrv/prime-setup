@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "@/styles/globals.scss";
-import { Header } from "@/components/Header";
+import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "ru" }];
 }
+
+const Header = dynamic(() => import("@/components/Header"));
 
 export default async function RootLayout({
   children,
