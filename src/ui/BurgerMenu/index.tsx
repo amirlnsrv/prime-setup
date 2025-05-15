@@ -28,7 +28,7 @@ export default function BurgerMenu() {
             <Link href="/services">Услуги</Link>
           </li>
           <li className={styles.menuItem}>
-            <Link href="#blog">Блог</Link>
+            <Link href="/blog">Блог</Link>
           </li>
           <li className={styles.menuItem}>
             <Link href="#">FAQ</Link>
