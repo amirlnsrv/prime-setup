@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import styles from "./OurPartners.module.scss";
 import { yourCompanyLogos } from "@/mockData/tempfile";
 // import { yourCompanyLogos } from "@/mockData/mockdata";
@@ -13,7 +11,7 @@ export function OurPartners() {
           <div className={styles.track}>
             {[...yourCompanyLogos, ...yourCompanyLogos].map((logo, index) => (
               <div className={styles.logo} key={index}>
-                <Image src={logo} alt={`Logo ${index}`} />
+                <img src={logo} alt={`Logo ${index}`} />
               </div>
             ))}
           </div>

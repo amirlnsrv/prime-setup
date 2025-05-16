@@ -1,12 +1,18 @@
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Hero.module.scss";
 import Image from "next/image";
+import { CSSProperties } from "react";
+
+type InlineStyles = {
+  inner?: CSSProperties;
+  content?: CSSProperties;
+}
 
 type Props = {
   imgUrl: string;
   title: string;
   subtitle: string;
-  inlineStyles?: any;
+  inlineStyles?: InlineStyles;
 };
 
 export const Hero = ({ imgUrl, title, subtitle, inlineStyles = {} }: Props) => {

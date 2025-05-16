@@ -1,27 +1,27 @@
-import Imag1 from "../../public/assets/icon/experience.svg";
-import Imag2 from "../../public/assets/icon/puzzle.svg";
-import Imag3 from "../../public/assets/icon/agreement.svg";
-import Imag4 from "../../public/assets/icon/time.svg";
-import Imag5 from "../../public/assets/icon/listen.svg";
-import Imag6 from "../../public/assets/icon/completed.svg";
+const Imag1 = "/assets/icon/experience.svg";
+const Imag2 = "/assets/icon/puzzle.svg";
+const Imag3 = "/assets/icon/agreement.svg";
+const Imag4 = "/assets/icon/time.svg";
+const Imag5 = "/assets/icon/listen.svg";
+const Imag6 = "/assets/icon/completed.svg";
 // ---------------------------------------------
-import list from "../../public/assets/icon/list.svg";
-import bank from '../../public/assets/icon/bank.svg'
-import license from '../../public/assets/icon/licence.svg'
-import table from '../../public/assets/icon/table.svg'
-import tax from '../../public/assets/icon/tax.svg'
-import accounting from '../../public/assets/icon/acaunting.svg'
-import pasavord from '../../public/assets/icon/passavord.svg'
-import full from '../../public/assets/icon/full.svg'
+const list = "/assets/icon/list.svg";
+const bank = '/assets/icon/bank.svg'
+const license = '/assets/icon/licence.svg'
+const table = '/assets/icon/table.svg'
+const tax = '/assets/icon/tax.svg'
+const accounting = '/assets/icon/acaunting.svg'
+const pasavord = '/assets/icon/passavord.svg'
+const full = '/assets/icon/full.svg'
 
 
 
-import companyBlack from "../../public/assets/images/companyBlack.svg";
-import companyYellow from "../../public/assets/images/companyYellow.svg";
-import companyPink from "../../public/assets/images/companyPink.svg";
-import companyGreen from "../../public/assets/images/companyGreen.svg";
-import companyPurple from "../../public/assets/images/companyPurple.svg";
-import companyOrange from "../../public/assets/images/companyOrange.svg";
+const companyBlack = "/assets/images/companyBlack.svg";
+const companyYellow = "/assets/images/companyYellow.svg";
+const companyPink = "/assets/images/companyPink.svg";
+const companyGreen = "/assets/images/companyGreen.svg";
+const companyPurple = "/assets/images/companyPurple.svg";
+const companyOrange = "/assets/images/companyOrange.svg";
 
 
 export const yourCompanyLogos = [

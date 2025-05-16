@@ -1,8 +1,5 @@
-import Image from "next/image";
 import styles from "./BlogCards.module.scss";
-import search from "../../../public/assets/icons/search.svg";
 import { UsefulCard } from "@/ui/UsefulCard";
-import arrow from "../../../public/assets/icons/smallArrow.svg";
 
 export default function BlogCards() {
   const cards = [1, 2, 3, 3, 4, 5, 6, 7, 8];
@@ -16,7 +13,7 @@ export default function BlogCards() {
           placeholder="Введите чтобы начать поиск..."
         />
         <button className={styles.search}>
-          <Image src={search} alt="search icon" />
+          <img src="/assets/icons/search.svg" alt="search icon" />
           <span>Поиск</span>
         </button>
       </div>
@@ -28,7 +25,7 @@ export default function BlogCards() {
       <div className={styles.pagination}>
         <button className={styles.prev}>Предыдущий</button>
         <button className={styles.next}>
-          Следующий <Image className={styles.arrow} src={arrow} alt="arrow" />
+          Следующий <img className={styles.arrow} src='/assets/icons/smallArrow.svg' alt="arrow" />
         </button>
       </div>
     </section>
