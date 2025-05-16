@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import styles from "./BusinessSlider.module.scss";
-import Image from "next/image";
 import { BusinessSlider } from "@/mockData/mockData";
 // import { BusinessSlider } from "@/mockData/tempfile";
 

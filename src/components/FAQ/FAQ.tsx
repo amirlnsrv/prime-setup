@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./FAQ.module.scss";
-import { Button } from "@/ui/Button";
+// import { Button } from "@/ui/Button";
 const faqData = [
   {
     q: "Почему я должен начать бизнес в Дубае?",

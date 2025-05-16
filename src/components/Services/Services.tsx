@@ -1,7 +1,6 @@
 // import { icon } from "@/mockData/tempfile";
 import { mockdataSectiom } from "@/mockData/mockData";
 import stylle from "./Services.module.scss";
-import Image from "next/image";
 import { PrimaryButton } from "@/ui/PrimaryButton";
 
 export function Services() {
