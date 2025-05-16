@@ -13,7 +13,6 @@ import img2 from '../../public/assets/icons/img2.svg'
 import img3 from '../../public/assets/icons/img3.svg'
 import img4 from '../../public/assets/icons/img4.svg'
 import img5 from '../../public/assets/icons/img5.svg'
-// import { title } from "process";
 
 // -----------------------------------------------------------------
 import notes from '../../public/assets/icons/notes.svg'
@@ -38,7 +37,6 @@ import handshake2 from '../../public/assets/icon/hund2.svg'
 import tame2 from '../../public/assets/icon/tame2.svg'
 import lisen2 from '../../public/assets/icon/lisen2.svg'
 import confidence2 from '../../public/assets/icon/confid.svg'
-// import { icon } from "./tempfile";
 
 
 

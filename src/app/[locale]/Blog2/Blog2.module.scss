@@ -1,0 +1,144 @@
+.sectionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.blogContainer{
+    padding: 95px 78px 250px 78px;
+}
+.h2{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 36px;
+line-height: 111%;
+color: var(--zagol);
+}
+
+.conteinerP{
+    display: flex;
+    gap: 100px;
+}
+
+.blueBlack{
+    color: #0051DE;
+}
+.textAlign{
+    font-family: var(--font4);
+font-weight: 400;
+font-size: 18px;
+line-height: 111%;
+color: #000;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 59px;
+}
+
+.dubaiText{
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 123%;
+    color: #000;
+  
+}
+.dubaiContainer{
+    padding-left: 59px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.blue{
+    font-family: var(--third-family);
+font-weight: 400;
+font-size: 26px;
+line-height: 123%;
+color: var(--osnov);
+padding-bottom: 25px;
+}
+.p{
+    color: #000;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 123%;
+    
+}
+
+.dubaiContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.pZone{
+    color: #000;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 123%;
+    width: 1100px;
+}
+
+.pZonee{
+    color: #000;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 123%;
+    width: 300px;
+}
+
+
+.h2Like{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 36px;
+line-height: 111%;
+text-align: center;
+color: var(--zagol);
+}
+
+.ContainerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    gap: 24px;
+
+}
+.h2Like{
+    padding-top: 160px;
+}
+
+.img{
+    border-radius: 30px;
+width: 1283px;
+height: 742px;
+}
+.textContainer{
+    margin-bottom: 50px ;
+}
+
+@media(max-width:1316px){
+    .img{
+    width: 1083px;
+    height: 642px;
+    }
+ 
+}
+
+@media(max-width:1266px){
+    .img{
+    width: 983px;
+    height: 542px;
+    }
+    .dubaiContainer{
+width: 983px;
+    }
+}
