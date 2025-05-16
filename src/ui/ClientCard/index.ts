@@ -1,1 +1,1 @@
-export { default as ClientCard } from "./ClientCard";
+export { ClientCard } from "./ClientCard";
