@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import styles from "./BusinessSlider.module.scss";
-import Image from "next/image";
 import { BusinessSlider } from "@/mockData/mockData";
 // import { BusinessSlider } from "@/mockData/tempfile";
 
@@ -98,7 +97,7 @@ export const BusinessSwiper = () => {
                       />
                     </svg>
                   </div> */}
-                  <Image
+                  <img
                     src={item.imag}
                     alt={item.title}
                     className={styles.imgSwiper}
@@ -128,9 +127,9 @@ export const BusinessSwiper = () => {
               <path
                 d="M15.0625 2.375L1.9375 15.5L15.0625 28.625"
                 stroke="white"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
@@ -149,9 +148,9 @@ export const BusinessSwiper = () => {
               <path
                 d="M15.9375 9.375L29.0625 22.5L15.9375 35.625"
                 stroke="white"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>

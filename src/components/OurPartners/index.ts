@@ -1,1 +1,1 @@
-export { default as OurPartners } from './OurPartners';
+export { OurPartners } from './OurPartners';

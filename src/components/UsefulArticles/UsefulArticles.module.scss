@@ -34,13 +34,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 50px;
-    background: linear-gradient(
-      to bottom,
-      var(--cvet-fona) 0%,
-      #0051de12 42%,
-      #0051de27 67%,
-      #0051de40 100%
-    );
+    background: linear-gradient(to bottom, var(--cvet-fona) 0%, #0051de12 42%, #0051de27 67%, #0051de40 100%);
 
     .btn {
       position: absolute;
@@ -79,7 +73,7 @@
       background: var(--osnov);
       border-radius: 0 0 50px 50px;
 
-      @media (max-width: 850) {
+      @media (max-width: 850px) {
         bottom: 67px;
       }
     }
@@ -113,22 +107,22 @@
     max-width: 800px;
   }
 
-  :global(.swiper-pagination) {
-    position: relative;
-    margin-top: 20px;
-  }
+  // :global(.swiper-pagination) {
+  //   position: relative;
+  //   margin-top: 20px;
+  // }
 
-  :global(.swiper-button-prev),
-  :global(.swiper-button-next) {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  // :global(.swiper-button-prev),
+  // :global(.swiper-button-next) {
+  //   width: 30px;
+  //   height: 30px;
+  //   border-radius: 50%;
 
-    &::after {
-      font-size: 16px;
-      font-weight: bold;
-    }
-  }
+  //   &::after {
+  //     font-size: 16px;
+  //     font-weight: bold;
+  //   }
+  // }
 }
 
 .swiperSlide {

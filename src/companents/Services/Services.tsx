@@ -18,13 +18,13 @@ export function Services() {
       {icon.map((item) => (
   <div key={item.id} className={stylle.card}>
     <div className={stylle.cardFront}>
-      <img src={item.icon.src} alt={item.title} className={stylle.icon} />
+      <img src={item.icon} alt={item.title} className={stylle.icon} />
       <h5 className={stylle.title}>{item.title}</h5>
     </div>
 
     <div className={stylle.cardBack}>
         <div  className={stylle.iconWrap}>
-        <img src={item.icon.src} alt={item.title} className={stylle.icon2} />
+        <img src={item.icon} alt={item.title} className={stylle.icon2} />
 
         </div>
       <h4 className={stylle.subTitle}>{item.description}</h4>

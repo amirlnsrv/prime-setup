@@ -16,8 +16,8 @@ export function Benefits() {
       <div className={stylly.containerBenefits}>
         {mockdataIcon.map((item) => (
           <div key={item.id} className={stylly.cardContainer}>
-            <Image src={item.icon} alt="icon" className={stylly.img} />
-            <Image src={item.icon2} alt="icon" className={stylly.img2} />
+            <img src={item.icon} alt="icon" className={stylly.img} />
+            <img src={item.icon2} alt="icon" className={stylly.img2} />
             <h3 className={stylly.title}>{item.title}</h3>
             <p className={stylly.description}>{item.description}</p>
           </div>

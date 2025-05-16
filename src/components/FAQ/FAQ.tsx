@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./FAQ.module.scss";
-import { ChevronDown } from "lucide-react";
-
+// import { Button } from "@/ui/Button";
 const faqData = [
   {
     q: "Почему я должен начать бизнес в Дубае?",
@@ -37,10 +36,9 @@ export function FAQ() {
     <section className={styles.faq}>
       <div className="container">
         <div className={styles.wrapper}>
-          <h2 className={styles.title}>Frequently Asked Questions</h2>
+          <h2 className={styles.title}>Часто задаваемые вопросы</h2>
           <p className={styles.subtitle}>
-            Discover clear, concise answers to the most common questions about
-            starting and registering a business in the UAE.
+            Ответы на самые популярные вопросы о регистрации бизнеса в ОАЭ.
           </p>
           <div className={styles.faqList}>
             {faqData.map((item, index) => (
@@ -50,15 +48,17 @@ export function FAQ() {
                     <button className={styles.question}>{item.q}</button>
                   </div>
                   <div
-                    className={styles.iconBlock}
+                    className={`${styles.iconBlock} ${
+                      openIndex === index ? styles.rotate : ""
+                    }`}
                     onClick={() =>
                       setOpenIndex(openIndex === index ? null : index)
                     }
                   >
-                    <ChevronDown
-                      className={`${styles.icon} ${
-                        openIndex === index ? styles.rotate : ""
-                      }`}
+                    <img
+                      src="/assets/icons/arrowDown.svg"
+                      alt="arrow"
+                      className={styles.icon}
                     />
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export function FAQ() {
               </div>
             ))}
           </div>
-          <button className={styles.moreBtn}>Читать все ответы</button>
+          {/* <Button /> */}
         </div>
       </div>
     </section>
