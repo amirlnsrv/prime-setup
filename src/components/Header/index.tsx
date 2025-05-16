@@ -7,8 +7,8 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"));
-const BurgerMenu = dynamic(() => import("@/ui/BurgerMenu"));
+const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"), {ssr: false});
+const BurgerMenu = dynamic(() => import("@/ui/BurgerMenu"), {ssr: false});
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +16,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0); // как только scrollY > 0 — закрашиваем
+      setScrolled(window.scrollY > 0); 
     };
 
     window.addEventListener("scroll", handleScroll);

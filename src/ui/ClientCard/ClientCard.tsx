@@ -1,6 +1,6 @@
 import styles from "./ClientCard.module.scss";
 
-export default function ClientCard() {
+export const ClientCard = () => {
   return (
     <div className={styles.client__card}>
       <div className={styles.client__card__image}>
@@ -25,4 +25,4 @@ export default function ClientCard() {
       </div>
     </div>
   );
-}
+};
