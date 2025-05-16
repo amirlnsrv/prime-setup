@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.scss";
 import dynamic from "next/dynamic";
 import { Telegram } from "@/ui/Telegram";
-import { FooterSection } from "@/components/FooterSection";
+// import { FooterSection } from "@/components/FooterSection";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -33,7 +33,7 @@ export default async function RootLayout({
         <Telegram />
         <Header />
         <main>{children}</main>
-        <FooterSection />
+        {/* <FooterSection /> */}
       </body>
     </html>
   );
