@@ -1,5 +1,6 @@
 import styles from "./OurPartners.module.scss";
-import { yourCompanyLogos } from "@/mockData/tempfile";
+import { yourCompanyLogos } from "./OurPartner.helpers";
+import Image from "next/image";
 // import { yourCompanyLogos } from "@/mockData/mockdata";
 
 export function OurPartners() {
@@ -11,7 +12,7 @@ export function OurPartners() {
           <div className={styles.track}>
             {[...yourCompanyLogos, ...yourCompanyLogos].map((logo, index) => (
               <div className={styles.logo} key={index}>
-                <img src={logo} alt={`Logo ${index}`} />
+                <Image width={240} height={100} src={logo} alt={`Logo ${index}`} />
               </div>
             ))}
           </div>
