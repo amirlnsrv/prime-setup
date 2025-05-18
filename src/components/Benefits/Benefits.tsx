@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import stylly from './Benefits.module.scss';
-import { mockdataIcon } from '@/mockData/mockData';
+import { mockdataIcon } from './Benefits.heplper';
 export function Benefits() {
   return (
     <section className={stylly.sectionContainer}>

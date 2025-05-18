@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import styles from "./BusinessSlider.module.scss";
-import { BusinessSlider } from "@/mockData/mockData";
+import { BusinessSlider } from "./Busines.heplper";
 // import { BusinessSlider } from "@/mockData/tempfile";
 
 export const BusinessSwiper = () => {
@@ -97,7 +97,7 @@ export const BusinessSwiper = () => {
                       />
                     </svg>
                   </div> */}
-                  <img
+                                    <img
                     src={item.imag}
                     alt={item.title}
                     className={styles.imgSwiper}

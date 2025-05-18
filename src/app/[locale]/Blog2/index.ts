@@ -1,1 +1,0 @@
-export {Blog2} from './Blog2'

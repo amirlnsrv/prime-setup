@@ -1,25 +1,21 @@
-// import { BusinessSetup } from "@/components/BusinessSetup";
-// import { Contact } from "@/components/Contact/Contact";
-// import { FAQ } from "@/components/FAQ";
-// import { Benefits } from "@/components/Benefits";
-// import { Hero } from "@/components/Hero";
-// import { OurPartners } from "@/components/OurPartners";
-// import { SuccessShared } from "@/components/SuccessShared";
+import { BusinessSetup } from "@/components/BusinessSetup";
+import { Contact } from "@/components/Contact/Contact";
+import { FAQ } from "@/components/FAQ";
+import { Benefits } from "@/components/Benefits";
+import { Hero } from "@/components/Hero";
+import { OurPartners } from "@/components/OurPartners";
+import { SuccessShared } from "@/components/SuccessShared";
 
-import { Blog2 } from "./Blog2";
+import { Services } from "@/components/Services/Services";
 
-
-// import { Services } from "@/components/Services/Services";
-
-// import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
-// import { UsefulArticles } from "@/components/UsefulArticles";
-// import { Swiper } from "@/components/Swiper/Swiper";
+import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
+import { UsefulArticles } from "@/components/UsefulArticles";
+import { Swiper } from "@/components/Swiper/Swiper";
 
 export default function Home() {
   return (
     <>
-    <Blog2/>
-      {/* <Hero
+      <Hero
         imgUrl="/assets/images/heroBg.jpg"
         title="Ваш бизнес в надёжных руках"
         subtitle="Комплексные услуги по регистрации бизнеса, лицензированию и сопровождению в ОАЭ"
@@ -34,15 +30,15 @@ export default function Home() {
         }}
       />
       <WhyPrimeSetup />
-      <Benefits/>
+      <Benefits />
       <Services />
-      <Swiper/>
+      <Swiper />
       <OurPartners />
       <SuccessShared />
       <UsefulArticles />
       <FAQ />
       <Contact />
-      <BusinessSetup /> */}
+      <BusinessSetup />
     </>
   );
 }

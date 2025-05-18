@@ -10,8 +10,12 @@
   z-index: 1;
   transition-delay: 0.3s;
 
+  @media (max-width: 1300px) {
+    transform: scale(0.8);
+  }
+
   @media (max-width: 850px) {
-    transform: scale(0.9);
+    transform: scale(0.6);
   }
 
   &::after {
@@ -89,7 +93,7 @@
       margin: 10px 0 20px;
       user-select: none;
 
-      @media (max-width: 800px) {
+      @media (max-width: 1300px) {
         font-size: 20px;
       }
 
@@ -109,7 +113,7 @@
       z-index: 1;
       user-select: none;
 
-      @media (max-width: 800px) {
+      @media (max-width: 1300px) {
         font-size: 16px;
       }
 
