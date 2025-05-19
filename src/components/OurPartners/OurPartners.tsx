@@ -1,7 +1,7 @@
 import styles from "./OurPartners.module.scss";
 import { yourCompanyLogos } from "./OurPartner.helpers";
 import Image from "next/image";
-import downborder from "#/assets/images/downborder.svg";
+import downborder from "#/images/downborder.svg";
 
 export function OurPartners() {
   return (
@@ -10,12 +10,12 @@ export function OurPartners() {
         <h1>Наши партнеры</h1>
         <div className={styles.slider}>
           <div className={styles.track}>
-            {[...yourCompanyLogos, ...yourCompanyLogos].map((logo, index) => (
+            {[...yourCompanyLogos, ...yourCompanyLogos].map((pic, index) => (
               <div className={styles.logo} key={index}>
                 <Image
                   width={240}
                   height={100}
-                  src={logo}
+                  src={pic}
                   alt={`Logo ${index}`}
                 />
               </div>
