@@ -1,6 +1,7 @@
 import styles from "./OurPartners.module.scss";
-import { yourCompanyLogos } from "@/mockData/tempfile";
-// import { yourCompanyLogos } from "@/mockData/mockdata";
+import { yourCompanyLogos } from "./OurPartner.helpers";
+import Image from "next/image";
+import downborder from "#/images/downborder.svg";
 
 export function OurPartners() {
   return (
@@ -9,16 +10,21 @@ export function OurPartners() {
         <h1>Наши партнеры</h1>
         <div className={styles.slider}>
           <div className={styles.track}>
-            {[...yourCompanyLogos, ...yourCompanyLogos].map((logo, index) => (
+            {[...yourCompanyLogos, ...yourCompanyLogos].map((pic, index) => (
               <div className={styles.logo} key={index}>
-                <img src={logo} alt={`Logo ${index}`} />
+                <Image
+                  width={240}
+                  height={100}
+                  src={pic}
+                  alt={`Logo ${index}`}
+                />
               </div>
             ))}
           </div>
         </div>
       </div>
       <div className={styles.downborderWrapper}>
-         <img src="/assets/images/downborder.svg" alt="Down border" />
+        <Image src={downborder} width={100} height={100} alt="Down border" />
       </div>
     </section>
   );
