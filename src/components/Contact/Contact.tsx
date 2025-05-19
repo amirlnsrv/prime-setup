@@ -132,7 +132,7 @@ export function Contact({
     phone: true,
     message: true,
   },
-  buttonText = "Send",
+  buttonText = "Отправить",
   className = "wrapper",
 }) {
   return (

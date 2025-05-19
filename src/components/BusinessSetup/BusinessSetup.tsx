@@ -1,4 +1,5 @@
 import { ExtraButton } from "@/ui/ExtraButton";
+
 import styles from "./BusinessSetup.module.scss";
 
 export function BusinessSetup() {
@@ -13,7 +14,10 @@ export function BusinessSetup() {
           Мы поможем вам на каждом этапе — от регистрации до открытия
           банковского счёта. Начните свой путь к успеху вместе с нами!
         </p>
-        <ExtraButton value="Бесплатная консультация" className={styles.button}/>
+        <ExtraButton
+          value="Бесплатная консультация"
+          className={styles.button}
+        />
       </div>
     </section>
   );
