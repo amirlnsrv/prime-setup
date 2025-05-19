@@ -11,6 +11,7 @@ export function Swiper() {
             src={img}
             alt="background"
             width={1440}
+            height={880}
             className={styles.img} />
           <div className={styles.swiperWrapper}>
             <BusinessSwiper />
