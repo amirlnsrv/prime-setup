@@ -114,7 +114,6 @@
 .row {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .input,
@@ -150,8 +149,8 @@
   max-width: 180px !important;
   width: 100%;
 
-  &::before{
-  content: 'Send' !important;
+  &::before {
+    content: "Send" !important;
   }
 }
 
