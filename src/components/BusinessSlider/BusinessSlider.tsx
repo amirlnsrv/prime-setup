@@ -17,7 +17,6 @@ export const BusinessSwiper = () => {
   const [isSwiperReady, setIsSwiperReady] = useState(false);
 
   useEffect(() => {
-    // Ensure that the navigation buttons are ready after the DOM is fully rendered
     setIsSwiperReady(true);
   }, []);
 
@@ -63,7 +62,6 @@ export const BusinessSwiper = () => {
                     alt={item.title}
                     className={styles.imgSwiper}
                   />
-                  {/* <img src={item.imag.src} alt={item.title}  className={styles.imgSwiper}/> */}
                   <div>
                     <h3 className={styles.titelSwiper}>{item.title}</h3>
                     <p className={styles.pSwiper}>{item.description}</p>

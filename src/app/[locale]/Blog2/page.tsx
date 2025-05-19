@@ -2,7 +2,7 @@ import style from "./Blog2.module.scss";
 import { UsefulCard } from "@/ui/UsefulCard";
 
 import Image from "next/image";
-import img from "../../../../public/assets/images/blog2.png";
+import img from "#/images/blog2.png";
 export default function Blog2() {
   return (
     <section className={style.blogContainer}>
@@ -27,7 +27,7 @@ export default function Blog2() {
               </div>
             </div>
           </div>
-          <Image src={img} alt="img" className={style.img} />
+          <Image src={img} alt="img" className={style.img} width={1283} height={742} />
         </div>
         <div className={style.ContainerBlog}>
           <div className={style.containerDiv}>

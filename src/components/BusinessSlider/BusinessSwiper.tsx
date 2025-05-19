@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 import styles from "./BusinessSlider.module.scss";
 import { BusinessSlider } from "./Busines.heplper";
-// import { BusinessSlider } from "@/mockData/tempfile";
+import Image from "next/image";
 
 export const BusinessSwiper = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
@@ -17,7 +17,6 @@ export const BusinessSwiper = () => {
   const [isSwiperReady, setIsSwiperReady] = useState(false);
 
   useEffect(() => {
-    // Ensure that the navigation buttons are ready after the DOM is fully rendered
     setIsSwiperReady(true);
   }, []);
 
@@ -54,55 +53,10 @@ export const BusinessSwiper = () => {
             {BusinessSlider.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className={styles.card}>
-                  {/* <div className={styles.lineTopLeft}>
-                    <img src="/assets/images/lineTopRight.svg" alt="lineTopRight-icon" />
-                  </div>
-                  <div className={styles.lineBottomRight}>
-                    <svg
-                      width="370"
-                      height="97"
-                      viewBox="0 0 370 97"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="73.7094"
-                        y="343.26"
-                        width="263.325"
-                        height="326.364"
-                        rx="59.5"
-                        transform="rotate(-108.893 73.7094 343.26)"
-                        stroke="white"
-                        stroke-width="7"
-                      />
-                    </svg>
-                  </div>
-                  <div className={styles.topLine}>
-                    <svg
-                      width="272"
-                      height="70"
-                      viewBox="0 0 272 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="-1.09484"
-                        y="41.0248"
-                        width="246"
-                        height="246"
-                        rx="46.5"
-                        transform="rotate(-82.9115 -1.09484 41.0248)"
-                        stroke="white"
-                        stroke-width="7"
-                      />
-                    </svg>
-                  </div> */}
-                                    <img
-                    src={item.imag}
+                  
+                  <Image    src={item.imag}
                     alt={item.title}
-                    className={styles.imgSwiper}
-                  />
-                  {/* <img src={item.imag.src} alt={item.title}  className={styles.imgSwiper}/> */}
+                    className={styles.imgSwiper} width={384} height={384}/>
                   <div className={styles.text}>
                     <h3 className={styles.titelSwiper}>{item.title}</h3>
                     <p className={styles.pSwiper}>{item.description}</p>

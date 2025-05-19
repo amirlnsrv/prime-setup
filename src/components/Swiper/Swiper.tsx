@@ -1,6 +1,6 @@
 import { BusinessSwiper } from "../BusinessSlider/BusinessSwiper";
 import styles from "./Swiper.module.scss";
-import img from "../../../public/assets/icons/swiper.svg";
+import img from "#/icons/swiper.svg"
 import Image from "next/image";
 export function Swiper() {
   return (
