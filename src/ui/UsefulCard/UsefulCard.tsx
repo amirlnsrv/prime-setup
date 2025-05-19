@@ -11,8 +11,8 @@ export default function UsefulCard() {
         <p>
         Открытие бизнеса в Дубае — это просто. Рассказываем, с чего начать, какие документы нужны и сколько времени занимает процесс регистрации.
         </p>
-          <Link href={"#"} className={styles.more}>
-          Читать далее <Image width={20} height={20} className={styles.arrow} src="/assets/icons/rightArrow.svg" alt="arrow" />
+          <Link href={"/blog2"} className={styles.more}>
+          Читать далее <Image className={styles.arrow} width={20} height={20} src="/assets/icons/rightArrow.svg" alt="arrow" />
           </Link>
       </div>
       <Image width={150} height={150} src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_right}/>

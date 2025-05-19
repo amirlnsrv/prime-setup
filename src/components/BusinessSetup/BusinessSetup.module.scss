@@ -2,22 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+  padding: 275px 0 0;
 }
 
 .container {
-  width: 792px;
-  height: 285px;
+  width: 1034px;
+  max-width: 90%;
+  height: auto;
+  min-height: 420px;
   background: var(--osnov);
   box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2),
     -5px 0 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 67px 121px;
-  width: 1034px;
-  height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  z-index: 10;
 }
 
 .title {
@@ -43,22 +46,62 @@
   text-align: center;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 150px 0 0;
+  }
 
-.button {
-  font-family: var(--font3);
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--osnov);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #e0e0e0;
-  padding: 5px;
-  border-radius: 10px;
-  width: 350px;
-  height: 62px;
+  .container {
+    max-width: 95%;
+    min-height: 350px;
+    padding: 40px 60px;
+    border-radius: 15px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 110%;
+  }
+
+  .button {
+    // width: 280px;
+    // height: 50px;
+    // font-size: 20px;
+    // border-radius: 8px;
+  }
 }
 
-.button:hover {
-  background: #e0e0e0;
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 80px 0 0;
+  }
+
+  .container {
+    max-width: 90%;
+    min-height: 300px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 108%;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 108%;
+  }
+
+  .button {
+    &::before {
+      content: "Бесплатная консультация" !important;
+    }
+  }
 }
