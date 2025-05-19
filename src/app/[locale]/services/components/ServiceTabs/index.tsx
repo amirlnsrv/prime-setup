@@ -7,7 +7,7 @@ import { services } from "./ServiceTabs.helper";
 export default function ServiceTabs() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     setSelectedIndex(index);
   };
 
