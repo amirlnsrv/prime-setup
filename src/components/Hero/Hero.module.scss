@@ -1,9 +1,11 @@
 .hero {
 	height: 100vh;
 	position: relative;
+	min-height: 958px;
 
 	.inner {
 		height: 100vh;
+		min-height: 958px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -52,7 +54,9 @@
 
 @media (max-width: 600px) {
 	.hero {
+		min-height: 328px;
 		.inner {
+			min-height: 328px;
 			max-width: 339px !important;
 
 			.content {

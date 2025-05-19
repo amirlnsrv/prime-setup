@@ -6,16 +6,23 @@ import { CSSProperties } from "react";
 type InlineStyles = {
   inner?: CSSProperties;
   content?: CSSProperties;
-}
+};
 
 type Props = {
   imgUrl: string;
   title: string;
   subtitle: string;
   inlineStyles?: InlineStyles;
+  disableBtn?: boolean;
 };
 
-export const Hero = ({ imgUrl, title, subtitle, inlineStyles = {} }: Props) => {
+export const Hero = ({
+  imgUrl,
+  title,
+  subtitle,
+  inlineStyles = {},
+  disableBtn,
+}: Props) => {
   return (
     <section className={styles.hero}>
       <Image
@@ -31,7 +38,7 @@ export const Hero = ({ imgUrl, title, subtitle, inlineStyles = {} }: Props) => {
           <div className={styles.content} style={inlineStyles.content}>
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subtitle}>{subtitle}</p>
-            <ExtraButton value="Бесплатная консультация" />
+            {disableBtn ? "" : <ExtraButton value="Бесплатная консультация" />}
           </div>
         </div>
       </div>
