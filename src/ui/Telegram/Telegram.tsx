@@ -1,9 +1,12 @@
+import Image from "next/image";
 import styles from "./Telegram.module.scss";
 
 export default function Telegram() {
   return (
     <button className={styles.tg}>
-      <img
+      <Image
+        width={40}
+        height={40}
         className={styles.telegramIcon}
         src="/assets/icons/telegram.svg"
         alt="tg"
