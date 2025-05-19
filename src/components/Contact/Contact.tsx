@@ -1,5 +1,7 @@
 "use client";
+import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
+import Image from "next/image";
 
 export function Contact() {
   return (
@@ -24,13 +26,24 @@ export function Contact() {
 
             <div className={styles.contactLinks}>
               <div className={styles.tel}>
-                <img src="/assets/icons/Component.svg" alt="logo" />
+                <Image
+                  src="/assets/icons/Component.svg"
+                  alt="Мое изображение"
+                  width={30}
+                  height={30}
+                />
                 <p>
                   <a href="#">info.xyz@gmail.com</a>
                 </p>
               </div>
               <div className={styles.email}>
-                <img src="/assets/icons/Group.svg" alt="tel" />
+                <Image
+                  src="/assets/icons/Group.svg"
+                  alt="Мое изображение"
+                  width={30}
+                  height={30}
+                />
+
                 <p>
                   <a href="#">+996 476-924</a>
                 </p>
@@ -86,9 +99,9 @@ export function Contact() {
                 name="message"
               ></textarea>
             </label>
-            <button type="submit" className={styles.submit}>
-              Send
-            </button>
+            {/* <button type="submit" className={styles.submit}> */}
+              <ExtraButton className={styles.submit} value="Send" />
+            {/* </button> */}
           </form>
         </div>
       </div>
