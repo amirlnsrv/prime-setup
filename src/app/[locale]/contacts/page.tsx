@@ -34,18 +34,19 @@ export default function Contacts() {
         }}
         disableBtn
       />
+      <div className={style.container}>
       <div className={style.contactWrapper}>
         <Image
           src={img1}
           alt="iconFon"
           className={style.imageContact}
-          fill
-          priority
         />
         <div className={style.contactContent}>
           <Contact />
         </div>
       </div>
+      </div>
+     
     </section>
   );
 }
