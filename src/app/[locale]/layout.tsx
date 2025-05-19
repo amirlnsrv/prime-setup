@@ -3,7 +3,10 @@ import type { Metadata } from "next";
 import "@/styles/globals.scss";
 import dynamic from "next/dynamic";
 import { Telegram } from "@/ui/Telegram";
+
 import { FooterWrapper } from "@/components/FooterWrapper/FooterWrapper";
+
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -16,11 +19,11 @@ export async function generateStaticParams() {
 
 const Header = dynamic(() => import("@/components/Header"));
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   params: { locale: "en" | "ru" };
 }) {
   const locale = params.locale;
