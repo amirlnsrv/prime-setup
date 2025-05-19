@@ -41,7 +41,7 @@ export default function Header() {
             <Link href="/services">Услуги</Link>
             <Link href="/blog">Блог</Link>
             <Link href="#">FAQ</Link>
-            <Link href="#">Контакты</Link>
+            <Link href="/contacts">Контакты</Link>
           </nav>
           <div className={styles.btns}>
             <LanguageSelector />
