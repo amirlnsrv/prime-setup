@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import "@/styles/globals.scss";
 import dynamic from "next/dynamic";
 import { Telegram } from "@/ui/Telegram";
-import { FooterSection } from "@/components/FooterSection";
+
+import { FooterWrapper } from "@/components/FooterWrapper/FooterWrapper";
+
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
@@ -34,7 +36,7 @@ export default function RootLayout({
         <Telegram />
         <Header />
         <main>{children}</main>
-        <FooterSection />
+        <FooterWrapper />
       </body>
     </html>
   );

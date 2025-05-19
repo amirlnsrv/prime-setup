@@ -1,8 +1,10 @@
 import Image from "next/image";
 import styles from "./FooterSection.module.scss";
+// import { BusinessSetup } from "../BusinessSetup";
 export function FooterSection() {
   return (
     <div className={styles.container}>
+      {/* <BusinessSetup /> */}
       <footer className={styles.footer}>
         <div className={styles.top}></div>
         <div className={styles.up}>
