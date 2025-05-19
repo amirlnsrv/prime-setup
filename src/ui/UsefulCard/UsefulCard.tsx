@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./UsefulCard.module.scss";
+import Image from "next/image";
 
 export default function UsefulCard() {
   return (
@@ -11,12 +12,12 @@ export default function UsefulCard() {
         Открытие бизнеса в Дубае — это просто. Рассказываем, с чего начать, какие документы нужны и сколько времени занимает процесс регистрации.
         </p>
           <Link href={"/blog2"} className={styles.more}>
-          Читать далее <img className={styles.arrow} src="/assets/icons/rightArrow.svg" alt="arrow" />
+          Читать далее <Image className={styles.arrow} width={20} height={20} src="/assets/icons/rightArrow.svg" alt="arrow" />
           </Link>
       </div>
-      <img src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_right}/>
-      <img src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_bottom}/>
-      <img src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_left}/>
+      <Image width={150} height={150} src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_right}/>
+      <Image width={150} height={150} src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_bottom}/>
+      <Image width={150} height={150} src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_left}/>
     </div>
   );
 }
