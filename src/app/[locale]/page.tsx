@@ -1,4 +1,3 @@
-import { BusinessSetup } from "@/components/BusinessSetup";
 import { Contact } from "@/components/Contact/Contact";
 import { FAQ } from "@/components/FAQ";
 import { Benefits } from "@/components/Benefits";
@@ -37,8 +36,7 @@ export default function Home() {
       <SuccessShared />
       <UsefulArticles />
       <FAQ />
-      <Contact />
-      <BusinessSetup />
+      <Contact />/{" "}
     </>
   );
 }
