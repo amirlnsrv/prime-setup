@@ -1,4 +1,4 @@
-import style from "./Blog2.module.scss";
+import style from "./Blog2.page.module.scss";
 import { UsefulCard } from "@/ui/UsefulCard";
 
 import Image from "next/image";
