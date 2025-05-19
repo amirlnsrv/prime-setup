@@ -1,16 +1,17 @@
 import { BusinessSwiper } from "../BusinessSlider/BusinessSwiper";
 import styles from "./Swiper.module.scss";
+import img from "#/icons/swiper.svg"
+import Image from "next/image";
 export function Swiper() {
   return (
     <div className="container">
       <section className={styles.section}>
         <div className={styles.content}>
-          <img
-            src="assets/icons/swiper.svg"
+          <Image
+            src={img}
             alt="background"
             width={1440}
-            className={styles.img}
-          />
+            className={styles.img} />
           <div className={styles.swiperWrapper}>
             <BusinessSwiper />
           </div>
