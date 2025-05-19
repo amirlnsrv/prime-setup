@@ -1,7 +1,7 @@
-import { Contact } from "@/components/Contact";
+// import { Contact } from "@/components/Contact";
 import { Hero } from "@/components/Hero";
 import Image from "next/image";
-import img1 from "../../../../public/assets/images/fonIconsContacts.svg";
+import img1 from "#/images/fonIconsContacts.svg";
 import style from "./Contacts.page.module.scss";
 
 export default function Contacts() {
@@ -32,10 +32,13 @@ export default function Contacts() {
             zIndex: 2,
           },
         }}
+        disableBtn
       />
-      <Image src={img1} alt="iconFon" />
+           <div className={style.contactWrapper}>
+        <Image src={img1} alt="iconFon" className={style.imageContact} height={1168} />
+        {/* <Contact  className={style.contact}/> */}
+      </div>
 
-      <Contact />
     </section>
   );
 }
