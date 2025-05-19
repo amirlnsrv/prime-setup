@@ -107,10 +107,16 @@
     max-width: 800px;
   }
 
-  // :global(.swiper-pagination) {
-  //   position: relative;
-  //   margin-top: 20px;
-  // }
+  :global(.swiper-pagination) {
+    position: relative;
+    margin-top: 50px;
+    margin-left: -130px;
+
+    :global(.swiper-pagination-bullet){
+      width: 20px;
+      height: 20px;
+    }
+  }
 
   // :global(.swiper-button-prev),
   // :global(.swiper-button-next) {
