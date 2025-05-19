@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 
 const Header = dynamic(() => import("@/components/Header"));
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params,
 }: {
