@@ -4,6 +4,7 @@ import "@/styles/globals.scss";
 import dynamic from "next/dynamic";
 import { Telegram } from "@/ui/Telegram";
 import { FooterSection } from "@/components/FooterSection";
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Dubai Consalting",
@@ -20,7 +21,7 @@ export default async function RootLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   params: { locale: "en" | "ru" };
 }) {
   const locale = params.locale;
