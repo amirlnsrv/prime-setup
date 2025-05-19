@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./ClientCard.module.scss";
 
 export const ClientCard = () => {
@@ -17,11 +18,11 @@ export const ClientCard = () => {
         of Letraset sheets containing Lorem
       </p>
       <div className={styles.stars}>
-        <img className={styles.star} src="assets/icons/star.svg" alt="star" />
-        <img className={styles.star} src="assets/icons/star.svg" alt="star" />
-        <img className={styles.star} src="assets/icons/star.svg" alt="star" />
-        <img className={styles.star} src="assets/icons/star.svg" alt="star" />
-        <img className={styles.star} src="assets/icons/star.svg" alt="star" />
+        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
+        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
+        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
+        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
+        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
       </div>
     </div>
   );
