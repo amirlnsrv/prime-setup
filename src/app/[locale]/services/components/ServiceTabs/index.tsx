@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import styles from "./ServiceTabs.module.scss";
 import { services } from "./ServiceTabs.helper";
 
