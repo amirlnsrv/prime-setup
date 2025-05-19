@@ -36,7 +36,7 @@ export default function Home() {
       <SuccessShared />
       <UsefulArticles />
       <FAQ />
-      <Contact />/{" "}
+      <Contact />
     </>
   );
 }
