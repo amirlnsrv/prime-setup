@@ -1,0 +1,21 @@
+.rangeOfServices {
+	padding: 160px 0 70px;
+
+	.inner {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 70px;
+		align-items: center;
+
+		.title {
+			max-width: 795px;
+			font-family: var(--second-family);
+			font-weight: 400;
+			font-size: 46px;
+			line-height: 109%;
+			text-align: center;
+			color: var(--zagol);
+		}
+	}
+}

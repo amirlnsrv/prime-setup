@@ -1,4 +1,3 @@
-// import { icon } from "@/mockData/tempfile";
 import Image from "next/image";
 import { mockdataSectiom } from "./Services.heplper";
 import stylle from "./Services.module.scss";

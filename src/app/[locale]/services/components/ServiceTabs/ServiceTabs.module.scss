@@ -3,42 +3,102 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 70px;
-}
+	position: relative;
 
-.sidebar {
-	flex: 1;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	border-right: 2px solid #eee;
-	overflow-y: auto;
-	scroll-behavior: smooth;
-	max-height: 100%;
-}
+	.nav {
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+		gap: 50px;
+		height: 760px;
+		max-height: 100%;
 
-.sidebar li {
-	padding: 15px 20px;
-	cursor: pointer;
-	border-left: 4px solid transparent;
-	transition: 0.3s;
-}
+		.scrollBar {
+			position: relative;
+			width: 12px;
+			min-height: 100%;
+			border-radius: 30px;
+			background: #c8c8c8;
 
-.sidebar li:hover {
-	background-color: #f8f8f8;
-}
+			.scrollDot {
+				position: absolute;
+				border-radius: 20px;
+				min-width: 100%;
+				height: 34px;
+				background: var(--dop);
+				transition: top 0.3s ease;
+			}
+		}
 
-.sidebar li.active {
-	background-color: #f0f8ff;
-	border-left: 4px solid #007bff;
-	font-weight: bold;
+		.sidebar {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+
+			li {
+				padding: 10px;
+				cursor: pointer;
+				font-family: var(--second-family);
+				font-weight: 400;
+				font-size: 30px;
+				line-height: 100%;
+				color: var(--osnov);
+				transition: color 0.3s ease-in-out;
+
+				&.active {
+					color: var(--333);
+				}
+
+				&:hover {
+					color: var(--333);
+				}
+			}
+		}
+	}
 }
 
 .contentPanel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 34px;
 	flex: 1;
-	max-width: 666px;
-	padding: 139px 50px;
-	background-color: #fafafa;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-	
+	padding: 50px;
+	height: 532px;
+	border-radius: 50px;
+	background-color: #fff;
+	border: 3px solid rgba(0, 0, 0, 0.2);
+	box-shadow:
+		4px 4px 15px 0 rgba(0, 0, 0, 0.15),
+		-4px -4px 15px 0 rgba(0, 0, 0, 0.15);
+
+	h2 {
+		max-width: 520px;
+		display: flex;
+		align-items: center;
+		gap: 19.5px;
+		font-family: var(--second-family);
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 100%;
+		text-align: center;
+		color: var(--osnov);
+
+		span {
+			font-size: 80px;
+			color: var(--333);
+		}
+	}
+
+	p {
+		max-width: 566px;
+		font-family: var(--third-family);
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 125%;
+		text-align: center;
+		color: #000;
+	}
 }
