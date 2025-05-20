@@ -31,6 +31,7 @@ export const Input: React.FC<InputProps> = ({
         {error && <p className={styles.errorText}>{error}</p>}
         <button className={styles.search}>
           <Image
+          className={styles.searchIcon}
             width={30}
             height={30}
             src="/assets/icons/search.svg"
