@@ -1,6 +1,6 @@
 .wrapper {
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   h2 {
     font-family: var(--second-family);
     font-weight: 400;
@@ -15,10 +15,22 @@
     width: 85%;
     margin: 60px auto 100px;
 
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+
     .input {
       &::placeholder {
         color: #8b8b8b;
         opacity: 1;
+
+        @media (max-width: 1000px) {
+          font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 12px;
+        }
       }
 
       border-radius: 10px 0 0 10px;
@@ -33,6 +45,15 @@
       border-bottom: 3px solid rgba(0, 0, 0, 0.25);
       border-left: 3px solid rgba(0, 0, 0, 0.25);
       border-top: 3px solid rgba(0, 0, 0, 0.25);
+
+      @media (max-width: 1000px) {
+        padding: 15px 20px;
+        height: 60px;
+      }
+
+      @media (max-width: 700px) {
+        padding: 5px 10px;
+      }
     }
 
     .search {
@@ -45,11 +66,38 @@
       height: 83px;
       background: var(--333);
 
+      @media (max-width: 1000px) {
+        // padding-left: 5px;
+        column-gap: 5px;
+        height: 60px;
+      }
+      @media (max-width: 700px) {
+        padding-left: 5px;
+        width: 73px;
+        height: 40px;
+      }
+
+      .searchIcon {
+        @media (max-width: 1000px) {
+          height: 25px;
+        }
+        @media (max-width: 700px) {
+          height: 20px;
+        }
+      }
+
       span {
         font-family: var(--second-family);
         font-weight: 400;
         font-size: 26px;
         color: #fff;
+
+        @media (max-width: 1000px) {
+          font-size: 16px;
+        }
+        @media (max-width: 700px) {
+          font-size: 14px;
+        }
       }
     }
   }
