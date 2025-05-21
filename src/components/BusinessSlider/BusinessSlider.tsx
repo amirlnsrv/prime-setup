@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import styles from "./BusinessSlider.module.scss";
 import Image from "next/image";
 import { BusinessSlider } from "./Busines.heplper";
+import {AnimatedBackground} from "@/components/AnimatedBackground/AnimatedBackground"; // 👈 добавь путь, как у тебя
 
 export const BusinessSwiper = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
@@ -24,10 +25,13 @@ export const BusinessSwiper = () => {
     <div className={styles.container}>
       <div className={styles.containerTitel}>
         <h2 className={styles.titleh2}>
-        Как проходит открытие вашей компании — шаг за шагом
+          Как проходит открытие вашей компании — шаг за шагом
         </h2>
       </div>
-      <div className={styles.wrapper}>
+
+      <div className={`${styles.wrapper} relative overflow-hidden`}>
+        <AnimatedBackground />
+
         {isSwiperReady && (
           <Swiper
             modules={[Navigation, Pagination]}
@@ -53,10 +57,27 @@ export const BusinessSwiper = () => {
             {BusinessSlider.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className={styles.card}>
-                <div className={styles.lineTopLeft}><svg width="148" height="192" viewBox="0 0 148 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="-11.3774" y="102.265" width="246" height="246" rx="46.5" transform="rotate(-65.9486 -11.3774 102.265)" stroke="white" stroke-width="7"/>
-</svg></div>
-                <div className={styles.lineBottomRight}></div>
+                  <div className={styles.lineTopLeft}>
+                    <svg
+                      width="148"
+                      height="192"
+                      viewBox="0 0 148 192"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="-11.3774"
+                        y="102.265"
+                        width="246"
+                        height="246"
+                        rx="46.5"
+                        transform="rotate(-65.9486 -11.3774 102.265)"
+                        stroke="white"
+                        strokeWidth="7"
+                      />
+                    </svg>
+                  </div>
+                  <div className={styles.lineBottomRight}></div>
                   <Image
                     src={item.imag}
                     alt={item.title}
@@ -83,17 +104,29 @@ export const BusinessSwiper = () => {
             <path
               d="M15.0625 2.375L1.9375 15.5L15.0625 28.625"
               stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>
 
         <button ref={nextRef} className={`${styles.navButton} ${styles.next}`}>
-        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M15.9375 9.375L29.0625 22.5L15.9375 35.625" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-</svg>
+          <svg
+            width="45"
+            height="45"
+            viewBox="0 0 45 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.9375 9.375L29.0625 22.5L15.9375 35.625"
+              stroke="white"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </button>
       </div>
     </div>
