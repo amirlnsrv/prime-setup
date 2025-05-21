@@ -7,6 +7,13 @@
     font-size: 46px;
     text-align: center;
     color: var(--zagol);
+
+    @media (max-width: 1000px) {
+      font-size: 36px;
+    }
+    @media (max-width: 700px) {
+      font-size: 26px;
+    }
   }
 
   .container {
