@@ -11,11 +11,13 @@ import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
 import { UsefulArticles } from "@/components/UsefulArticles";
 import { Swiper } from "@/components/Swiper/Swiper";
 
+import HeroBg from "#/images/heroBg.jpg";
+
 export default function Home() {
   return (
     <>
       <Hero
-        imgUrl="/assets/images/heroBg.jpg"
+        imgUrl={HeroBg}
         title="Ваш бизнес в надёжных руках"
         subtitle="Комплексные услуги по регистрации бизнеса, лицензированию и сопровождению в ОАЭ"
         inlineStyles={{

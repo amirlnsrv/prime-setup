@@ -6,6 +6,7 @@ import { Button } from "@/ui/Button";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"), {ssr: false});
 const BurgerMenu = dynamic(() => import("@/ui/BurgerMenu"), {ssr: false});
@@ -32,7 +33,7 @@ export default function Header() {
       <div className="container">
         <div className={styles.headerInner}>
           <div className={styles.logo} onClick={() => router.push("/")}>
-            <img src="/assets/icons/logo.svg" alt="logo" />
+            <Image src="/assets/icons/logo.svg" width={44} height={46} alt="logo" />
             <p className={styles.logoTitle}>PRIME SETUP</p>
             <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           </div>
