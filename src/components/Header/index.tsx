@@ -45,7 +45,7 @@ export default function Header() {
           </nav>
           <div className={styles.btns}>
             <LanguageSelector />
-            <Button value="Оставить заявку" className={styles.headerBtn} />
+            <Link href="/contacts"><Button value="Оставить заявку" className={styles.headerBtn} /></Link>
             <BurgerMenu />
           </div>
         </div>
