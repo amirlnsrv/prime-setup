@@ -1,18 +1,19 @@
 import Image from "next/image";
 import stylly from "./Benefits.module.scss";
 import { mockdataIcon } from "./Benefits.heplper";
-import bg from "#/img/FonImg.png";
+import bg from "#/images/FonImg.png";
 
 export function Benefits() {
   return (
     <section className={stylly.sectionContainer}>
       <div className={stylly.backgroundImage}>
         <Image
+        width={100}
+        height={100}
           src={bg}
           alt="background"
-          fill
+          // fill
           className={stylly.backgroundImage}
-          priority
         />
       </div>
 
