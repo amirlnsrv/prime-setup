@@ -1,0 +1,23 @@
+{
+	"header": {
+		"about": "About",
+		"services": "Services",
+		"blog": "Blog",
+		"faq": "FAQ",
+		"contacts": "Contacts",
+		"button": "Leave a request"
+	},
+	"hero": {
+		"button": "Book a Free Consultation",
+		"main": {
+			"title": "Start Your Business Setup in Dubai with Confidence",
+			"subtitle": "Prime Setup offers clear, step-by-step support for business setup in Dubai. From company registration to licensing and ongoing assistance, we guide you through each stage.",
+			"button": "Book a Free Consultation"
+		}
+	},
+	"WhyPrimeSetup": {
+		"title": "Why Choose Prime Setup for Business Setup in Dubai",
+		"subtitle": "Setting up a business in Dubai is a major step-Prime Setup makes it simple, secure, and efficient. With over 15 years of experience, we have helped hundreds of entrepreneurs and companies establish themselves in the UAE, guiding them through every legal and administrative detail so they can focus on growth.",
+		"button": "Learn more about us"
+	}
+}

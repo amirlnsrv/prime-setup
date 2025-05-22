@@ -12,14 +12,17 @@ import { UsefulArticles } from "@/components/UsefulArticles";
 import { Swiper } from "@/components/Swiper/Swiper";
 
 import HeroBg from "#/images/heroBg.jpg";
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
+export default async function Home() {
+  const tHeroMain = await getTranslations("hero.main");
+
   return (
     <>
       <Hero
         imgUrl={HeroBg}
-        title="Ваш бизнес в надёжных руках"
-        subtitle="Комплексные услуги по регистрации бизнеса, лицензированию и сопровождению в ОАЭ"
+        title={tHeroMain("title")}
+        subtitle={tHeroMain("subtitle")}
         inlineStyles={{
           inner: {
             maxWidth: "608px",
