@@ -11,9 +11,9 @@
   align-items: center;
   justify-content: center;
 
-//   img{
-//     z-index: -1;
-//   }
+  //   img{
+  //     z-index: -1;
+  //   }
 }
 
 .imageContact {
@@ -23,14 +23,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
 }
 
 .container {
   padding-top: 93px;
 }
 
-
-@media(max-width:1148px){
-    
+@media (max-width: 1148px) {
 }

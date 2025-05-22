@@ -1,3 +1,11 @@
+html[lang="en"] .btn::before {
+	content: "Learn more about us";
+}
+
+html[lang="ru"] .btn::before {
+	content: "Узнать больше о нас";
+}
+
 .whyPrimeSetup {
 	padding: 160px 0 128px;
 
@@ -31,7 +39,7 @@
 			height: 62px;
 			padding: 16px 32px 15px;
 			&::before {
-				content: "Узнать больше о нас";
+				// content: "Узнать больше о нас";
 			}
 		}
 	}

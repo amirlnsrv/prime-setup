@@ -1,6 +1,11 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  productionBrowserSourceMaps: false,
 };
 
-export default nextConfig;
+const withNextIntl = require("next-intl/plugin")(
+  "./src/lib/i18n/request.ts"
+);
+
+module.exports = withNextIntl(nextConfig);
