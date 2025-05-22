@@ -7,17 +7,21 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"), {ssr: false});
-const BurgerMenu = dynamic(() => import("@/ui/BurgerMenu"), {ssr: false});
+const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"), {
+  ssr: false,
+});
+const BurgerMenu = dynamic(() => import("@/ui/BurgerMenu"), { ssr: false });
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const router = useRouter();
+  const navigation = useRouter();
+  const t = useTranslations("header");
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0); 
+      setScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,21 +36,26 @@ export default function Header() {
     >
       <div className="container">
         <div className={styles.headerInner}>
-          <div className={styles.logo} onClick={() => router.push("/")}>
-            <Image src="/assets/icons/logo.svg" width={44} height={46} alt="logo" />
+          <div className={styles.logo} onClick={() => navigation.push("/")}>
+            <Image
+              src="/assets/icons/logo.svg"
+              width={44}
+              height={46}
+              alt="logo"
+            />
             <p className={styles.logoTitle}>PRIME SETUP</p>
             <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           </div>
           <nav className={styles.nav}>
-            <Link href="#">О нас</Link>
-            <Link href="/services">Услуги</Link>
-            <Link href="/blog">Блог</Link>
-            <Link href="#">FAQ</Link>
-            <Link href="/contacts">Контакты</Link>
+            <Link href="#">{t("about")}</Link>
+            <Link href="/services">{t("services")}</Link>
+            <Link href="/blog">{t("blog")}</Link>
+            <Link href="/faq">{t("faq")}</Link>
+            <Link href="/contacts">{t("contacts")}</Link>
           </nav>
           <div className={styles.btns}>
             <LanguageSelector />
-            <Link href="/contacts"><Button value="Оставить заявку" className={styles.headerBtn} /></Link>
+            <Button value={t("button")} className={styles.headerBtn} />
             <BurgerMenu />
           </div>
         </div>

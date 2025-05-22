@@ -3,38 +3,45 @@
 import { useState } from "react";
 import styles from "./LanguageSelector.module.scss";
 import HeaderArrow from "./components/HeaderArrow";
-
-const languages = [
-  { code: "en", label: "En" },
-  { code: "ru", label: "Ru" },
-];
+import { usePathname, useRouter } from "@/lib/i18n/navigation";
+import { useLocale } from "next-intl";
 
 const LanguageSelector = () => {
-  const [selectedLang, setSelectedLang] = useState("ru");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
   const [open, setOpen] = useState(false);
+
+  const currentLang = locale === "en" ? "En" : "Ru";
+
+  const toggleDropdown = () => setOpen((prev) => !prev);
+
+  const handleChangeLang = (lang: "En" | "Ru") => {
+    const newLocale = lang.toLowerCase();
+    if (newLocale === locale) return;
+    router.push(pathname, { locale: newLocale });
+    setOpen(false);
+  };
 
   return (
     <div className={styles.dropdown}>
-      <button className={styles.toggle} onClick={() => setOpen(!open)}>
-        <span>{languages.find((l) => l.code === selectedLang)?.label}</span>
+      <button className={styles.toggle} onClick={toggleDropdown}>
+        <span>{currentLang}</span>
         <HeaderArrow className={styles.arrowIcon} />
       </button>
 
-      <ul className={`${styles.menu} ${open ? styles.open : ""}`}>
-        {languages.map((lang) => (
-          <li key={lang.code}>
-            <button
-              onClick={() => {
-                setSelectedLang(lang.code);
-                setOpen(false);
-              }}
-              className={styles.item}
-            >
-              {lang.label}
-            </button>
-          </li>
+      <div className={`${styles.menu} ${open ? styles.open : ""}`}>
+        {["En", "Ru"].map((lang) => (
+          <button
+            key={lang}
+            onClick={() => handleChangeLang(lang as "En" | "Ru")}
+            className={styles.item}
+          >
+            {lang}
+          </button>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
