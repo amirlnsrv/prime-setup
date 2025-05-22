@@ -11,7 +11,7 @@ export function RangeOfServices() {
           <h2 className={styles.title}>
             Полный спектр услуг для запуска и развития бизнеса в ОАЭ
           </h2>
-        <ServiceTabs />
+          <ServiceTabs />
         </div>
       </div>
     </section>
