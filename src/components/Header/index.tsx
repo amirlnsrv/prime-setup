@@ -47,19 +47,11 @@ export default function Header() {
             <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           </div>
           <nav className={styles.nav}>
-<<<<<<< HEAD
             <Link href="#">{t("about")}</Link>
             <Link href="/services">{t("services")}</Link>
             <Link href="/blog">{t("blog")}</Link>
-            <Link href="#">{t("faq")}</Link>
+            <Link href="/faq">{t("faq")}</Link>
             <Link href="/contacts">{t("contacts")}</Link>
-=======
-            <Link href="#">О нас</Link>
-            <Link href="/services">Услуги</Link>
-            <Link href="/blog">Блог</Link>
-            <Link href="/faq">FAQ</Link>
-            <Link href="/contacts">Контакты</Link>
->>>>>>> 26c0791a7c067248efd73a45b50b2ee0d4720ca0
           </nav>
           <div className={styles.btns}>
             <LanguageSelector />
