@@ -1,3 +1,85 @@
-.sectionContainer{
-    background: var(--osnov);
+.sectionContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
 }
+
+.svg3 {
+  position: absolute;
+  top: 437px;
+  right: 38px;
+  bottom: 0;
+  border: 7px solid #fff;
+border-radius: 63px;
+width: 270px;
+height: 333px;
+transition: transform 0.8s ease-in-out;
+
+
+
+}
+
+.svg1 {
+  position: relative;
+  bottom: 0px;
+    left: 300px;
+  border: 7px solid #fff;
+  border-radius: 50px;
+  width: 253px;
+  height: 253px;
+  transition: transform 0.8s ease-in-out;
+}
+.svgContainer{
+    transform: rotate(83deg);
+}
+
+.svg2 {
+    border: 7px solid #fff;
+    border-radius: 50px;
+    width: 253px;
+    height: 253px;
+    position: absolute;
+    bottom: 450px;
+    right: 435px;
+    left: 500px;
+
+    transition: transform 0.8s ease-in-out;
+  }
+  .svgContainer2{
+    transform: rotate(66deg); 
+
+  }
+  
+
+// .rotate {
+//     transform: rotate(83deg);
+//     transition: transform 0.8s ease-in-out;
+//   }
+
+// @keyframes rotateForward {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(20deg);
+//   }
+// }
+
+// @keyframes rotateBackward {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(-20deg);
+//   }
+// }
+
+// .rotatable {
+//   transition: transform 0.8s ease-in-out;
+// }
+
+// .rotated {
+//   transform: rotate(83deg);
+// }

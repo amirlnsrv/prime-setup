@@ -1,5 +1,4 @@
 import { Contact } from "@/components/Contact";
-// import { Hero } from "@/components/Hero";
 import Image from "next/image";
 import img1 from "#/images/fonIconsContacts.svg";
 import style from "./Contacts.page.module.scss";
@@ -9,30 +8,9 @@ import { ContactTime } from "@/components/ContactTime/ContactTime";
 export default function Contacts() {
   return (
     <section>
-      {/* <Hero
-        imgUrl="/assets/images/contacts.png"
-        title="Готовы помочь вам начать бизнес в ОАЭ — просто напишите нам."
-        subtitle="Мы всегда на связи и рады ответить на любые вопросы."
-        inlineStyles={{
-          inner: {
-            justifyContent: "flex-end",
-            paddingBottom: "170px",
-            alignItems: "center !important",
-          },
-          content: {
-            textAlign: "center",
-            maxWidth: 'none !important',
-            alignItems: "center !important",
-          },
-        }}
-        disableBtn
-      /> */}
-
 <ContainerHero/>
 
 <ContactTime/>
-
-
       <div className={style.container}>
         <div className={style.contactWrapper}>
           <Image src={img1} alt="iconFon" className={style.imageContact} />

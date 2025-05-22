@@ -13,6 +13,11 @@ export function Swiper() {
             width={1440}
             height={880}
             className={styles.img} />
+             <div className={styles.containerTitel}>
+        <h2 className={styles.titleh2}>
+          Как проходит открытие вашей компании — шаг за шагом
+        </h2>
+      </div>
           <div className={styles.swiperWrapper}>
             <BusinessSwiper />
           </div>
