@@ -7,8 +7,10 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"), {ssr: false});
-const BurgerMenu = dynamic(() => import("@/ui/BurgerMenu"), {ssr: false});
+const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"), {
+  ssr: false,
+});
+const BurgerMenu = dynamic(() => import("@/ui/BurgerMenu"), { ssr: false });
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +18,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0); 
+      setScrolled(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,7 +39,7 @@ export default function Header() {
             <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           </div>
           <nav className={styles.nav}>
-            <Link href="#">О нас</Link>
+            <Link href="/about">О нас</Link>
             <Link href="/services">Услуги</Link>
             <Link href="/blog">Блог</Link>
             <Link href="#">FAQ</Link>

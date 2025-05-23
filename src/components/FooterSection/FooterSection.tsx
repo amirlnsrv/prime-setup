@@ -96,8 +96,46 @@ export function FooterSection() {
             </div>
           </div>
         </div>
+
         <hr />
+        <div className={styles.appIconsDown}>
+          <Image
+            src="/assets/icons/Facebook-Icon.svg"
+            alt="Мое изображение"
+            width={30}
+            height={30}
+          />
+
+          <Image
+            src="/assets/icons/Twitter-Icon.svg"
+            alt="Мое изображение"
+            width={30}
+            height={30}
+          />
+
+          <Image
+            src="/assets/icons/Instagram-Icon.svg"
+            alt="Мое изображение"
+            width={30}
+            height={30}
+          />
+
+          <Image
+            src="/assets/icons/Linkedin-Icon.svg"
+            alt="Мое изображение"
+            width={30}
+            height={30}
+          />
+
+          <Image
+            src="/assets/icons/Youtube-Icon.svg"
+            alt="Мое изображение"
+            width={30}
+            height={30}
+          />
+        </div>
       </footer>
+      <div className="line"></div>
     </div>
   );
 }

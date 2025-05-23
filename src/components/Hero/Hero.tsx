@@ -1,6 +1,6 @@
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Hero.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { CSSProperties } from "react";
 
 type InlineStyles = {
@@ -9,7 +9,7 @@ type InlineStyles = {
 };
 
 type Props = {
-  imgUrl: string;
+  imgUrl: string | StaticImageData;
   title: string;
   subtitle: string;
   inlineStyles?: InlineStyles;

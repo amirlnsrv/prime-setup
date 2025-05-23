@@ -3,7 +3,7 @@ import { UsefulCard } from "@/ui/UsefulCard";
 
 import Image from "next/image";
 import img from "#/images/blog2.png";
-export default function Blog2() {
+export default function blog2() {
   return (
     <section className={style.blogContainer}>
       <div className={style.sectionContainer}>

@@ -4,13 +4,16 @@
   // align-items: flex-start;
   // justify-content: center;
   // align-items: flex-start;
+  // align-items: center;
   position: "relative";
 
   zindex: 1;
 }
 .content {
   display: flex;
-  align-self: center;
+  // align-self: center;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
   color: #fff;
 }
