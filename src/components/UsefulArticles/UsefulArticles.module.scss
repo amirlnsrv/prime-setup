@@ -1,3 +1,11 @@
+html[lang="en"] .btn::before {
+	content: "View all articles";
+}
+
+html[lang="ru"] .btn::before {
+	content: "Смотреть все статьи";
+}
+
 .usefulArticles {
   position: relative;
   display: flex;
@@ -39,9 +47,6 @@
     .btn {
       position: absolute;
       bottom: 50px;
-      &::before {
-        content: "Смотреть все статьи";
-      }
 
       @media (max-width: 850px) {
         position: relative;
@@ -78,18 +83,6 @@
       }
     }
   }
-  // &::after {
-  //   z-index: 0;
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   bottom: 50px;
-  //   height: 150px;
-
-  //   @media (max-width: 850px) {
-  //     bottom: 0px;
-  //   }
-  // }
 
   .cards {
     display: flex;
@@ -117,18 +110,6 @@
       height: 20px;
     }
   }
-
-  // :global(.swiper-button-prev),
-  // :global(.swiper-button-next) {
-  //   width: 30px;
-  //   height: 30px;
-  //   border-radius: 50%;
-
-  //   &::after {
-  //     font-size: 16px;
-  //     font-weight: bold;
-  //   }
-  // }
 }
 
 .swiperSlide {

@@ -2,12 +2,16 @@ import styles from "./OurPartners.module.scss";
 import { yourCompanyLogos } from "./OurPartner.helpers";
 import Image from "next/image";
 import downborder from "#/images/downborder.svg";
+import { getTranslations } from "next-intl/server";
 
-export function OurPartners() {
+export async function OurPartners() {
+
+  const t = await getTranslations("OurPartners")
+
   return (
     <section className={styles.ourPartners}>
       <div className={styles.top}>
-        <h1>Наши партнеры</h1>
+        <h1>{t("title")}</h1>
         <div className={styles.slider}>
           <div className={styles.track}>
             {[...yourCompanyLogos, ...yourCompanyLogos].map((pic, index) => (

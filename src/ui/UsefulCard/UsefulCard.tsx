@@ -2,17 +2,22 @@ import Link from "next/link";
 import styles from "./UsefulCard.module.scss";
 import Image from "next/image";
 
-export default function UsefulCard() {
+type Props = {
+  titleTxt: string;
+  subtitleTxt: string;
+  buttonTxt: string;
+};
+
+
+export default function UsefulCard({titleTxt, subtitleTxt, buttonTxt} : Props) {
   return (
     <div className={styles.card}>
       <div className={styles.picture}></div>
       <div className={styles.content}>
-        <h2>Как открыть компанию в Дубае: Пошаговая инструкция</h2>
-        <p>
-        Открытие бизнеса в Дубае — это просто. Рассказываем, с чего начать, какие документы нужны и сколько времени занимает процесс регистрации.
-        </p>
+        <h2>{titleTxt}</h2>
+        <p>{subtitleTxt}</p>
           <Link href={"/blog2"} className={styles.more}>
-          Читать далее <Image className={styles.arrow} width={20} height={20} src="/assets/icons/rightArrow.svg" alt="arrow" />
+          {buttonTxt} <Image className={styles.arrow} width={20} height={20} src="/assets/icons/rightArrow.svg" alt="arrow" />
           </Link>
       </div>
       <Image width={150} height={150} src="/assets/images/elipse.svg" alt="elipse" className={styles.elipse_right}/>

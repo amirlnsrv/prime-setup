@@ -5,10 +5,13 @@ import styles from "./BlogCards.module.scss";
 import { UsefulCard } from "@/ui/UsefulCard";
 import { Input } from "@/ui/Input/Input";
 import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const cards = [1, 2, 3, 3, 4, 5, 6, 7, 8];
 
+
 export default function BlogCards() {
+  const t = useTranslations("UsefulArticles.card")
   const PAGE_SIZE = 9;
 
   const [page, setPage] = useState(1);
@@ -27,23 +30,24 @@ export default function BlogCards() {
     <section className={styles.blogCards}>
       <div className={styles.filter}>
         <Input
-          title="Что вас интересует"
-          placeholder="Введите чтобы начать поиск..."
+          title={t("blog.input.title")}
+          placeholder={t("blog.input.placeholder")}
           type="text"
           id="1"
+          inButton={t("blog.input.button")}
         />
       </div>
       <div className={styles.cardsContainer}>
         {visibleCards.map((_, index) => (
-          <UsefulCard key={index} />
+          <UsefulCard buttonTxt={t("button")} subtitleTxt={t("subtitle")} titleTxt={t("title")} key={index} />
         ))}
       </div>
       <div className={styles.pagination}>
         <button onClick={handlePrev} className={styles.prev}>
-          Предыдущий
+          {t("blog.buttonPrevious")}
         </button>
         <button onClick={handleNext} className={styles.next}>
-          Следующий
+        {t("blog.buttonNext")}
           <Image
             width={10}
             height={20}
