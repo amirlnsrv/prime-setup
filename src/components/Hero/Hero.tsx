@@ -2,7 +2,6 @@ import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Hero.module.scss";
 import Image, { StaticImageData } from "next/image";
 import { CSSProperties } from "react";
-import { StaticImageData } from "next/image";
 import { getTranslations } from "next-intl/server";
 
 type InlineStyles = {
