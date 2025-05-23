@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 import styles from "./BusinessSlider.module.scss";
 import Image from "next/image";
-import { BusinessSlider } from "@/mockData/tempfile";
+import { BusinessSlider } from "./Busines.heplper";
 
 export const BusinessSwiper = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);

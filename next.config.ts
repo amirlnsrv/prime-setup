@@ -1,12 +1,12 @@
-import type { NextConfig } from "next";
+/* eslint-disable @typescript-eslint/no-require-imports */
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  webpack(config) {
-    config.module.rules.push({
-    });
-
-    return config;
-  },
+  productionBrowserSourceMaps: false,
 };
 
-export default nextConfig;
+const withNextIntl = require("next-intl/plugin")(
+  "./src/lib/i18n/request.ts"
+);
+
+module.exports = withNextIntl(nextConfig);

@@ -2,6 +2,8 @@ import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Hero.module.scss";
 import Image, { StaticImageData } from "next/image";
 import { CSSProperties } from "react";
+import { StaticImageData } from "next/image";
+import { getTranslations } from "next-intl/server";
 
 type InlineStyles = {
   inner?: CSSProperties;
@@ -16,13 +18,15 @@ type Props = {
   disableBtn?: boolean;
 };
 
-export const Hero = ({
+export const Hero = async ({
   imgUrl,
   title,
   subtitle,
   inlineStyles = {},
   disableBtn,
 }: Props) => {
+  const tHero = await getTranslations("hero");
+
   return (
     <section className={styles.hero}>
       <Image
@@ -38,7 +42,7 @@ export const Hero = ({
           <div className={styles.content} style={inlineStyles.content}>
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subtitle}>{subtitle}</p>
-            {disableBtn ? "" : <ExtraButton value="Бесплатная консультация" />}
+            {disableBtn ? "" : <ExtraButton value={tHero("button")} />}
           </div>
         </div>
       </div>

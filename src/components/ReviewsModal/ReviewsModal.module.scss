@@ -1,0 +1,284 @@
+.reviewsModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000070;
+
+  .modal {
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 40px 80px 60px 80px;
+    width: 60%;
+    height: 90vh;
+    box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.15),
+      -4px -4px 15px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    z-index: 10;
+
+    @media (max-width: 1200px) {
+      width: 80%;
+      padding: 30px 70px 50px 70px;
+      border-radius: 40px;
+    }
+
+    @media (max-width: 900px) {
+      width: 70%;
+      height: 80vh;
+      padding: 20px 60px 40px 60px;
+      border-radius: 30px;
+    }
+
+    @media (max-width: 700px) {
+      max-height: 325px;
+      max-width: 350px;
+      border-radius: 20px;
+      padding: 10px 20px 10px 20px;
+    }
+
+    .bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .zagol {
+        font-family: var(--font5);
+        font-style: italic;
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 0.13em;
+        text-align: center;
+        color: #000;
+
+        @media (max-width: 1200px) {
+          font-size: 18px;
+        }
+        @media (max-width: 900px) {
+          font-size: 16px;
+        }
+        @media (max-width: 700px) {
+          font-size: 14px;
+        }
+      }
+
+      .title {
+        font-family: var(--font5);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.25em;
+        text-align: center;
+        color: #000;
+
+        @media (max-width: 1200px) {
+          font-size: 14px;
+        }
+        @media (max-width: 900px) {
+          font-size: 12px;
+        }
+      }
+
+      img {
+        @media (max-width: 1200px) {
+        }
+        @media (max-width: 900px) {
+          width: 35px;
+        }
+      }
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      margin: 30px 0 30px;
+
+      @media (max-width: 800px) {
+        margin: 20px 0 20px !important;
+        // margin: 0;
+      }
+      @media (max-width: 700px) {
+        margin: 5px 0 5px !important;
+      }
+
+      input {
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 30px 30px;
+        max-width: 949px;
+        width: 100%;
+        height: 70px;
+        background: #fbf3ec;
+        font-family: var(--third-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 108%;
+        color: #6d6d6d;
+        z-index: 5;
+
+        @media (max-width: 800px) {
+          font-size: 16px;
+          padding: 20px 20px;
+        }
+
+        @media (max-width: 700px) {
+          font-size: 14px;
+          height: 30px;
+          border-radius: 8px;
+          width: 98%;
+          margin: 0 auto;
+          padding: 10px 10px;
+        }
+      }
+    }
+
+    .panel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 25px;
+
+      @media (max-width: 900px) {
+        row-gap: 15px;
+      }
+
+      @media (max-width: 700px) {
+        row-gap: 10px;
+      }
+
+      .star {
+        @media (max-width: 900px) {
+          width: 35px !important;
+          height: 35px !important;
+          margin-bottom: 10px;
+        }
+        @media (max-width: 700px) {
+          width: 20px !important;
+          height: 20px !important;
+        }
+      }
+
+      .textarea {
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        background: #fbf3ec;
+        border-radius: 14px;
+        padding: 25px 25px;
+        font-family: var(--third-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 108%;
+        letter-spacing: 0.01em;
+        color: #000;
+        height: 190px;
+
+        @media (max-width: 900px) {
+          height: 160px;
+        }
+        @media (max-width: 700px) {
+          max-width: 299px;
+          height: 110px;
+          font-size: 11px;
+          padding: 10px 10px;
+        }
+        @media (max-width: 420px) {
+          height: 110px;
+          font-size: 11px;
+          padding: 10px 10px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    z-index: 20;
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+    justify-content: end;
+    margin-top: 20px;
+
+    @media (max-width: 900px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 700px) {
+      margin-top: 6px;
+    }
+
+    button {
+      &:hover {
+        filter: contrast(0.7);
+      }
+    }
+    .left {
+      border: 5px solid var(--333);
+      border-radius: 10px;
+      padding: 10px 25px;
+      max-width: 150px;
+      height: 55px;
+      font-family: var(--font3);
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: var(--333);
+      background: rgba(210, 50, 22, 0.1);
+
+      @media (max-width: 900px) {
+        max-width: 140px;
+        height: 45px;
+        padding: 5px 20px;
+        font-size: 18px;
+      }
+
+      @media (max-width: 700px) {
+        border: 1px solid var(--333);
+        max-width: 90px;
+        height: 30px;
+        padding: 6px 11px;
+        font-size: 13px;
+      }
+    }
+
+    .dep {
+      border-radius: 10px;
+      padding: 10px 20px;
+      width: 150px;
+      height: 55px;
+      background: var(--333);
+      font-family: var(--font3);
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+
+      @media (max-width: 900px) {
+        max-width: 140px;
+        height: 45px;
+        font-size: 18px;
+      }
+      @media (max-width: 700px) {
+        max-width: 90px;
+        height: 30px;
+        padding: 6px 11px;
+        font-size: 13px;
+      }
+    }
+  }
+}

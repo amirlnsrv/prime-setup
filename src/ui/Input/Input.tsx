@@ -7,11 +7,13 @@ import Image from "next/image";
 interface InputProps extends React.HTMLProps<HTMLInputElement> {
   label?: string;
   error?: string;
+  inButton?: string;
 }
 
 export const Input: React.FC<InputProps> = ({
   title,
   error,
+  inButton,
   id,
   name,
   ...rest
@@ -31,12 +33,13 @@ export const Input: React.FC<InputProps> = ({
         {error && <p className={styles.errorText}>{error}</p>}
         <button className={styles.search}>
           <Image
+          className={styles.searchIcon}
             width={30}
             height={30}
             src="/assets/icons/search.svg"
             alt="search icon"
           />
-          <span>Поиск</span>
+          <span>{inButton}</span>
         </button>
       </div>
     </div>

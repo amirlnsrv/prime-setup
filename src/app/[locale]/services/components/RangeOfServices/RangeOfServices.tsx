@@ -7,10 +7,12 @@ export function RangeOfServices() {
   return (
     <section className={styles.rangeOfServices}>
       <div className="container">
-        <h2 className={styles.title}>
-          Полный спектр услуг для запуска и развития бизнеса в ОАЭ
-        </h2>
-        <ServiceTabs />
+        <div className={styles.inner}>
+          <h2 className={styles.title}>
+            Полный спектр услуг для запуска и развития бизнеса в ОАЭ
+          </h2>
+          <ServiceTabs />
+        </div>
       </div>
     </section>
   );

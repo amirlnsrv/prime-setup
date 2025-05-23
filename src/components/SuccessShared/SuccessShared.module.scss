@@ -1,4 +1,14 @@
+html[lang="en"] .button::before {
+	content: "Leave a review";
+}
+
+html[lang="ru"] .button::before {
+	content: "Оставить отзыв";
+}
+
+
 .success__shared {
+  position: relative;
   padding: 60px 20px 150px;
   display: flex;
   flex-direction: column;

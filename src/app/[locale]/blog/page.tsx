@@ -1,23 +1,29 @@
 import dynamic from "next/dynamic";
 
 import { Hero } from "@/components/Hero";
+import { getTranslations } from "next-intl/server";
 
 const BlogCards = dynamic(() => import("@/components/BlogCards"));
 
-export default function Blog() {
+export default async function Blog() {
+
+  const t = await getTranslations("hero.blog")
+
   return (
     <section>
       <Hero
         imgUrl="/assets/images/heroBlogBg.jpg"
-        title="Ваш бизнес в надёжных руках"
-        subtitle="Комплексные услуги по регистрации бизнеса, лицензированию и сопровождению в ОАЭ"
+        title={t("title")}
+        subtitle={t("subtitle")}
         inlineStyles={{
           inner: {
-            maxWidth: "608px",
+            maxWidth: "900px",
+            margin: "0 auto"
+
           },
           content: {
-            textAlign: "left",
-            alignItems: "flex-start",
+            textAlign: "center",
+            alignItems: "center",
           },
         }}
       />

@@ -11,13 +11,18 @@ import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
 import { UsefulArticles } from "@/components/UsefulArticles";
 import { Swiper } from "@/components/Swiper/Swiper";
 
-export default function Home() {
+import HeroBg from "#/images/heroBg.jpg";
+import { getTranslations } from "next-intl/server";
+
+export default async function Home() {
+  const tHeroMain = await getTranslations("hero.main");
+
   return (
     <>
       <Hero
-        imgUrl="/assets/images/heroBg.jpg"
-        title="Ваш бизнес в надёжных руках"
-        subtitle="Комплексные услуги по регистрации бизнеса, лицензированию и сопровождению в ОАЭ"
+        imgUrl={HeroBg}
+        title={tHeroMain("title")}
+        subtitle={tHeroMain("subtitle")}
         inlineStyles={{
           inner: {
             maxWidth: "608px",

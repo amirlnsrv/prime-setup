@@ -3,7 +3,11 @@ import { UsefulCard } from "@/ui/UsefulCard";
 
 import Image from "next/image";
 import img from "#/images/blog2.png";
-export default function blog2() {
+import { getTranslations } from "next-intl/server";
+export default async function Blog2() {
+
+  const t = await getTranslations("UsefulArticles")
+
   return (
     <section className={style.blogContainer}>
       <div className={style.sectionContainer}>
@@ -27,7 +31,13 @@ export default function blog2() {
               </div>
             </div>
           </div>
-          <Image src={img} alt="img" className={style.img} width={1283} height={742} />
+          <Image
+            src={img}
+            alt="img"
+            className={style.img}
+            width={1283}
+            height={742}
+          />
         </div>
         <div className={style.ContainerBlog}>
           <div className={style.containerDiv}>
@@ -133,9 +143,9 @@ export default function blog2() {
         <h2 className={style.h2Like}>Вам также может понравиться</h2>
 
         <div className={style.containerCard}>
-          <UsefulCard />
-          <UsefulCard />
-          <UsefulCard />
+          <UsefulCard buttonTxt={t("card.button")} subtitleTxt={t("card.subtitle")} titleTxt={t("card.title")}/>
+          <UsefulCard buttonTxt={t("card.button")} subtitleTxt={t("card.subtitle")} titleTxt={t("card.title")}/>
+          <UsefulCard buttonTxt={t("card.button")} subtitleTxt={t("card.subtitle")} titleTxt={t("card.title")}/>
         </div>
       </div>
     </section>
