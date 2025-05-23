@@ -30,7 +30,7 @@ export function FAQ() {
                     onClick={() =>
                       setOpenIndex(openIndex === index ? null : index)
                     }
-                  >
+                  > 
 
                     <Image
                       src="/assets/icons/arrowDown.svg"

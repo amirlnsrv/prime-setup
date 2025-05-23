@@ -31,7 +31,13 @@ export default async function Blog2() {
               </div>
             </div>
           </div>
-          <Image src={img} alt="img" className={style.img} width={1283} height={742} />
+          <Image
+            src={img}
+            alt="img"
+            className={style.img}
+            width={1283}
+            height={742}
+          />
         </div>
         <div className={style.ContainerBlog}>
           <div className={style.containerDiv}>
