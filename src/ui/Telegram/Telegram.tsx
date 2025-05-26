@@ -1,7 +1,11 @@
 import Image from "next/image";
 import styles from "./Telegram.module.scss";
+import { getTranslations } from "next-intl/server";
 
-export default function Telegram() {
+export default async function Telegram() {
+
+  const t = await getTranslations("telegram")
+
   return (
     <button className={styles.tg}>
       <Image
@@ -12,7 +16,7 @@ export default function Telegram() {
         alt="tg"
       />
       <p>
-        Нужна помощь? <br /> Свяжитесь с нами по чату
+        {t("title")} <br /> {t("subtitle")} 
       </p>
     </button>
   );
