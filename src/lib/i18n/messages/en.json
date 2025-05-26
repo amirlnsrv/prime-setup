@@ -55,5 +55,9 @@
 			}
 		},
 		"button": "View all articles"
-	}
+	},
+	"telegram": {
+		"title": "Need help?",
+		"subtitle": "Contact us via chat"
+	  }
 }
