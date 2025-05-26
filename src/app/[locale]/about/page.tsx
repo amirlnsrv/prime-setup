@@ -1,3 +1,4 @@
+npm install next-international
 import { Hero } from "@/components/Hero";
 import { WeAreTeam } from "@/components/WeAreTeam/WeAreTeam";
 import AboutHeroBg from "#/images/AboutHero.jpg";
