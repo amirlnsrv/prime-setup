@@ -55,8 +55,11 @@
 @media (max-width: 600px) {
   .hero {
     min-height: 328px;
+    max-height: 259px;
+    
     .inner {
       min-height: 328px;
+      max-height: 259px;
       max-width: 339px !important;
 
       .content {

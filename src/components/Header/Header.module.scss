@@ -104,12 +104,17 @@
 	.header {
 		padding: 10.57px 0;
 		background-color: var(--osnov);
-		position: fixed;
+		position: static;
 
 		&Inner {
 			.headerBtn {
 				display: none;
 			}
 		}
+	}
+
+	.scrolled {
+		position: fixed;
+		background-color: var(--osnov);
 	}
 }

@@ -5,7 +5,14 @@
 		"blog": "Blog",
 		"faq": "FAQ",
 		"contacts": "Contacts",
-		"button": "Leave a request"
+		"button": "Leave a request",
+		"burger": {
+			"about": "About",
+			"services": "Services",
+			"blog": "Blog",
+			"faq": "FAQ",
+			"contacts": "Contacts"
+		}
 	},
 	"hero": {
 		"button": "Book a Free Consultation",
@@ -17,6 +24,10 @@
 		"blog": {
 			"title": "Useful articles and tips",
 			"subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
+		},
+		"services": {
+			"title": "All services for starting and developing a business in the UAE - in one place",
+			"subtitle": "We offer comprehensive business support in the UAE — from the idea to full launch and development. Our team helps entrepreneurs at every stage, ensuring legal purity, transparency and maximum efficiency of processes."
 		}
 	},
 	"WhyPrimeSetup": {
@@ -40,7 +51,7 @@
 	"UsefulArticles": {
 		"title": "Useful articles and tips",
 		"subtitle": "Stay up to date with the latest news on UAE business, visas, licenses and more.",
-		"card":{
+		"card": {
 			"title": "How to open a company in Dubai: Step-by-step instructions",
 			"subtitle": "Starting a business in Dubai is easy. We tell you where to start, what documents you need and how long the registration process takes.",
 			"button": "Read more",
