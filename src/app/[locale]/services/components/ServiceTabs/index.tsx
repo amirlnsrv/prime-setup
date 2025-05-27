@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./ServiceTabs.module.scss";
 import { services } from "./ServiceTabs.helper";
+import { ServiceCard } from "@/ui/ServiceCard";
 
 export default function ServiceTabs() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -40,7 +41,6 @@ export default function ServiceTabs() {
 
       const style = getComputedStyle(scrollBar);
       const paddingTop = parseFloat(style.paddingTop) || 0;
-      
 
       dot.style.top = `${
         paddingTop +
@@ -59,7 +59,11 @@ export default function ServiceTabs() {
 
   return (
     <div className={styles.serviceTabs}>
-<div className={`${styles.nav} ${selectedIndex !== null ? styles.expanded : ""}`}>
+      <div
+        className={`${styles.nav} ${
+          selectedIndex !== null ? styles.expanded : ""
+        }`}
+      >
         <div className={styles.scrollBar}>
           <div className={styles.scrollDot} ref={dotRef}></div>
         </div>
@@ -76,13 +80,10 @@ export default function ServiceTabs() {
               {service.title}
 
               {isMobile && selectedIndex === index && (
-                <div className={styles.contentPanel}>
-                  <h2>
-                    <span>{index + 1}. </span>
-                    {service.title}
-                  </h2>
-                  <p>{service.content}</p>
-                </div>
+                <ServiceCard
+                  selectedIndex={selectedIndex}
+                  services={services}
+                />
               )}
             </li>
           ))}
@@ -90,13 +91,7 @@ export default function ServiceTabs() {
       </div>
 
       {!isMobile && selectedIndex !== null && (
-        <div className={styles.contentPanel}>
-          <h2>
-            <span>{selectedIndex + 1}. </span>
-            {services[selectedIndex].title}
-          </h2>
-          <p>{services[selectedIndex].content}</p>
-        </div>
+        <ServiceCard selectedIndex={selectedIndex} services={services} />
       )}
     </div>
   );

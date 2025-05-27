@@ -1,0 +1,100 @@
+.contentPanel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    justify-content: center;
+    gap: 34px;
+    flex: 1;
+    overflow: hidden;
+    padding: 50px;
+    height: 450px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.15),
+      -4px -4px 15px 0 rgba(0, 0, 0, 0.15);
+
+      @media (max-width: 1300px) {
+        height: 400px;
+      }
+  
+    @media (max-width: 1200px) {
+      margin-top: 20px;
+      padding: 30px;
+      border-radius: 20px;
+      height: auto;
+      max-width: 100%;
+      box-shadow: none;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    h2 {
+      max-width: 520px;
+      display: flex;
+      align-items: center;
+      gap: 19.5px;
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      text-align: center;
+      color: var(--osnov);
+      text-wrap: nowrap;
+
+      @media (max-width: 1300px) {
+        text-wrap: wrap;
+      }
+  
+      span {
+        font-size: 80px;
+        color: var(--333);
+      }
+    }
+  
+    p {
+      max-width: 566px;
+      font-family: var(--third-family);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 125%;
+      text-align: center;
+      color: #000;
+    }
+
+    #cube{
+        position: absolute;
+        background: #0051DE20;
+        border-radius: 12px;
+    }
+
+    .cube1{
+        width: 280px;
+        height: 280px;
+        top: -100px;
+        right: -50px;
+        rotate: 45deg;
+    }
+    .cube2{
+        width: 150px;
+        height: 150px;
+        top: -100px;
+        rotate: 45deg;
+        right: 300px;
+    }
+    .cube3{
+        width: 150px;
+        height: 150px;
+        bottom: -200px;
+        rotate: 45deg;
+    }
+    .cube4{
+        width: 250px;
+        height: 250px;
+        rotate: 45deg;
+        bottom: -140px;
+        left: 0;
+    }
+  }
+  
