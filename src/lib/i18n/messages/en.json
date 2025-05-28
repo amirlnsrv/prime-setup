@@ -5,7 +5,14 @@
 		"blog": "Blog",
 		"faq": "FAQ",
 		"contacts": "Contacts",
-		"button": "Leave a request"
+		"button": "Leave a request",
+		"burger": {
+			"about": "About",
+			"services": "Services",
+			"blog": "Blog",
+			"faq": "FAQ",
+			"contacts": "Contacts"
+		}
 	},
 	"hero": {
 		"button": "Book a Free Consultation",
@@ -18,10 +25,14 @@
 			"title": "Useful articles and tips",
 			"subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
 		},
+		"services": {
+			"title": "All services for starting and developing a business in the UAE - in one place",
+			"subtitle": "We offer comprehensive business support in the UAE — from the idea to full launch and development. Our team helps entrepreneurs at every stage, ensuring legal purity, transparency and maximum efficiency of processes."
+		},
 		"contacts": {
 			"title": "We are ready to help you start a business in the UAE - just write to us.",
 			"subtitle": "We are always in touch and happy to answer any questions."
-		  }
+		}
 	},
 	"WhyPrimeSetup": {
 		"title": "Why Choose Prime Setup for Business Setup in Dubai",
@@ -44,7 +55,7 @@
 	"UsefulArticles": {
 		"title": "Useful articles and tips",
 		"subtitle": "Stay up to date with the latest news on UAE business, visas, licenses and more.",
-		"card":{
+		"card": {
 			"title": "How to open a company in Dubai: Step-by-step instructions",
 			"subtitle": "Starting a business in Dubai is easy. We tell you where to start, what documents you need and how long the registration process takes.",
 			"button": "Read more",
@@ -63,51 +74,82 @@
 	"telegram": {
 		"title": "Need help?",
 		"subtitle": "Contact us via chat"
-	  },
-	  "contactTime": {
-  "titleh2": "Let's Get Started",
-  "title2": "We are happy to personally consult you.",
-  "titleTime": "Business Hours",
-  "time": "Monday to Friday",
-  "time2": "from 8:30 AM to 5:30 PM,",
-  "sub": "Saturday",
-  "time3": "10:00 AM – 2:00 PM",
-  "adress": "Office address:",
-  "business": "Prime Business Setup",
-  "adress2": "Sheikh Zayed Road, Dubai, UAE"
-},
-"benefits": {
-    "items": [
-      {
-        "title": "15 Years of Experience",
-        "description": "Since 2009, we’ve been helping companies enter the UAE market."
-      },
-      {
-        "title": "Comprehensive Solutions",
-        "description": "All business services in one place—from licensing to bank accounts."
-      },
-      {
-        "title": "Personalized Approach",
-        "description": "Solutions tailored to your business specifics and goals."
-      },
-      {
-        "title": "Fast Registration",
-        "description": "Start your business in as little as 48 hours."
-      },
-      {
-        "title": "24/7 Support",
-        "description": "Responsive assistance and consultation anytime."
-      },
-      {
-        "title": "Trusted Partners",
-        "description": "Banks, government agencies, and services for your convenience and safety."
-      }
-    ]
-  }
-
-
-
-
-
-
+	},
+	"contactTime": {
+		"titleh2": "Let's Get Started",
+		"title2": "We are happy to personally consult you.",
+		"titleTime": "Business Hours",
+		"time": "Monday to Friday",
+		"time2": "from 8:30 AM to 5:30 PM,",
+		"sub": "Saturday",
+		"time3": "10:00 AM – 2:00 PM",
+		"adress": "Office address:",
+		"business": "Prime Business Setup",
+		"adress2": "Sheikh Zayed Road, Dubai, UAE"
+	},
+	"benefits": {
+		"items": [
+			{
+				"title": "15 Years of Experience",
+				"description": "Since 2009, we’ve been helping companies enter the UAE market."
+			},
+			{
+				"title": "Comprehensive Solutions",
+				"description": "All business services in one place—from licensing to bank accounts."
+			},
+			{
+				"title": "Personalized Approach",
+				"description": "Solutions tailored to your business specifics and goals."
+			},
+			{
+				"title": "Fast Registration",
+				"description": "Start your business in as little as 48 hours."
+			},
+			{
+				"title": "24/7 Support",
+				"description": "Responsive assistance and consultation anytime."
+			},
+			{
+				"title": "Trusted Partners",
+				"description": "Banks, government agencies, and services for your convenience and safety."
+			}
+		]
+	},
+	"servicesPage": {
+		"title": "Full range of services for starting and developing a business in the UAE",
+		"items": [
+			{
+				"title": "Company Registration in UAE",
+				"content": "We help register businesses in any jurisdiction: Mainland, Free Zone or Offshore. We provide consultation, prepare documents and fully support the process until obtaining the registration certificate."
+			},
+			{
+				"title": "Bank Account Opening",
+				"content": "We support you at all stages of opening corporate and personal accounts in UAE banks. We help choose the right bank, prepare documents and pass the interview."
+			},
+			{
+				"title": "License Acquisition",
+				"content": "We arrange obtaining all types of business licenses: commercial, professional, industrial and freelance. We handle interactions with regulatory authorities and document processing."
+			},
+			{
+				"title": "Virtual Offices and Coworking",
+				"content": "We provide legal addresses, help rent virtual offices, coworking spaces and physical spaces for your business that meet the requirements of your chosen license."
+			},
+			{
+				"title": "Tax Consulting",
+				"content": "We consult on UAE tax legislation, including VAT system registration, planning and compliance with all obligations to government authorities."
+			},
+			{
+				"title": "Accounting Support",
+				"content": "We provide professional accounting services: reporting, financial analysis, document preparation and support during audits. Everything strictly according to legal requirements."
+			},
+			{
+				"title": "Visas for Investors and Employees",
+				"content": "We assist in obtaining residence visas for business owners, employees and their family members. We help with Emirates ID, medical certificates and visa renewals."
+			},
+			{
+				"title": "Full Business Support",
+				"content": "Comprehensive support at every stage: from idea to scaling. We handle all administrative and organizational matters so you can focus on growing your business."
+			}
+		]
+	}
 }
