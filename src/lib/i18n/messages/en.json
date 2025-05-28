@@ -75,6 +75,39 @@
   "adress": "Office address:",
   "business": "Prime Business Setup",
   "adress2": "Sheikh Zayed Road, Dubai, UAE"
-}
+},
+"benefits": {
+    "items": [
+      {
+        "title": "15 Years of Experience",
+        "description": "Since 2009, we’ve been helping companies enter the UAE market."
+      },
+      {
+        "title": "Comprehensive Solutions",
+        "description": "All business services in one place—from licensing to bank accounts."
+      },
+      {
+        "title": "Personalized Approach",
+        "description": "Solutions tailored to your business specifics and goals."
+      },
+      {
+        "title": "Fast Registration",
+        "description": "Start your business in as little as 48 hours."
+      },
+      {
+        "title": "24/7 Support",
+        "description": "Responsive assistance and consultation anytime."
+      },
+      {
+        "title": "Trusted Partners",
+        "description": "Banks, government agencies, and services for your convenience and safety."
+      }
+    ]
+  }
+
+
+
+
+
 
 }
