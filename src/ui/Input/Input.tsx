@@ -7,11 +7,13 @@ import Image from "next/image";
 interface InputProps extends React.HTMLProps<HTMLInputElement> {
   label?: string;
   error?: string;
+  inButton?: string;
 }
 
 export const Input: React.FC<InputProps> = ({
   title,
   error,
+  inButton,
   id,
   name,
   ...rest
@@ -37,7 +39,7 @@ export const Input: React.FC<InputProps> = ({
             src="/assets/icons/search.svg"
             alt="search icon"
           />
-          <span>Поиск</span>
+          <span>{inButton}</span>
         </button>
       </div>
     </div>

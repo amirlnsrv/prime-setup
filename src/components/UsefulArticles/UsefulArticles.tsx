@@ -10,16 +10,17 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { useTranslations } from "next-intl";
+
 
 export default function UsefulArticles() {
+  const t = useTranslations("UsefulArticles")
   const cards = [1, 2, 3];
 
   return (
     <section className={styles.usefulArticles}>
-      <h2>Полезные статьи и советы</h2>
-      <p>
-      Будьте в курсе последних новостей о бизнесе в ОАЭ, визах, лицензиях и многом другом.
-      </p>
+      <h2>{t("title")}</h2>
+      <p>{t("subtitle")}</p>
       <div className={styles.bg}>
         <Swiper
            slidesPerView="auto"
@@ -60,12 +61,12 @@ export default function UsefulArticles() {
         >
           {cards.map((_, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>
-              <UsefulCard />
+              <UsefulCard buttonTxt={t("card.button")} subtitleTxt={t("card.subtitle")} titleTxt={t("card.title")}/>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <PrimaryButton url="/blog" value={"Смотреть все статьи"} className={styles.btn} />
+        <PrimaryButton url="/blog" value={t("button")} className={styles.btn} />
       </div>
     </section>
   );

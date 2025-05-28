@@ -11,12 +11,53 @@
 		"button": "Book a Free Consultation",
 		"main": {
 			"title": "Start Your Business Setup in Dubai with Confidence",
-			"subtitle": "Prime Setup offers clear, step-by-step support for business setup in Dubai. From company registration to licensing and ongoing assistance, we guide you through each stage."
+			"subtitle": "Prime Setup offers clear, step-by-step support for business setup in Dubai. From company registration to licensing and ongoing assistance, we guide you through each stage.",
+			"button": "Book a Free Consultation"
+		},
+		"blog": {
+			"title": "Useful articles and tips",
+			"subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
 		}
 	},
 	"WhyPrimeSetup": {
 		"title": "Why Choose Prime Setup for Business Setup in Dubai",
 		"subtitle": "Setting up a business in Dubai is a major step-Prime Setup makes it simple, secure, and efficient. With over 15 years of experience, we have helped hundreds of entrepreneurs and companies establish themselves in the UAE, guiding them through every legal and administrative detail so they can focus on growth.",
 		"button": "Learn more about us"
-	}
+	},
+	"SuccessShared": {
+		"title": "Successes shared by our clients",
+		"button": "Leave a review",
+		"modal": {
+			"title": "Enter your name",
+			"subtitle": "Share your opinion about our service",
+			"buttonCencel": "Cancel",
+			"buttonSend": "Send"
+		}
+	},
+	"OurPartners": {
+		"title": "Our partners"
+	},
+	"UsefulArticles": {
+		"title": "Useful articles and tips",
+		"subtitle": "Stay up to date with the latest news on UAE business, visas, licenses and more.",
+		"card":{
+			"title": "How to open a company in Dubai: Step-by-step instructions",
+			"subtitle": "Starting a business in Dubai is easy. We tell you where to start, what documents you need and how long the registration process takes.",
+			"button": "Read more",
+			"blog": {
+				"buttonNext": "Next",
+				"buttonPrevious": "Previous",
+				"input": {
+					"title": "What are you interested in?",
+					"placeholder": "Enter to start searching...",
+					"button": "Search"
+				}
+			}
+		},
+		"button": "View all articles"
+	},
+	"telegram": {
+		"title": "Need help?",
+		"subtitle": "Contact us via chat"
+	  }
 }

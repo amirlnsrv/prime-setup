@@ -10,14 +10,17 @@ import { ClientCard } from "@/ui/ClientCard";
 import { PrimaryButton } from "@/ui/PrimaryButton";
 import { ReviewsModal } from "../ReviewsModal";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function SuccessShared() {
   const [isOpen, setIsOpen] = useState(false);
   const reviews = [1, 2, 3, 4, 5, 6, 7];
 
+  const t = useTranslations("SuccessShared")
+
   return (
     <section className={styles.success__shared}>
-      <h1>Успехи, которыми делятся наши клиенты</h1>
+      <h1>{t("title")}</h1>
       <div className={styles.client__cards}>
         <Swiper
           modules={[Navigation, Pagination]}
@@ -71,7 +74,7 @@ export default function SuccessShared() {
       </div>
       <PrimaryButton
         action={() => setIsOpen(true)}
-        value="Оставить отзыв"
+        value={t("button")}
         className={styles.button}
       />
       {isOpen ? <ReviewsModal onClose={() => setIsOpen(false)} /> : null}
