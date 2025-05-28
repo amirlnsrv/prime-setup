@@ -63,5 +63,18 @@
 	"telegram": {
 		"title": "Need help?",
 		"subtitle": "Contact us via chat"
-	  }
+	  },
+	  "contactTime": {
+  "titleh2": "Let's Get Started",
+  "title2": "We are happy to personally consult you.",
+  "titleTime": "Business Hours",
+  "time": "Monday to Friday",
+  "time2": "from 8:30 AM to 5:30 PM,",
+  "sub": "Saturday",
+  "time3": "10:00 AM – 2:00 PM",
+  "adress": "Office address:",
+  "business": "Prime Business Setup",
+  "adress2": "Sheikh Zayed Road, Dubai, UAE"
+}
+
 }
