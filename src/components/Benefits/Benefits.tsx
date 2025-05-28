@@ -1,9 +1,12 @@
 import Image from "next/image";
 import stylly from "./Benefits.module.scss";
 import { mockdataIcon } from "./Benefits.heplper";
-import bg from "#/images/FonImg.png";
+import bg from "#/images/Rectangle 99 (16).png";
+import { getTranslations } from "next-intl/server";
 
-export function Benefits() {
+export async function Benefits() {
+  const t = await getTranslations("benefits");
+
   return (
     <section className={stylly.sectionContainer}>
       <div className={stylly.backgroundImage}>
@@ -18,7 +21,7 @@ export function Benefits() {
       </div>
 
       <div className={stylly.containerBenefits}>
-        {mockdataIcon.map((item) => (
+        {mockdataIcon.map((item,index) => (
           <div key={item.id} className={stylly.cardContainer}>
             <Image
               src={item.icon}
@@ -34,8 +37,8 @@ export function Benefits() {
               height={100}
               className={stylly.img2}
             />
-            <h3 className={stylly.title}>{item.title}</h3>
-            <p className={stylly.description}>{item.description}</p>
+            <h3 className={stylly.title}>{t(`items.${index}.title`)}</h3>
+            <p className={stylly.description}>{t(`items.${index}.description`)}</p>
           </div>
         ))}
       </div>
