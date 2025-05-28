@@ -17,7 +17,11 @@
 		"blog": {
 			"title": "Useful articles and tips",
 			"subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
-		}
+		},
+		"contacts": {
+			"title": "We are ready to help you start a business in the UAE - just write to us.",
+			"subtitle": "We are always in touch and happy to answer any questions."
+		  }
 	},
 	"WhyPrimeSetup": {
 		"title": "Why Choose Prime Setup for Business Setup in Dubai",
@@ -59,5 +63,18 @@
 	"telegram": {
 		"title": "Need help?",
 		"subtitle": "Contact us via chat"
-	  }
+	  },
+	  "contactTime": {
+  "titleh2": "Let's Get Started",
+  "title2": "We are happy to personally consult you.",
+  "titleTime": "Business Hours",
+  "time": "Monday to Friday",
+  "time2": "from 8:30 AM to 5:30 PM,",
+  "sub": "Saturday",
+  "time3": "10:00 AM – 2:00 PM",
+  "adress": "Office address:",
+  "business": "Prime Business Setup",
+  "adress2": "Sheikh Zayed Road, Dubai, UAE"
+}
+
 }
