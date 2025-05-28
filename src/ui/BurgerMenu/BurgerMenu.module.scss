@@ -54,7 +54,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  top: 67px;
+  transform: translateY(40px);
   right: -15px;
   border-radius: 0 0 5px 5px;
   background: #fff;
@@ -93,7 +93,4 @@
 }
 
 @media (max-width: 600px) {
-  .menuContent {
-    top: 63px;
-  }
 }

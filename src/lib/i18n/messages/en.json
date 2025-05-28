@@ -114,5 +114,42 @@
 				"description": "Banks, government agencies, and services for your convenience and safety."
 			}
 		]
+	},
+	"servicesPage": {
+		"title": "Full range of services for starting and developing a business in the UAE",
+		"items": [
+			{
+				"title": "Company Registration in UAE",
+				"content": "We help register businesses in any jurisdiction: Mainland, Free Zone or Offshore. We provide consultation, prepare documents and fully support the process until obtaining the registration certificate."
+			},
+			{
+				"title": "Bank Account Opening",
+				"content": "We support you at all stages of opening corporate and personal accounts in UAE banks. We help choose the right bank, prepare documents and pass the interview."
+			},
+			{
+				"title": "License Acquisition",
+				"content": "We arrange obtaining all types of business licenses: commercial, professional, industrial and freelance. We handle interactions with regulatory authorities and document processing."
+			},
+			{
+				"title": "Virtual Offices and Coworking",
+				"content": "We provide legal addresses, help rent virtual offices, coworking spaces and physical spaces for your business that meet the requirements of your chosen license."
+			},
+			{
+				"title": "Tax Consulting",
+				"content": "We consult on UAE tax legislation, including VAT system registration, planning and compliance with all obligations to government authorities."
+			},
+			{
+				"title": "Accounting Support",
+				"content": "We provide professional accounting services: reporting, financial analysis, document preparation and support during audits. Everything strictly according to legal requirements."
+			},
+			{
+				"title": "Visas for Investors and Employees",
+				"content": "We assist in obtaining residence visas for business owners, employees and their family members. We help with Emirates ID, medical certificates and visa renewals."
+			},
+			{
+				"title": "Full Business Support",
+				"content": "Comprehensive support at every stage: from idea to scaling. We handle all administrative and organizational matters so you can focus on growing your business."
+			}
+		]
 	}
 }
