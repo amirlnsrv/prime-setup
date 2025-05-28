@@ -1,6 +1,5 @@
 "use client";
-
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -10,11 +9,13 @@ import "swiper/css/navigation";
 import styles from "./BusinessSlider.module.scss";
 import { BusinessSlider } from "./Busines.heplper";
 import Image from "next/image";
+import { AnimatedBackground } from "../AnimatedBackground/AnimatedBackground";
 
 export const BusinessSwiper = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
   const [isSwiperReady, setIsSwiperReady] = useState(false);
+  const [rotateAngle, setRotateAngle] = useState(0);
 
   useEffect(() => {
     setIsSwiperReady(true);
@@ -22,12 +23,8 @@ export const BusinessSwiper = () => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.containerTitel}>
-        <h2 className={styles.titleh2}>
-          Как проходит открытие вашей компании — шаг за шагом
-        </h2>
-      </div>
       <div className={styles.wrapper}>
+        <AnimatedBackground rotateAngle={rotateAngle} />
         {isSwiperReady && (
           <Swiper
             modules={[Navigation, Pagination]}
@@ -38,6 +35,7 @@ export const BusinessSwiper = () => {
               prevEl: prevRef.current,
               nextEl: nextRef.current,
             }}
+            allowTouchMove={false}
             onSwiper={(swiper) => {
               if (
                 swiper.params.navigation &&
@@ -53,10 +51,13 @@ export const BusinessSwiper = () => {
             {BusinessSlider.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className={styles.card}>
-                  
-                  <Image    src={item.imag}
+                  <Image
+                    src={item.imag}
                     alt={item.title}
-                    className={styles.imgSwiper} width={384} height={384}/>
+                    className={styles.imgSwiper}
+                    width={384}
+                    height={384}
+                  />
                   <div className={styles.text}>
                     <h3 className={styles.titelSwiper}>{item.title}</h3>
                     <p className={styles.pSwiper}>{item.description}</p>
@@ -66,9 +67,11 @@ export const BusinessSwiper = () => {
             ))}
           </Swiper>
         )}
-        <div>
+
+        <div className={styles.buttonGroup}>
           <button
             ref={prevRef}
+            onClick={() => setRotateAngle((prev) => prev - 83)}
             className={`${styles.navButton} ${styles.prev}`}
           >
             <svg
@@ -90,6 +93,7 @@ export const BusinessSwiper = () => {
 
           <button
             ref={nextRef}
+            onClick={() => setRotateAngle((prev) => prev + 83)}
             className={`${styles.navButton} ${styles.next}`}
           >
             <svg
