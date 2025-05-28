@@ -1,8 +1,11 @@
 import Image from "next/image";
 import img from "#/images/contacts.png";
 import style from "./ContainerHero.module.scss";
+import { getTranslations } from "next-intl/server";
 
-export function ContainerHero() {
+export async function ContainerHero() {
+  const t = await getTranslations("hero.contacts");
+
   return (
     <section className={style.heroSection}>
       <Image
@@ -14,11 +17,11 @@ export function ContainerHero() {
       />
       <div className={style.titleContainer}>
         <h1 className={style.title}>
-          Готовы помочь вам начать бизнес в ОАЭ — просто напишите нам.
+        {t("title")}
         </h1>
         <div>
           <p className={style.title2}>
-            Мы всегда на связи и рады ответить на любые вопросы.
+          {t("subtitle")}
           </p>
         </div>
       </div>

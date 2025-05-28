@@ -17,7 +17,11 @@
 		"blog": {
 			"title": "Useful articles and tips",
 			"subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
-		}
+		},
+		"contacts": {
+			"title": "We are ready to help you start a business in the UAE - just write to us.",
+			"subtitle": "We are always in touch and happy to answer any questions."
+		  }
 	},
 	"WhyPrimeSetup": {
 		"title": "Why Choose Prime Setup for Business Setup in Dubai",
