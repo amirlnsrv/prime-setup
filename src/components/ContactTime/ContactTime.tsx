@@ -8,58 +8,51 @@ import email from "#/icon/email.svg";
 import tell from "#/icon/tell.svg";
 
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-export function ContactTime() {
+export async function ContactTime() {
+  const t = await getTranslations("hero.contacts");
+const tr = await getTranslations("contactTime");
   return (
     <section >
       <div className={style.h3Container}>
-        <h3 className={style.h3we}>Мы всегда на связи и рады ответить на любые вопросы.</h3>
+        <h3 className={style.h3we}>{t("subtitle")}</h3>
       </div>
       <div className={style.sectionContainer}>
         <div className={style.container}>
-          <h2 className={style.title}>Давайте начнем</h2>
-          <p className={style.title2}>Мы с радостью проконсультируем вас лично.</p>
+          <h2 className={style.title}>{tr("titleh2")}</h2>
+          <p className={style.title2}>{tr("title2")}</p>
         </div>
 
         <div className={style.container}>
-          <h2 className={style.title}>Рабочие часы</h2>
+          <h2 className={style.title}>{tr("titleTime")}</h2>
           <div>
-          <p className={style.title2}>С понедельника по пятницу </p>
-          <p className={style.title2}>с 8:30 до 17:30,</p>
-          <p className={style.title2}> Суббота </p>
-          <p className={style.title2}>10:00–14:00</p>
+          <p className={style.title2}>{tr("time")}</p>
+          <p className={style.title2}>{tr("time2")}</p>
+          <p className={style.title2}>{tr("sub")}</p>
+          <p className={style.title2}>{tr("time3")}</p>
           </div>
         
         </div>
 
         <div className={style.container}>
-          <h2 className={style.title}>Адрес офиса:</h2>
-         <div> <p className={style.title2}>Prime Setup Business </p>
-         <p className={style.title2}>Sheikh Zayed Road, Dubai, UAE</p></div>
+          <h2 className={style.title}>{tr("adress")}</h2>
+         <div> <p className={style.title2}>{tr("business")} </p>
+         <p className={style.title2}>{tr("adress2")}</p></div>
         </div>
 
         <div className={style.containerEmail}>
           <div><Image src={email} alt="email" width={24} height={19} />
           <a className={style.aEmail} href="#">info.xyz@gmail.com</a></div>
-          
-
           <div>  <Image src={tell} alt="tell" width={24} height={24} />
           <a  className={style.aEmail}  href="#">+996 476-924</a></div>
         </div>
-
-          
-        
-
         <div className={style.containerIcon}>
           <a href=""> <Image src={facebook} alt="facebook" width={32} height={32} /></a>
          <a href=""><Image src={twiter} alt="twitter" width={32} height={32} /></a>
          <a href=""><Image src={instagram} alt="instagram" width={32} height={32} /></a>
          <a href=""><Image src={link} alt="linkedin" width={32} height={32} /></a>
          <a href=""><Image src={youtube} alt="youtube" width={32} height={32} /></a>
-         
-         
-         
-         
         </div>
       </div>
     </section>

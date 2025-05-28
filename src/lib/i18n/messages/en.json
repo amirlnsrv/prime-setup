@@ -28,6 +28,10 @@
 		"services": {
 			"title": "All services for starting and developing a business in the UAE - in one place",
 			"subtitle": "We offer comprehensive business support in the UAE — from the idea to full launch and development. Our team helps entrepreneurs at every stage, ensuring legal purity, transparency and maximum efficiency of processes."
+		},
+		"contacts": {
+			"title": "We are ready to help you start a business in the UAE - just write to us.",
+			"subtitle": "We are always in touch and happy to answer any questions."
 		}
 	},
 	"WhyPrimeSetup": {
@@ -70,5 +74,45 @@
 	"telegram": {
 		"title": "Need help?",
 		"subtitle": "Contact us via chat"
+	},
+	"contactTime": {
+		"titleh2": "Let's Get Started",
+		"title2": "We are happy to personally consult you.",
+		"titleTime": "Business Hours",
+		"time": "Monday to Friday",
+		"time2": "from 8:30 AM to 5:30 PM,",
+		"sub": "Saturday",
+		"time3": "10:00 AM – 2:00 PM",
+		"adress": "Office address:",
+		"business": "Prime Business Setup",
+		"adress2": "Sheikh Zayed Road, Dubai, UAE"
+	},
+	"benefits": {
+		"items": [
+			{
+				"title": "15 Years of Experience",
+				"description": "Since 2009, we’ve been helping companies enter the UAE market."
+			},
+			{
+				"title": "Comprehensive Solutions",
+				"description": "All business services in one place—from licensing to bank accounts."
+			},
+			{
+				"title": "Personalized Approach",
+				"description": "Solutions tailored to your business specifics and goals."
+			},
+			{
+				"title": "Fast Registration",
+				"description": "Start your business in as little as 48 hours."
+			},
+			{
+				"title": "24/7 Support",
+				"description": "Responsive assistance and consultation anytime."
+			},
+			{
+				"title": "Trusted Partners",
+				"description": "Banks, government agencies, and services for your convenience and safety."
+			}
+		]
 	}
 }
