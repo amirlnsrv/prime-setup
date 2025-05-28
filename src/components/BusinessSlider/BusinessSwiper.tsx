@@ -35,6 +35,7 @@ export const BusinessSwiper = () => {
               prevEl: prevRef.current,
               nextEl: nextRef.current,
             }}
+            allowTouchMove={false}
             onSwiper={(swiper) => {
               if (
                 swiper.params.navigation &&
@@ -67,14 +68,26 @@ export const BusinessSwiper = () => {
           </Swiper>
         )}
 
-        <div>
+        <div className={styles.buttonGroup}>
           <button
             ref={prevRef}
             onClick={() => setRotateAngle((prev) => prev - 83)}
             className={`${styles.navButton} ${styles.prev}`}
           >
-            <svg width="17" height="31" viewBox="0 0 17 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15.0625 2.375L1.9375 15.5L15.0625 28.625" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            <svg
+              width="17"
+              height="31"
+              viewBox="0 0 17 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.0625 2.375L1.9375 15.5L15.0625 28.625"
+                stroke="white"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </button>
 
@@ -83,8 +96,20 @@ export const BusinessSwiper = () => {
             onClick={() => setRotateAngle((prev) => prev + 83)}
             className={`${styles.navButton} ${styles.next}`}
           >
-            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15.9375 9.375L29.0625 22.5L15.9375 35.625" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            <svg
+              width="45"
+              height="45"
+              viewBox="0 0 45 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.9375 9.375L29.0625 22.5L15.9375 35.625"
+                stroke="white"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </button>
         </div>

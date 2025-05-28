@@ -10,12 +10,15 @@
     justify-content: center;
     flex-direction: column;
     gap: 60px;
+    height: auto;
   }
   .content {
     width: 100%;
-    max-height: auto;
+    max-height: 1000px;
     height: 100%;
     position: relative;
+    padding-bottom: 100px;
+
   }
   .img {
     width: 100%;
@@ -23,6 +26,7 @@
     height: 100%;
     position: absolute;
     z-index: -10;
+    padding-bottom: 65px;
   }
   .swiperWrapper {
     width: 100%;
@@ -49,6 +53,14 @@
     color: var(--zagol);
     width: 800px;
     padding-top: 60px;
+  
+  }
+
+
+  @media(max-width:1188px){
+    .swiperWrapper {
+      padding: 30px;
+    }
   }
   @media (max-width: 936px) {
     .swiperWrapper {
@@ -60,5 +72,18 @@
     .swiperWrapper {
       padding: 10;
     }
+
+    .titleh2{
+      font-size: 15px;
+      width: 100%;
+      padding-top: 30px;
+    }
+
+
+   .section{
+    padding: 0 0 0;
+   }
   }
+
+
 
