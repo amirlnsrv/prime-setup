@@ -176,26 +176,6 @@ html[lang="ru"] .button::before {
   }
 }
 
-// :global(.swiper-pagination) {
-//   position: absolute;
-//   bottom: 10px;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   margin: 0;
-//   display: flex;
-//   gap: 8px;
-//   justify-content: center;
-
-//   @media (max-width: 767px) {
-//     position: relative;
-//     bottom: auto;
-//     left: auto;
-//     transform: none;
-//     margin: 20px auto 0;
-//     justify-content: center;
-//   }
-// }
-
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
@@ -221,10 +201,11 @@ html[lang="ru"] .button::before {
   }
 
 
-// :global(.swiper-button-next)::after,
-// :global(.swiper-button-prev)::after {
-//   filter: brightness(0) invert(1);
-// }
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  top: 43%;
+  transform: translateY(-50%);
+}
 
 .arrowDisabled {
   opacity: 0;
