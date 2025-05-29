@@ -103,10 +103,78 @@
         "description": "Banks, government agencies, and services for your convenience and safety."
       }
     ]
-  }
+  },
+
+"services": {
+  "serverH2": "Services that cover everything — from registration to operations",
+  "serverP": "You can choose an individual service or trust us with a full turnkey solution. We adapt to your goals and budget.",
+  "items": [
+    {
+      "title": "Company registration in the UAE",
+      "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+    },
+    {
+      "title": "Opening bank accounts",
+      "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+    },
+    {
+      "title": "Obtaining licenses",
+      "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+    },
+    {
+      "title": "Virtual offices and coworking spaces",
+      "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+    },
+    {
+      "title": "Tax consulting",
+      "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+    },
+    {
+      "title": "Accounting support",
+      "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+    },
+    {
+      "title": "Visas for investors and employees",
+      "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+    },
+    {
+      "title": "Full business support",
+      "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+    }
+  ],
+  "btn1": "Learn more",
+"btn2": "Explore our services",
+"btn3": "Explore our services"
+},
 
 
-
+"swiper": {
+	  "titleh2": "How the company setup process works — step by step",
+	  "items": [
+		{
+		  "title": "Free Consultation",
+		  "description": "We start with a consultation to understand your goals and objectives. We discuss which business structures suit you best and suggest the optimal option for registration. You’ll receive all the information you need to make a decision."
+		},
+		{
+		  "title": "Personalized Solution",
+		  "description": "Based on the consultation, we develop a tailored plan that meets your needs. We select the right license, prepare documents, and set deadlines. All actions are agreed upon with you at each step."
+		},
+		{
+		  "title": "Document Collection & Preparation",
+		  "description": "We collect and verify all necessary documents to ensure your business is registered without delays. We complete all forms, applications, and notarize them if needed."
+		},
+		{
+		  "title": "Company Registration",
+		  "description": "Once documents are ready, we submit them to the appropriate authorities for registration. We monitor the process and keep you updated at every stage. In the end, you receive your license and official confirmations."
+		},
+		{
+		  "title": "Post-Registration Support",
+		  "description": "After registration, we continue to support you. We help open a bank account, arrange visas for staff, and provide accounting and legal assistance. Your business will grow without extra hassle."
+		}
+	  ]
+	}
+  
+  
 
 
 

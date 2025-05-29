@@ -10,8 +10,12 @@ import styles from "./BusinessSlider.module.scss";
 import { BusinessSlider } from "./Busines.heplper";
 import Image from "next/image";
 import { AnimatedBackground } from "../AnimatedBackground/AnimatedBackground";
+import { useTranslations } from "next-intl";
 
-export const BusinessSwiper = () => {
+export   function   BusinessSwiper() {
+  const t =  useTranslations("swiper");
+
+
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
   const [isSwiperReady, setIsSwiperReady] = useState(false);
@@ -20,6 +24,8 @@ export const BusinessSwiper = () => {
   useEffect(() => {
     setIsSwiperReady(true);
   }, []);
+
+
 
   return (
     <section className={styles.container}>
@@ -48,19 +54,19 @@ export const BusinessSwiper = () => {
               }
             }}
           >
-            {BusinessSlider.map((item) => (
+            {BusinessSlider.map((item,index) => (
               <SwiperSlide key={item.id}>
                 <div className={styles.card}>
                   <Image
                     src={item.imag}
-                    alt={item.title}
+                    alt={'img'}
                     className={styles.imgSwiper}
                     width={384}
                     height={384}
                   />
                   <div className={styles.text}>
-                    <h3 className={styles.titelSwiper}>{item.title}</h3>
-                    <p className={styles.pSwiper}>{item.description}</p>
+                    <h3 className={styles.titelSwiper}>{t(`items.${index}.title`)}</h3>
+                    <p className={styles.pSwiper}>{t(`items.${index}.description`)}</p>
                   </div>
                 </div>
               </SwiperSlide>
