@@ -4,24 +4,24 @@ import { useState } from "react";
 import styles from "./FAQ.module.scss";
 import { faqData } from "./FAQ.helper";
 import { PrimaryButton } from "@/ui/PrimaryButton";
+import { useTranslations } from "next-intl";
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const t = useTranslations("FAQ");
 
   return (
     <section className={styles.faq}>
       <div className="container">
         <div className={styles.wrapper}>
-          <h2 className={styles.title}>Часто задаваемые вопросы</h2>
-          <p className={styles.subtitle}>
-            Ответы на самые популярные вопросы о регистрации бизнеса в ОАЭ.
-          </p>
+          <h2 className={styles.title}>{t("title")}</h2>
+          <p className={styles.subtitle}>{t("subtitle")}</p>
           <div className={styles.faqList}>
             {faqData.map((item, index) => (
               <div key={index} className={styles.faqItemExpanded}>
                 <div className={styles.faqItem}>
                   <div className={styles.questionBlock}>
-                    <button className={styles.question}>{item.q}</button>
+                    <button className={styles.question}>{t(item.q)}</button>
                   </div>
                   <div
                     className={`${styles.iconBlock} ${
@@ -30,8 +30,7 @@ export function FAQ() {
                     onClick={() =>
                       setOpenIndex(openIndex === index ? null : index)
                     }
-                  > 
-
+                  >
                     <Image
                       src="/assets/icons/arrowDown.svg"
                       alt="logo"

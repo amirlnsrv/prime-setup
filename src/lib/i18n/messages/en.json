@@ -1,63 +1,164 @@
 {
-	"header": {
-		"about": "About",
-		"services": "Services",
-		"blog": "Blog",
-		"faq": "FAQ",
-		"contacts": "Contacts",
-		"button": "Leave a request"
-	},
-	"hero": {
-		"button": "Book a Free Consultation",
-		"main": {
-			"title": "Start Your Business Setup in Dubai with Confidence",
-			"subtitle": "Prime Setup offers clear, step-by-step support for business setup in Dubai. From company registration to licensing and ongoing assistance, we guide you through each stage.",
-			"button": "Book a Free Consultation"
-		},
-		"blog": {
-			"title": "Useful articles and tips",
-			"subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
-		}
-	},
-	"WhyPrimeSetup": {
-		"title": "Why Choose Prime Setup for Business Setup in Dubai",
-		"subtitle": "Setting up a business in Dubai is a major step-Prime Setup makes it simple, secure, and efficient. With over 15 years of experience, we have helped hundreds of entrepreneurs and companies establish themselves in the UAE, guiding them through every legal and administrative detail so they can focus on growth.",
-		"button": "Learn more about us"
-	},
-	"SuccessShared": {
-		"title": "Successes shared by our clients",
-		"button": "Leave a review",
-		"modal": {
-			"title": "Enter your name",
-			"subtitle": "Share your opinion about our service",
-			"buttonCencel": "Cancel",
-			"buttonSend": "Send"
-		}
-	},
-	"OurPartners": {
-		"title": "Our partners"
-	},
-	"UsefulArticles": {
-		"title": "Useful articles and tips",
-		"subtitle": "Stay up to date with the latest news on UAE business, visas, licenses and more.",
-		"card":{
-			"title": "How to open a company in Dubai: Step-by-step instructions",
-			"subtitle": "Starting a business in Dubai is easy. We tell you where to start, what documents you need and how long the registration process takes.",
-			"button": "Read more",
-			"blog": {
-				"buttonNext": "Next",
-				"buttonPrevious": "Previous",
-				"input": {
-					"title": "What are you interested in?",
-					"placeholder": "Enter to start searching...",
-					"button": "Search"
-				}
-			}
-		},
-		"button": "View all articles"
-	},
-	"telegram": {
-		"title": "Need help?",
-		"subtitle": "Contact us via chat"
-	  }
+  "header": {
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "button": "Leave a request"
+  },
+  "hero": {
+    "button": "Book a Free Consultation",
+    "main": {
+      "title": "Start Your Business Setup in Dubai with Confidence",
+      "subtitle": "Prime Setup offers clear, step-by-step support for business setup in Dubai. From company registration to licensing and ongoing assistance, we guide you through each stage.",
+      "button": "Book a Free Consultation"
+    },
+    "blog": {
+      "title": "Useful articles and tips",
+      "subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
+    }
+  },
+  "WhyPrimeSetup": {
+    "title": "Why Choose Prime Setup for Business Setup in Dubai",
+    "subtitle": "Setting up a business in Dubai is a major step-Prime Setup makes it simple, secure, and efficient. With over 15 years of experience, we have helped hundreds of entrepreneurs and companies establish themselves in the UAE, guiding them through every legal and administrative detail so they can focus on growth.",
+    "button": "Learn more about us"
+  },
+  "SuccessShared": {
+    "title": "Successes shared by our clients",
+    "button": "Leave a review",
+    "modal": {
+      "title": "Enter your name",
+      "subtitle": "Share your opinion about our service",
+      "buttonCencel": "Cancel",
+      "buttonSend": "Send"
+    }
+  },
+  "OurPartners": {
+    "title": "Our partners"
+  },
+  "UsefulArticles": {
+    "title": "Useful articles and tips",
+    "subtitle": "Stay up to date with the latest news on UAE business, visas, licenses and more.",
+    "card": {
+      "title": "How to open a company in Dubai: Step-by-step instructions",
+      "subtitle": "Starting a business in Dubai is easy. We tell you where to start, what documents you need and how long the registration process takes.",
+      "button": "Read more",
+      "blog": {
+        "buttonNext": "Next",
+        "buttonPrevious": "Previous",
+        "input": {
+          "title": "What are you interested in?",
+          "placeholder": "Enter to start searching...",
+          "button": "Search"
+        }
+      }
+    },
+    "button": "View all articles"
+  },
+  "telegram": {
+    "title": "Need help?",
+    "subtitle": "Contact us via chat"
+  },
+
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the most popular questions about registering a business in the UAE.",
+    "button": "Read all answers",
+    "items": [
+      {
+        "q": "How long does it take to open a business in the UAE?",
+        "a": "The process typically takes 3–7 business days, depending on the business activity and approvals required."
+      },
+      {
+        "q": "Do I need a local sponsor to start a business?",
+        "a": "In most cases, no. Free zone companies and many mainland structures allow 100% foreign ownership."
+      },
+      {
+        "q": "What types of business licenses are available in Dubai?",
+        "a": "Commercial, professional, and industrial licenses — depending on the type of activity."
+      },
+      {
+        "q": "What are the main steps to starting a company in Dubai?",
+        "a": "Choosing a jurisdiction, company registration, licensing, and opening a bank account."
+      },
+      {
+        "q": "How much does it cost to start a business in Dubai?",
+        "a": "The cost depends on the zone and type of activity, starting from $5,000."
+      },
+      {
+        "q": "Can foreigners own 100% of their business in Dubai?",
+        "a": "Yes, in free economic zones and in some cases on the mainland."
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "We are ready to answer your questions.",
+    "workingHours": {
+      "title": "Working hours",
+      "schedule": ["Monday to Friday: 8:30–17:30", "Saturday: 10:00–14:00"]
+    },
+    "form": {
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "message": "How can we help?",
+      "messagePlaceholder": "Enter your message",
+      "submit": "Send"
+    }
+  },
+  "BusinessSetup": {
+    "title": "Start your business in the UAE with <accent>PRIME SETUP</accent> today",
+    "subtitle": "We will help you every step of the way — from registration to opening a bank account. Start your path to success with us!",
+    "button": "Free consultation"
+  },
+
+  "FooterBottom": {
+    "logoSubtitle": "BUSINESS BEGINS HERE",
+    "description": "Comprehensive solutions for business registration and support in the UAE.",
+    "sections": "Sections",
+    "about": "About Us",
+    "services": "Services",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "workHours": "Working Hours",
+    "monFri": "Mon–Fri: 8:30 AM–5:30 PM",
+    "sat": "Saturday: 10:00 AM–2:00 PM",
+    "contactUs": "Contact Us",
+    "rights": "All rights reserved."
+  },
+  "FooterSection": {
+    "logoTitle": "PRIME SETUP",
+    "logoSubtitle": "BUSINESS BEGINS HERE",
+    "description": "Comprehensive solutions for business registration and support in the UAE.",
+    "sections": "Sections",
+    "about": "About Us",
+    "services": "Services",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "workHours": "Working Hours",
+    "monFriText": "Monday to Friday",
+    "monFriTime": "8:30 AM to 5:30 PM",
+    "saturday": "Saturday",
+    "saturdayTime": "10:00 AM to 2:00 PM",
+    "contactUs": "Contact Us",
+    "email": "info.xyz@gmail.com",
+    "phone": "+996 476-924",
+    "rights": "©2025 PRIME SETUP. All rights reserved.",
+    "socials": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    }
+  }
 }
