@@ -104,7 +104,7 @@
 	.header {
 		padding: 10.57px 0;
 		background-color: var(--osnov);
-		position: fixed;
+		// position: absolute;
 
 		&Inner {
 			.headerBtn {
@@ -112,4 +112,8 @@
 			}
 		}
 	}
+
+	// .scrolled {
+	// 	position: fixed;
+	// }
 }

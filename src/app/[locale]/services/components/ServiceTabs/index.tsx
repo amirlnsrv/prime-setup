@@ -2,13 +2,15 @@
 
 import { useEffect, useRef, useState } from "react";
 import styles from "./ServiceTabs.module.scss";
-import { services } from "./ServiceTabs.helper";
+import { ServiceCard } from "@/ui/ServiceCard";
+import { useTranslations } from "next-intl";
 
 export default function ServiceTabs() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const dotRef = useRef(null);
   const listRef = useRef<(HTMLLIElement | null)[]>([]);
   const [isMobile, setIsMobile] = useState(false);
+  const t = useTranslations("servicesPage");
 
   useEffect(() => {
     const checkMobile = () => {
@@ -40,7 +42,6 @@ export default function ServiceTabs() {
 
       const style = getComputedStyle(scrollBar);
       const paddingTop = parseFloat(style.paddingTop) || 0;
-      
 
       dot.style.top = `${
         paddingTop +
@@ -59,12 +60,16 @@ export default function ServiceTabs() {
 
   return (
     <div className={styles.serviceTabs}>
-<div className={`${styles.nav} ${selectedIndex !== null ? styles.expanded : ""}`}>
+      <div
+        className={`${styles.nav} ${
+          selectedIndex !== null ? styles.expanded : ""
+        }`}
+      >
         <div className={styles.scrollBar}>
           <div className={styles.scrollDot} ref={dotRef}></div>
         </div>
         <ul className={styles.sidebar}>
-          {services.map((service, index) => (
+          {Array.from({ length: 8 }).map((_, index) => (
             <li
               key={index}
               ref={(el) => {
@@ -73,16 +78,10 @@ export default function ServiceTabs() {
               className={selectedIndex === index ? styles.active : ""}
               onClick={() => handleClick(index)}
             >
-              {service.title}
+              {t(`items.${index}.title`)}
 
               {isMobile && selectedIndex === index && (
-                <div className={styles.contentPanel}>
-                  <h2>
-                    <span>{index + 1}. </span>
-                    {service.title}
-                  </h2>
-                  <p>{service.content}</p>
-                </div>
+                <ServiceCard selectedIndex={selectedIndex} />
               )}
             </li>
           ))}
@@ -90,13 +89,7 @@ export default function ServiceTabs() {
       </div>
 
       {!isMobile && selectedIndex !== null && (
-        <div className={styles.contentPanel}>
-          <h2>
-            <span>{selectedIndex + 1}. </span>
-            {services[selectedIndex].title}
-          </h2>
-          <p>{services[selectedIndex].content}</p>
-        </div>
+        <ServiceCard selectedIndex={selectedIndex} />
       )}
     </div>
   );

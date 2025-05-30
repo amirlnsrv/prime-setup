@@ -60,105 +60,21 @@
     "title": "Need help?",
     "subtitle": "Contact us via chat"
   },
-
-  "FAQ": {
+  "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Answers to the most popular questions about registering a business in the UAE.",
-    "button": "Read all answers",
-    "items": [
-      {
-        "q": "How long does it take to open a business in the UAE?",
-        "a": "The process typically takes 3–7 business days, depending on the business activity and approvals required."
-      },
-      {
-        "q": "Do I need a local sponsor to start a business?",
-        "a": "In most cases, no. Free zone companies and many mainland structures allow 100% foreign ownership."
-      },
-      {
-        "q": "What types of business licenses are available in Dubai?",
-        "a": "Commercial, professional, and industrial licenses — depending on the type of activity."
-      },
-      {
-        "q": "What are the main steps to starting a company in Dubai?",
-        "a": "Choosing a jurisdiction, company registration, licensing, and opening a bank account."
-      },
-      {
-        "q": "How much does it cost to start a business in Dubai?",
-        "a": "The cost depends on the zone and type of activity, starting from $5,000."
-      },
-      {
-        "q": "Can foreigners own 100% of their business in Dubai?",
-        "a": "Yes, in free economic zones and in some cases on the mainland."
-      }
-    ]
-  },
-  "Contact": {
-    "title": "Contact Us",
-    "description": "We are ready to answer your questions.",
-    "workingHours": {
-      "title": "Working hours",
-      "schedule": ["Monday to Friday: 8:30–17:30", "Saturday: 10:00–14:00"]
-    },
-    "form": {
-      "firstName": "First Name",
-      "firstNamePlaceholder": "Enter your first name",
-      "lastName": "Last Name",
-      "lastNamePlaceholder": "Enter your last name",
-      "email": "Email Address",
-      "emailPlaceholder": "Enter your email address",
-      "phone": "Phone Number",
-      "phonePlaceholder": "Enter your phone number",
-      "message": "How can we help?",
-      "messagePlaceholder": "Enter your message",
-      "submit": "Send"
-    }
-  },
-  "BusinessSetup": {
-    "title": "Start your business in the UAE with <accent>PRIME SETUP</accent> today",
-    "subtitle": "We will help you every step of the way — from registration to opening a bank account. Start your path to success with us!",
-    "button": "Free consultation"
-  },
-
-  "FooterBottom": {
-    "logoSubtitle": "BUSINESS BEGINS HERE",
-    "description": "Comprehensive solutions for business registration and support in the UAE.",
-    "sections": "Sections",
-    "about": "About Us",
-    "services": "Services",
-    "blog": "Blog",
-    "faq": "FAQ",
-    "contacts": "Contacts",
-    "workHours": "Working Hours",
-    "monFri": "Mon–Fri: 8:30 AM–5:30 PM",
-    "sat": "Saturday: 10:00 AM–2:00 PM",
-    "contactUs": "Contact Us",
-    "rights": "All rights reserved."
-  },
-  "FooterSection": {
-    "logoTitle": "PRIME SETUP",
-    "logoSubtitle": "BUSINESS BEGINS HERE",
-    "description": "Comprehensive solutions for business registration and support in the UAE.",
-    "sections": "Sections",
-    "about": "About Us",
-    "services": "Services",
-    "blog": "Blog",
-    "faq": "FAQ",
-    "contacts": "Contacts",
-    "workHours": "Working Hours",
-    "monFriText": "Monday to Friday",
-    "monFriTime": "8:30 AM to 5:30 PM",
-    "saturday": "Saturday",
-    "saturdayTime": "10:00 AM to 2:00 PM",
-    "contactUs": "Contact Us",
-    "email": "info.xyz@gmail.com",
-    "phone": "+996 476-924",
-    "rights": "©2025 PRIME SETUP. All rights reserved.",
-    "socials": {
-      "facebook": "Facebook",
-      "twitter": "Twitter",
-      "instagram": "Instagram",
-      "linkedin": "LinkedIn",
-      "youtube": "YouTube"
-    }
+    "subtitle": "Here are answers to common questions",
+    "question1": "Why should I start a business in Dubai?",
+    "answer1": "Dubai offers tax advantages, a stable economy, and a strategic location.",
+    "question2": "How to open a business in Dubai?",
+    "answer2": "Choose a zone, company type, get a license, and open a bank account.",
+    "question3": "What types of business licenses are available in Dubai?",
+    "answer3": "Commercial, professional, and industrial — depending on the business activity.",
+    "question4": "What are the main steps to starting a company in Dubai?",
+    "answer4": "Choose jurisdiction, register the company, get licensed, and open a bank account.",
+    "question5": "How much does it cost to start a business in Dubai?",
+    "answer5": "Cost depends on zone and activity type, starting from $5,000.",
+    "question6": "Can foreigners own 100% of their business in Dubai?",
+    "answer6": "Yes, in free zones and in some mainland cases.",
+    "button": "Read all answers"
   }
 }

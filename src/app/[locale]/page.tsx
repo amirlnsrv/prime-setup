@@ -26,6 +26,8 @@ export default async function Home() {
         inlineStyles={{
           inner: {
             maxWidth: "608px",
+            left: "auto",
+            transform: "translateY(-50%)",
           },
           content: {
             textAlign: "left",
