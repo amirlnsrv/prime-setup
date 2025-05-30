@@ -13,13 +13,10 @@ export function ServiceCard({ selectedIndex }: { selectedIndex: number }) {
       setIsSmallScreen(window.innerWidth < 1300);
     };
 
-    // Проверяем при монтировании
     checkScreenSize();
 
-    // Добавляем слушатель изменений размера
     window.addEventListener("resize", checkScreenSize);
 
-    // Убираем слушатель при размонтировании
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
