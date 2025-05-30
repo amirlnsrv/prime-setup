@@ -2,7 +2,10 @@ import { BusinessSwiper } from "../BusinessSlider/BusinessSwiper";
 import styles from "./Swiper.module.scss";
 import img from "#/icons/swiper.svg";
 import Image from "next/image";
-export function Swiper() {
+import { getTranslations } from "next-intl/server";
+export async function Swiper() {
+  const t = await getTranslations("swiper");
+
   return (
     <section className={styles.section}>
       <div className={styles.content}>
@@ -15,7 +18,7 @@ export function Swiper() {
         />
         <div className={styles.containerTitel}>
           <h2 className={styles.titleh2}>
-            Как проходит открытие вашей компании — шаг за шагом
+            {t("titleh2")}
           </h2>
         </div>
         <div className={styles.swiperWrapper}>
