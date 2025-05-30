@@ -1,53 +1,57 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
 
-export function Contact({
-  title = "Свяжитесь с нами",
-  description = "Мы готовы ответить на ваши вопросы.",
-  workingHours = {
-    title: "Рабочие часы",
-    schedule: ["С понедельника по пятницу: 8:30–17:30", "Суббота: 10:00–14:00"],
-  },
-  contacts = {
+export function Contact() {
+  const t = useTranslations("contact");
+
+  const scheduleObj = t("workingHours.schedule"); 
+
+  const scheduleItems = Array.isArray(scheduleObj)
+    ? scheduleObj
+    : [t("workingHours.schedule1"), t("workingHours.schedule2")].filter(
+        Boolean
+      );
+
+
+  const contacts = {
     email: { href: "mailto:info.xyz@gmail.com", text: "info.xyz@gmail.com" },
     phone: { href: "tel:+996476924", text: "+996 476-924" },
-  },
-  formFields = {
+  };
+
+  // Настройки формы
+  const formFields = {
     firstName: true,
     lastName: true,
     email: true,
     phone: true,
     message: true,
-  },
-  buttonText = "Отправить",
-  className = "wrapper",
-}) {
+  };
+
   return (
-    <div className={styles[className] || styles.wrapper}>
+    <div className={styles.wrapper}>
       <div className={styles.rightLine}></div>
       <div className={styles.contactSection}>
         <div className={styles.container}>
           <div className={styles.left}>
-            <h2 className={styles.title}>{title}</h2>
-            <p className={styles.description}>{description}</p>
+            <h2 className={styles.title}>{t("title")}</h2>
+            <p className={styles.description}>{t("description")}</p>
 
-            {workingHours && (
-              <div className={styles.infoBlock}>
-                <h3 className={styles.hoursTitle}>{workingHours.title}</h3>
-                {workingHours.schedule.map((item, index) => (
-                  <p key={index}>{item}</p>
-                ))}
-              </div>
-            )}
+            <div className={styles.infoBlock}>
+              <h3 className={styles.hoursTitle}>{t("workingHours.title")}</h3>
+              {scheduleItems.map((item, i) => (
+                <p key={i}>{item}</p>
+              ))}
+            </div>
 
             <div className={styles.contactLinks}>
               {contacts.email && (
                 <div className={styles.tel}>
                   <Image
                     src="/assets/icons/Component.svg"
-                    alt="Иконка email"
+                    alt={t("contacts.emailAlt")}
                     width={30}
                     height={30}
                   />
@@ -60,7 +64,7 @@ export function Contact({
                 <div className={styles.email}>
                   <Image
                     src="/assets/icons/Group.svg"
-                    alt="Иконка телефона"
+                    alt={t("contacts.phoneAlt")}
                     width={30}
                     height={30}
                   />
@@ -76,10 +80,10 @@ export function Contact({
             <div className={styles.row}>
               {formFields.firstName && (
                 <label className={styles.inp}>
-                  Имя
+                  {t("form.firstName")}
                   <input
                     type="text"
-                    placeholder="Введите полное имя"
+                    placeholder={t("form.placeholders.firstName")}
                     className={styles.input}
                     name="firstName"
                   />
@@ -87,10 +91,10 @@ export function Contact({
               )}
               {formFields.lastName && (
                 <label className={styles.inp}>
-                  Фамилия
+                  {t("form.lastName")}
                   <input
                     type="text"
-                    placeholder="Введите полную фамилию"
+                    placeholder={t("form.placeholders.lastName")}
                     className={styles.input}
                     name="lastName"
                   />
@@ -99,10 +103,10 @@ export function Contact({
             </div>
             {formFields.email && (
               <label className={styles.inp}>
-                Адрес электронной почты
+                {t("form.email")}
                 <input
                   type="email"
-                  placeholder="Введите адрес электронной почты"
+                  placeholder={t("form.placeholders.email")}
                   className={styles.inputFull}
                   name="email"
                 />
@@ -110,10 +114,10 @@ export function Contact({
             )}
             {formFields.phone && (
               <label className={styles.inp}>
-                Номер телефона
+                {t("form.phone")}
                 <input
                   type="tel"
-                  placeholder="Введите номер телефона"
+                  placeholder={t("form.placeholders.phone")}
                   className={styles.inputFull}
                   name="phone"
                 />
@@ -121,16 +125,19 @@ export function Contact({
             )}
             {formFields.message && (
               <label className={styles.inp}>
-                Чем мы можем помочь?
+                {t("form.message")}
                 <textarea
-                  placeholder="Введите ваше сообщение"
+                  placeholder={t("form.placeholders.message")}
                   className={styles.textarea}
                   name="message"
                 ></textarea>
               </label>
             )}
 
-            <ExtraButton className={styles.submit} value={buttonText} />
+            <ExtraButton
+              className={styles.submit}
+              value={t("form.buttonText")}
+            />
           </form>
         </div>
       </div>

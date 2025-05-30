@@ -92,6 +92,33 @@
     "answer6": "Yes, in free zones and in some mainland cases.",
     "button": "Read all answers"
   },
+  "contact": {
+    "workingHours": {
+      "title": "Working Hours",
+      "schedule": ["Monday to Friday: 8:30–17:30", "Saturday: 10:00–14:00"]
+    },
+    "title": "Contact Us",
+    "description": "We are ready to answer your questions.",
+    "contacts": {
+      "emailAlt": "Email icon",
+      "phoneAlt": "Phone icon"
+    },
+    "form": {
+      "buttonText": "Send",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "How can we help?",
+      "placeholders": {
+        "firstName": "Enter your first name",
+        "lastName": "Enter your last name",
+        "email": "Enter your email address",
+        "phone": "Enter your phone number",
+        "message": "Enter your message"
+      }
+    }
+  },
   "services": {
     "serverH2": "Services that cover everything — from registration to operations",
     "serverP": "You can choose an individual service or trust us with a full turnkey solution. We adapt to your goals and budget.",
