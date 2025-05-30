@@ -11,12 +11,10 @@ export async function Benefits() {
     <section className={stylly.sectionContainer}>
       <div className={stylly.backgroundImage}>
         <Image
-        width={100}
-        height={100}
           src={bg}
+          fill
           alt="background"
-          // fill
-          className={stylly.backgroundImage}
+          objectFit="cover"
         />
       </div>
 
