@@ -2,15 +2,11 @@ import styles from "./ServiceCard.module.scss";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { desktopAnimations, mobileAnimations } from "./ServiceCard.helpers";
+import { useTranslations } from "next-intl";
 
-export function ServiceCard({
-  selectedIndex,
-  services,
-}: {
-  selectedIndex: number;
-  services: { title: string; content: string }[];
-}) {
+export function ServiceCard({ selectedIndex }: { selectedIndex: number }) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const t = useTranslations("servicesPage");
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -26,8 +22,6 @@ export function ServiceCard({
     // Убираем слушатель при размонтировании
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
-
-
 
   const cubeAnimations = isSmallScreen ? mobileAnimations : desktopAnimations;
 
@@ -75,9 +69,9 @@ export function ServiceCard({
       />
       <h2>
         <span>{selectedIndex + 1}. </span>
-        {services[selectedIndex].title}
+        {t(`items.${selectedIndex}.title`)}
       </h2>
-      <p>{services[selectedIndex].content}</p>
+      <p>{t(`items.${selectedIndex}.content`)}</p>
     </div>
   );
 }

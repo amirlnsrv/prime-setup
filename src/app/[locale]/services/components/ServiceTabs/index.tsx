@@ -2,14 +2,15 @@
 
 import { useEffect, useRef, useState } from "react";
 import styles from "./ServiceTabs.module.scss";
-import { services } from "./ServiceTabs.helper";
 import { ServiceCard } from "@/ui/ServiceCard";
+import { useTranslations } from "next-intl";
 
 export default function ServiceTabs() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const dotRef = useRef(null);
   const listRef = useRef<(HTMLLIElement | null)[]>([]);
   const [isMobile, setIsMobile] = useState(false);
+  const t = useTranslations("servicesPage");
 
   useEffect(() => {
     const checkMobile = () => {
@@ -68,7 +69,7 @@ export default function ServiceTabs() {
           <div className={styles.scrollDot} ref={dotRef}></div>
         </div>
         <ul className={styles.sidebar}>
-          {services.map((service, index) => (
+          {Array.from({ length: 8 }).map((_, index) => (
             <li
               key={index}
               ref={(el) => {
@@ -77,13 +78,10 @@ export default function ServiceTabs() {
               className={selectedIndex === index ? styles.active : ""}
               onClick={() => handleClick(index)}
             >
-              {service.title}
+              {t(`items.${index}.title`)}
 
               {isMobile && selectedIndex === index && (
-                <ServiceCard
-                  selectedIndex={selectedIndex}
-                  services={services}
-                />
+                <ServiceCard selectedIndex={selectedIndex} />
               )}
             </li>
           ))}
@@ -91,7 +89,7 @@ export default function ServiceTabs() {
       </div>
 
       {!isMobile && selectedIndex !== null && (
-        <ServiceCard selectedIndex={selectedIndex} services={services} />
+        <ServiceCard selectedIndex={selectedIndex} />
       )}
     </div>
   );
