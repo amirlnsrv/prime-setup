@@ -18,7 +18,7 @@ export default function UsefulCard({
   buttonTxt,
 }: Props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isAdmin = false; // Замените на вашу логику проверки прав администратора -----------------------------------------------------
+  const isAdmin = true; // Замените на вашу логику проверки прав администратора -----------------------------------------------------
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -36,8 +36,11 @@ export default function UsefulCard({
             <span className={styles.point}></span>
           </div>
 
-          {isMenuOpen && (
-            <div className={styles.editMenu}>
+            <div
+              className={`${styles.editMenu} ${
+                isMenuOpen ? styles.show : styles.hide
+              }`}
+            >
               <div className={styles.editIcon}>
                 <Image
                   className={styles.icon}
@@ -59,7 +62,6 @@ export default function UsefulCard({
                 <p>Удалить</p>
               </div>
             </div>
-          )}
         </div>
       )}
 
