@@ -27,19 +27,6 @@
     }
 
     .input {
-      &::placeholder {
-        color: #8b8b8b;
-        opacity: 1;
-
-        @media (max-width: 1000px) {
-          font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-          font-size: 12px;
-        }
-      }
-
       border-radius: 10px 0 0 10px;
       width: 100%;
       min-width: 200px;
@@ -61,6 +48,19 @@
       @media (max-width: 700px) {
         padding: 5px 10px;
       }
+
+      &::placeholder {
+        color: #8b8b8b;
+        opacity: 1;
+
+        @media (max-width: 1000px) {
+          font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 12px;
+        }
+      }
     }
 
     .search {
@@ -74,7 +74,6 @@
       background: var(--333);
 
       @media (max-width: 1000px) {
-        // padding-left: 5px;
         column-gap: 5px;
         height: 60px;
       }

@@ -1,9 +1,12 @@
 import style from "./Blog2.page.module.scss";
-import { UsefulCard } from "@/ui/UsefulCard";
 
 import Image from "next/image";
 import img from "#/images/blog2.png";
 import { getTranslations } from "next-intl/server";
+import dynamic from "next/dynamic";
+
+const UsefulCard = dynamic(() => import("@/ui/UsefulCard/UsefulCard"))
+
 export default async function Blog2() {
 
   const t = await getTranslations("UsefulArticles")
