@@ -75,7 +75,23 @@
     "title": "Need help?",
     "subtitle": "Contact us via chat"
   },
-
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Here are answers to common questions",
+    "question1": "Why should I start a business in Dubai?",
+    "answer1": "Dubai offers tax advantages, a stable economy, and a strategic location.",
+    "question2": "How to open a business in Dubai?",
+    "answer2": "Choose a zone, company type, get a license, and open a bank account.",
+    "question3": "What types of business licenses are available in Dubai?",
+    "answer3": "Commercial, professional, and industrial — depending on the business activity.",
+    "question4": "What are the main steps to starting a company in Dubai?",
+    "answer4": "Choose jurisdiction, register the company, get licensed, and open a bank account.",
+    "question5": "How much does it cost to start a business in Dubai?",
+    "answer5": "Cost depends on zone and activity type, starting from $5,000.",
+    "question6": "Can foreigners own 100% of their business in Dubai?",
+    "answer6": "Yes, in free zones and in some mainland cases.",
+    "button": "Read all answers"
+  },
   "services": {
     "serverH2": "Services that cover everything — from registration to operations",
     "serverP": "You can choose an individual service or trust us with a full turnkey solution. We adapt to your goals and budget.",
@@ -117,7 +133,6 @@
     "btn2": "Explore our services",
     "btn3": "Explore our services"
   },
-
   "swiper": {
     "titleh2": "How the company setup process works — step by step",
     "items": [
