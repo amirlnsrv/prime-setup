@@ -2,10 +2,14 @@
 
 import Image from "next/image";
 import styles from "./BlogCards.module.scss";
-import { UsefulCard } from "@/ui/UsefulCard";
 import { Input } from "@/ui/Input/Input";
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+
+const UsefulCard = dynamic(() => import("@/ui/UsefulCard/UsefulCard"),{
+  ssr: false
+})
 
 const cards = [1, 2, 3, 3, 4, 5, 6, 7, 8];
 

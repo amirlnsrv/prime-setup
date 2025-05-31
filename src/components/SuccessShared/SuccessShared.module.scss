@@ -1,11 +1,10 @@
 html[lang="en"] .button::before {
-	content: "Leave a review";
+  content: "Leave a review";
 }
 
 html[lang="ru"] .button::before {
-	content: "Оставить отзыв";
+  content: "Оставить отзыв";
 }
-
 
 .success__shared {
   position: relative;
@@ -15,9 +14,9 @@ html[lang="ru"] .button::before {
   justify-content: center;
   align-items: center;
 
-  .button{
+  .button {
     margin-top: 40px;
-    &::before{
+    &::before {
       content: "Оставить отзыв";
     }
 
@@ -36,7 +35,6 @@ html[lang="ru"] .button::before {
     color: var(--zagol);
     max-width: 800px;
     margin-bottom: 40px;
-
 
     @media (min-width: 768px) {
       font-size: 38px;
@@ -132,7 +130,6 @@ html[lang="ru"] .button::before {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 
-  
   @media (min-width: 1024px) {
     display: flex;
   }
@@ -176,57 +173,37 @@ html[lang="ru"] .button::before {
   }
 }
 
-// :global(.swiper-pagination) {
-//   position: absolute;
-//   bottom: 10px;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   margin: 0;
-//   display: flex;
-//   gap: 8px;
-//   justify-content: center;
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s;
 
-//   @media (max-width: 767px) {
-//     position: relative;
-//     bottom: auto;
-//     left: auto;
-//     transform: none;
-//     margin: 20px auto 0;
-//     justify-content: center;
-//   }
-// }
-
-  .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: #ccc;
-    opacity: 1;
-    border-radius: 50%;
-    transition: all 0.3s;
-
-    @media (min-width: 768px) {
-      width: 12px;
-      height: 12px;
-    }
-
-    @media (min-width: 1024px) {
-      width: 14px;
-      height: 14px;
-    }
+  @media (min-width: 768px) {
+    width: 12px;
+    height: 12px;
   }
 
-  .swiper-pagination-bullet-active {
-    background: #0051de;
-    transform: scale(1.2);
+  @media (min-width: 1024px) {
+    width: 14px;
+    height: 14px;
   }
+}
 
-
-// :global(.swiper-button-next)::after,
-// :global(.swiper-button-prev)::after {
-//   filter: brightness(0) invert(1);
-// }
+.swiper-pagination-bullet-active {
+  background: #0051de;
+  transform: scale(1.2);
+}
 
 .arrowDisabled {
   opacity: 0;
   pointer-events: none;
+}
+
+.success__shared :global(.swiper-button-next),
+.success__shared :global(.swiper-button-prev) {
+  top: 43%;
+  transform: translateY(-50%);
 }

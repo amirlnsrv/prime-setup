@@ -1,6 +1,5 @@
 "use client";
 
-import { UsefulCard } from "@/ui/UsefulCard";
 import styles from "./UsefulArticles.module.scss";
 import { PrimaryButton } from "@/ui/PrimaryButton";
 
@@ -11,6 +10,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+
+const UsefulCard = dynamic(() => import("@/ui/UsefulCard/UsefulCard"))
 
 
 export default function UsefulArticles() {
