@@ -23,7 +23,7 @@ export function FooterSection() {
             </p>
             <div className={styles.appIcons}>
               <Image
-                src="/assets/icons/Facebook-Icon.svg"
+                src="/assets/icons/Facebook-Icon (1).svg"
                 alt="Мое изображение"
                 width={30}
                 height={30}
@@ -37,14 +37,14 @@ export function FooterSection() {
               />
 
               <Image
-                src="/assets/icons/Instagram-Icon.svg"
+                src="/assets/icons/InstagramWhite.svg"
                 alt="Мое изображение"
                 width={30}
                 height={30}
               />
 
               <Image
-                src="/assets/icons/Linkedin-Icon.svg"
+                src="/assets/icons/linkedinWhite.svg"
                 alt="Мое изображение"
                 width={30}
                 height={30}
@@ -77,7 +77,7 @@ export function FooterSection() {
             <p className={styles.title}>Свяжитесь с нами </p>
             <div className={styles.contacts}>
               <Image
-                src="/assets/icons/email.svg"
+                src="/assets/icons/emailWhite.svg"
                 alt="Мое изображение"
                 width={15}
                 height={15}

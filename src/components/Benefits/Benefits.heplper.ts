@@ -1,16 +1,16 @@
-const medal = '/assets/icon/medalll.svg'
+const medal = '/assets/icons/medalll.svg'
 const puzzule = '/assets/icons/puzzule.svg'
 const handshake = '/assets/icons/handshake.svg'
-const tame = '/assets/icon/tame.svg'
-const lisen = '/assets/icon/lisen.svg'
-const confidence = '/assets/icon/confidence.svg'
+const tame = '/assets/icons/tame.svg'
+const lisen = '/assets/icons/lisen.svg'
+const confidence = '/assets/icons/confidence.svg'
 // ------------------------------------
-const medal2 = '/assets/icon/medal2.svg'
-const puzzule2 = '/assets/icon/puzzule2.svg'
-const handshake2 = '/assets/icon/hund2.svg'
-const tame2 = '/assets/icon/tame2.svg'
-const lisen2 = '/assets/icon/lisen2.svg'
-const confidence2 = '/assets/icon/confid.svg'
+const medal2 = '/assets/icons/medal2.svg'
+const puzzule2 = '/assets/icons/puzzule2.svg'
+const handshake2 = '/assets/icons/hund2.svg'
+const tame2 = '/assets/icons/tame2.svg'
+const lisen2 = '/assets/icons/lisen2.svg'
+const confidence2 = '/assets/icons/confid.svg'
 
 
 export const mockdataIcon = [
