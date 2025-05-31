@@ -219,5 +219,43 @@
         "content": "Comprehensive support at every stage: from idea to scaling. We handle all administrative and organizational matters so you can focus on growing your business."
       }
     ]
+  },
+  "blog2": {
+    "h2": "How to Start a Business in Dubai: Step-by-Step Guide",
+    "textAlign": "Publication Date: April 20, 2025",
+    "name": "Ritesh Sharma",
+    "user": "(author)",
+    "name2": "Jacob Joy Matthew",
+    "resent": "(reviewer)",
+    "dubaiText": "Dubai is one of the most attractive cities for doing business thanks to its flexible economy, low taxes, and favorable legal system. In this article, we’ll walk you through how to open a business in Dubai step by step, what to watch out for, and what to avoid.",
+    "blue1": "Step 1: Choose the Jurisdiction Type",
+    "three": "There are three main types of registration in the UAE:",
+    "free": "Free Zone — beneficial for foreign entrepreneurs, allows 100% ownership of the business.",
+    "mainland": "Mainland — suitable if you want to work directly with local companies and government entities.",
+    "offshore": "Offshore — for international operations and tax planning, but not suitable for operating within the UAE.",
+    "blue2": "Step 2: Choose Your Business Activity",
+    "text": "Every business needs a license, which depends on the field of activity:",
+    "div1": "Commercial",
+    "div2": "Professional",
+    "div3": "Industrial",
+    "div4": "Media, IT, Finance, etc.",
+    "div5": "It’s important to specify the correct field, otherwise you may face rejections or limitations.",
+    "blue3": "Step 3: Choose a Free Zone or Regulatory Authority",
+    "text1": "If you choose a Free Zone, you’ll need to determine which zone suits your business. For example:",
+    "text2": "DMCC — trade, precious metals, cryptocurrency",
+    "text3": "IFZA — low registration costs",
+    "text4": "DIFC — finance, banking, investments",
+    "step4Title": "Step 4: Prepare Your Documents",
+    "documentsListTitle": "Standard set:",
+    "document1": "Passport copy",
+    "document2": "Resume (in some zones)",
+    "document3": "Company name",
+    "document4": "Business plan",
+    "document5": "Office lease (virtual or physical)",
+    "blue5": "Step 5: Submit Application and Get a License",
+    "text12": "You submit documents online or via a registered agent. Processing time: from 3 to 15 business days. After that, you receive your license and can start operations.",
+    "blue6": "Additionally: Bank Account & Visas",
+    "bank": "After registration, you can open a corporate bank account and apply for an investor visa, as well as employee visas if you plan to hire staff.",
+    "h2Like": "You may also like"
   }
 }
