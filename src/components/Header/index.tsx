@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import styles from "./Header.module.scss";
-import { Button } from "@/ui/Button";
+import Button from "@/ui/Button";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
