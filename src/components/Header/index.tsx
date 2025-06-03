@@ -47,7 +47,7 @@ export default function Header() {
             <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           </div>
           <nav className={styles.nav}>
-            <Link href="#">{t("about")}</Link>
+            <Link href="/about">{t("about")}</Link>
             <Link href="/services">{t("services")}</Link>
             <Link href="/blog">{t("blog")}</Link>
             <Link href="/faq">{t("faq")}</Link>

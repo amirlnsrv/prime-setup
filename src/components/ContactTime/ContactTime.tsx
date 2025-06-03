@@ -1,11 +1,11 @@
 import style from "./Contact.module.scss";
-import facebook from "#/icon/Facebook-Icon.svg";
-import twiter from "#/icon/Twiter.svg";
-import instagram from "#/icon/Instagram-Icon.svg";
-import link from "#/icon/LinkedIn-Icon.svg";
-import youtube from "#/icon/Youtube-Icon (1).svg";
-import email from "#/icon/email.svg";
-import tell from "#/icon/tell.svg";
+import facebook from "#/icons/Facebook-Icon.svg";
+import twiter from "#/icons/Twiter.svg";
+import instagram from "#/icons/Instagram-Icon.svg";
+import link from "#/icons/LinkedIn-Icon.svg";
+import youtube from "#/icons/Youtube-IconBlue.svg";
+import email from "#/icons/email.svg";
+import tell from "#/icons/tell.svg";
 
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";

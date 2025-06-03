@@ -3,16 +3,22 @@ import { FAQ } from "@/components/FAQ";
 import { Benefits } from "@/components/Benefits";
 import { Hero } from "@/components/Hero";
 import { OurPartners } from "@/components/OurPartners";
-import { SuccessShared } from "@/components/SuccessShared";
 
 import { Services } from "@/components/Services/Services";
 
 import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
-import { UsefulArticles } from "@/components/UsefulArticles";
 import { Swiper } from "@/components/Swiper/Swiper";
 
 import HeroBg from "#/images/heroBg.jpg";
 import { getTranslations } from "next-intl/server";
+import dynamic from "next/dynamic";
+
+const UsefulArticles = dynamic(
+  () => import("@/components/UsefulArticles/UsefulArticles")
+);
+const SuccessShared = dynamic(
+  () => import("@/components/SuccessShared/SuccessShared")
+);
 
 export default async function Home() {
   const tHeroMain = await getTranslations("hero.main");
