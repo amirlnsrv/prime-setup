@@ -302,5 +302,59 @@
       "Personal account manager — always in touch and ready to help",
       "No hidden fees — only transparent terms"
     ]
+  },
+  "faqPage": {
+    "title1": "Everything You Wanted to Know — in One Place",
+    "subtitle": "We’ve collected answers to the most frequently asked questions from our clients. If you didn’t find the information you need — contact us and we’ll be happy to help.",
+    "title2": "Looking for a specific question?",
+    "placeholder": "Type to start searching...",
+    "inButton": "Search",
+    "title3": "Still have questions?",
+    "description": "We’ll be happy to consult you personally."
+  },
+  "questionsAnswers": {
+    "title": "Questions & Answers",
+    "items": [
+      {
+        "question": "1. Can a foreigner start a business in Dubai?",
+        "answer": "Yes, foreigners can own 100% of a business in free economic zones and in several mainland jurisdictions."
+      },
+      {
+        "question": "2. How long does it take to register a company?",
+        "answer": "The process takes from 3 to 15 working days depending on the jurisdiction and the documents provided."
+      },
+      {
+        "question": "3. What documents are required to open a company?",
+        "answer": "Usually a passport copy, visa, business plan, and proof of address are required."
+      },
+      {
+        "question": "4. What business zones exist in the UAE?",
+        "answer": "Free zones, mainland, and offshore — each with its own rules and benefits."
+      },
+      {
+        "question": "5. Is a local partner required?",
+        "answer": "Not in free zones. In some mainland jurisdictions — yes, but 100% foreign ownership is often possible."
+      },
+      {
+        "question": "6. Can I open a business remotely?",
+        "answer": "Yes, registration is possible remotely via online document submission and video verification."
+      },
+      {
+        "question": "7. Is it mandatory to rent an office?",
+        "answer": "Some free zones offer virtual offices, while others require a physical space."
+      },
+      {
+        "question": "8. Can I get a visa when opening a company?",
+        "answer": "Yes, as a business owner you can apply for a UAE residence visa."
+      },
+      {
+        "question": "9. What types of licenses are available?",
+        "answer": "Commercial, professional, and industrial — depending on your activity."
+      },
+      {
+        "question": "10. What are the typical setup costs?",
+        "answer": "Costs vary by zone and activity but usually start from $3,500–$5,000."
+      }
+    ]
   }
 }
