@@ -1,15 +1,14 @@
+import { getTranslations } from "next-intl/server";
 import Styles from "./WeAreTeam.module.scss";
 
-export const WeAreTeam = () => {
+export  const  WeAreTeam = async ()  => {
+  const t = await getTranslations("weAreTeam");
   return (
     <section>
       <div className={Styles.container}>
-        <h2 className={Styles.title}>Кто стоит за PRIME SETUP?</h2>
+        <h2 className={Styles.title}>{t("title")}</h2>
         <p className={Styles.description}>
-          Мы — команда экспертов в области бизнес-консалтинга, юридического
-          сопровождения и финансовых услуг. У нас за плечами более 10 лет опыта,
-          сотни успешных кейсов и глубокое знание особенностей ведения бизнеса в
-          ОАЭ.
+          {t("description")}
         </p>
       </div>
     </section>
