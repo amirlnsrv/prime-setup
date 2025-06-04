@@ -1,3 +1,11 @@
+html[lang="en"] .btn::before {
+	content: "Read all answers";
+}
+
+html[lang="ru"] .btn::before {
+	content: "Смотреть все ответы";
+}
+
 .faq {
   width: 100%;
   padding-top: 140px;
@@ -5,11 +13,6 @@
   font-family: var(--second-family);
   font-size: 26px;
 
-  .btn {
-    &::before {
-      content: "Read all answers";
-    }
-  }
 }
 .faqList {
   width: 85%;
