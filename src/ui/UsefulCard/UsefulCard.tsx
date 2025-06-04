@@ -10,15 +10,17 @@ type Props = {
   titleTxt: string;
   subtitleTxt: string;
   buttonTxt: string;
+  onClick?: () => void;
 };
 
 export default function UsefulCard({
   titleTxt,
   subtitleTxt,
   buttonTxt,
+  onClick,
 }: Props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isAdmin = true; // Замените на вашу логику проверки прав администратора -----------------------------------------------------
+  const isAdmin = true;
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -36,32 +38,32 @@ export default function UsefulCard({
             <span className={styles.point}></span>
           </div>
 
-            <div
-              className={`${styles.editMenu} ${
-                isMenuOpen ? styles.show : styles.hide
-              }`}
-            >
-              <div className={styles.editIcon}>
-                <Image
-                  className={styles.icon}
-                  width={30}
-                  height={30}
-                  src={edit}
-                  alt="edit"
-                />
-                <p>Редактировать</p>
-              </div>
-              <div className={styles.deleteIcon}>
-                <Image
-                  className={styles.icon}
-                  width={30}
-                  height={30}
-                  src={trash}
-                  alt="delete"
-                />
-                <p>Удалить</p>
-              </div>
+          <div
+            className={`${styles.editMenu} ${
+              isMenuOpen ? styles.show : styles.hide
+            }`}
+          >
+            <div className={styles.editIcon}>
+              <Image
+                className={styles.icon}
+                width={30}
+                height={30}
+                src={edit}
+                alt="edit"
+              />
+              <p>Редактировать</p>
             </div>
+            <div onClick={onClick} className={styles.deleteIcon}>
+              <Image
+                className={styles.icon}
+                width={30}
+                height={30}
+                src={trash}
+                alt="delete"
+              />
+              <p>Удалить</p>
+            </div>
+          </div>
         </div>
       )}
 

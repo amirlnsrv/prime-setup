@@ -7,14 +7,31 @@ type Props = {
   value?: string;
   children?: React.ReactNode;
   link?: string;
+  handleClick?: () => void;
+  type?: "button" | "submit" | "reset";
 };
 
-const Button = ({ className, value, link, children }: Props) => {
+const Button = ({
+  className,
+  value,
+  link,
+  children,
+  handleClick,
+  type,
+}: Props) => {
   const router = useRouter();
   return (
     <button
       className={`${styles.button} ${className}`}
-      onClick={() => link && router.push(link)}
+      onClick={() => {
+        if (link) {
+          router.push(link);
+        }
+        if (handleClick) {
+          handleClick();
+        }
+      }}
+      type={type || "button"}
     >
       {value}
       {children}
