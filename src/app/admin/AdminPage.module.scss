@@ -1,0 +1,13 @@
+.adminPage {
+  padding: 50px;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 41px;
+  & > div {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 300px;
+  }
+}

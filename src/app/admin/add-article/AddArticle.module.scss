@@ -1,0 +1,164 @@
+.addArticle {
+  padding: 50px;
+}
+
+.title {
+  font-size: 46px;
+  color: var(--zagol);
+  font-family: var(--second-family);
+}
+
+.addArticleForm {
+  padding: 0 145px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  label,
+  p {
+    font-family: var(--third-family);
+    font-size: 26px;
+    color: #000;
+  }
+  .input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 22px;
+    &::placeholder {
+      color: #adadad;
+      font-family: var(--font4);
+    }
+  }
+  .textarea {
+    resize: none;
+    height: 430px;
+    padding: 20px;
+    font-size: 22px;
+  }
+}
+
+.imageWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  border: solid;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #fff;
+  input {
+    display: none;
+  }
+  .imageLabel {
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    span {
+      &:first-child {
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 10px 13px;
+      }
+      &:last-child {
+        font-family: var(--font4);
+        font-size: 20px;
+        color: #adadad;
+      }
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  justify-content: flex-end;
+  button {
+    &:first-child {
+      border-radius: 10px;
+      padding: 20px 35px;
+      border: 5px solid var(--333);
+      color: var(--333);
+      width: 270px;
+      max-height: 71px;
+      background: rgba(210, 50, 22, 0.1);
+      font-family: var(--font3);
+      font-weight: 700;
+      font-size: 26px;
+      &:hover {
+        color: rgba(210, 50, 22, 0.8);
+        border-color: rgba(210, 50, 22, 0.8);
+      }
+    }
+    &:last-child {
+      border-radius: 10px;
+      padding: 20px 35px;
+      width: 270px;
+      height: 71px;
+      background: var(--333);
+      font-family: var(--font3);
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+      color: #fff;
+      &:hover {
+        background: rgba(210, 50, 22, 0.8);
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .addArticleForm {
+    padding: 0 20px;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 36px;
+  }
+  .addArticleForm {
+    padding: 0 20px;
+    label,
+    p {
+      font-size: 22px;
+    }
+    .input,
+    .textarea {
+      font-size: 16px;
+    }
+  }
+  .imageWrap {
+    height: 400px;
+    .imageLabel span:first-child {
+      padding: 8px 10px;
+      font-size: 18px;
+    }
+    .imageLabel span:last-child {
+      font-size: 16px;
+    }
+  }
+  .buttons {
+    button {
+      &:first-child {
+        width: 100%;
+        font-size: 20px;
+      }
+      &:last-child {
+        width: 100%;
+        font-size: 20px;
+      }
+    }
+  }
+}
