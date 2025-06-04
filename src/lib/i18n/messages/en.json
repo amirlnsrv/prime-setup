@@ -356,5 +356,28 @@
         "answer": "Costs vary by zone and activity but usually start from $3,500–$5,000."
       }
     ]
+  },
+  "businessSetup": {
+    "title": "Start your business in the UAE with",
+    "accent": "PRIME SETUP",
+    "title2": "today",
+    "subtitle": "We’ll support you at every step — from registration to opening a bank account. Start your journey to success with us!",
+    "value": "Free consultation"
+  },
+  "footerSection": {
+    "alt": "My image",
+    "prime": "PRIME SETUP",
+    "title2": "Sections",
+    "p1": "About Us",
+    "p2": "Services",
+    "p3": "Blog",
+    "p4": "FAQ",
+    "p5": "Contacts",
+    "title3": "Working Hours",
+    "p6": "Monday to Friday",
+    "p7": "8:30 AM – 5:30 PM",
+    "p8": "Saturday",
+    "p9": "10:00 AM – 2:00 PM",
+    "title4": "Contact Us"
   }
 }
