@@ -22,7 +22,7 @@ export default function UsefulCard({
   onClick,
 }: Props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isAdmin = true;
+  const isAdmin = false;
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);

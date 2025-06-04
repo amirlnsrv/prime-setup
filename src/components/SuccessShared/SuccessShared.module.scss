@@ -8,14 +8,14 @@ html[lang="ru"] .button::before {
 
 .success__shared {
   position: relative;
-  padding: 60px 20px 150px;
+  padding: 150px 20px 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .button {
-    margin-top: 40px;
+    margin-top: 20px;
     &::before {
       content: "Оставить отзыв";
     }
