@@ -1,21 +1,22 @@
 import Image from "next/image";
 import styles from "./FooterSection.module.scss";
-// import { BusinessSetup } from "../BusinessSetup";
-export function FooterSection() {
+import { getTranslations } from "next-intl/server";
+export async function FooterSection() {
+  const t = await getTranslations("footerSection");
+
   return (
     <div className={styles.container}>
-      {/* <BusinessSetup /> */}
       <footer className={styles.footer}>
         <div className={styles.top}></div>
         <div className={styles.up}>
           <div className={styles.logo}>
             <Image
               src="/assets/icons/logo.svg"
-              alt="logo"
+              alt={t("alt")}
               width={100}
               height={100}
             />
-            <p className={styles.prime}>PRIME SETUP </p>
+            <p className={styles.prime}>{t("prime")} </p>
             <p className={styles.title}>BUSINESS BEGINS HERE</p>
             <p className={styles.txt}>
               Comprehensive solutions for business registration and support in
@@ -24,61 +25,61 @@ export function FooterSection() {
             <div className={styles.appIcons}>
               <Image
                 src="/assets/icons/Facebook-Icon (1).svg"
-                alt="Мое изображение"
+                alt={t("alt")}
                 width={30}
                 height={30}
               />
 
               <Image
                 src="/assets/icons/Twitter-Icon.svg"
-                alt="Мое изображение"
+                alt={t("alt")}
                 width={30}
                 height={30}
               />
 
               <Image
                 src="/assets/icons/InstagramWhite.svg"
-                alt="Мое изображение"
+                alt={t("alt")}
                 width={30}
                 height={30}
               />
 
               <Image
                 src="/assets/icons/linkedinWhite.svg"
-                alt="Мое изображение"
+                alt={t("alt")}
                 width={30}
                 height={30}
               />
 
               <Image
                 src="/assets/icons/Youtube-Icon.svg"
-                alt="Мое изображение"
+                alt={t("alt")}
                 width={30}
                 height={30}
               />
             </div>
           </div>
           <div className={styles.footerNav}>
-            <p className={styles.title}>Разделы</p>
-            <p>О нас</p>
-            <p>Услуги</p>
-            <p>Блог</p>
-            <p>FAQ</p>
-            <p>Контакты</p>
+            <p className={styles.title}>{t("title2")}</p>
+            <p>{t("p1")}</p>
+            <p>{t("p2")}</p>
+            <p>{t("p3")}</p>
+            <p>{t("p4")}</p>
+            <p>{t("p5")}</p>
           </div>
           <div className={styles.workTime}>
-            <p className={styles.title}>Рабочие часы</p>
-            <p>С понедельника по пятницу с </p>
-            <p>8:30 до 17:30</p>
-            <p>Суббота</p>
-            <p>10:00-14:00</p>
+            <p className={styles.title}>{t("title3")}</p>
+            <p>{t("p6")}</p>
+            <p>{t("p7")}</p>
+            <p>{t("p8")}</p>
+            <p>{t("p9")}</p>
           </div>
           <div className={styles.contactUs}>
-            <p className={styles.title}>Свяжитесь с нами </p>
+            <p className={styles.title}>{t("title4")}</p>
             <div className={styles.contacts}>
               <Image
                 src="/assets/icons/emailWhite.svg"
-                alt="Мое изображение"
+                alt={t("alt")}
                 width={15}
                 height={15}
               />
@@ -88,7 +89,7 @@ export function FooterSection() {
             <div className={styles.contacts}>
               <Image
                 src="/assets/icons/tel.svg"
-                alt="Мое изображение"
+                alt={t("alt")}
                 width={15}
                 height={15}
               />
@@ -101,35 +102,35 @@ export function FooterSection() {
         <div className={styles.appIconsDown}>
           <Image
             src="/assets/icons/Facebook-Icon.svg"
-            alt="Мое изображение"
+            alt={t("alt")}
             width={30}
             height={30}
           />
 
           <Image
             src="/assets/icons/Twitter-Icon.svg"
-            alt="Мое изображение"
+            alt={t("alt")}
             width={30}
             height={30}
           />
 
           <Image
             src="/assets/icons/Instagram-Icon.svg"
-            alt="Мое изображение"
+            alt={t("alt")}
             width={30}
             height={30}
           />
 
           <Image
             src="/assets/icons/Linkedin-Icon.svg"
-            alt="Мое изображение"
+            alt={t("alt")}
             width={30}
             height={30}
           />
 
           <Image
             src="/assets/icons/Youtube-Icon.svg"
-            alt="Мое изображение"
+            alt={t("alt")}
             width={30}
             height={30}
           />
