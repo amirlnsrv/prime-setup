@@ -1,16 +1,17 @@
 import styles from "./MeetOurTeam.module.scss";
 import Image from "next/image";
 import { teamMembers } from "@/components/MeetOurTeam/MeetOurTeam.helpers"; // путь может отличаться у тебя
+import { getTranslations } from "next-intl/server";
 
-export function MeetOurTeam() {
+export async function  MeetOurTeam() {
+  const t = await getTranslations("meetOurTeam");
+
   return (
     <section className={styles.container}>
       <div className={styles.wrapper}>
-        <h2 className={styles.title}>Познакомьтесь с нашей командой</h2>
+        <h2 className={styles.title}>{t("title")}</h2>
         <p className={styles.subtitle}>
-          Мы верим, что за каждым успешным бизнесом стоят люди. Именно поэтому
-          мы гордимся нашей командой экспертов, которые делают всё, чтобы запуск
-          вашего бизнеса в ОАЭ был простым, безопасным и успешным.
+          {t("subtitle")}
         </p>
         <div className={styles.grid}>
           {teamMembers.map((imageSrc, idx) => (
