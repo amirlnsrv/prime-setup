@@ -4,8 +4,11 @@ import img1 from "#/images/fonIconsContacts.svg";
 import style from "./Contacts.page.module.scss";
 import { ContainerHero } from "@/components/ContainerHero";
 import { ContactTime } from "@/components/ContactTime/ContactTime";
+import { getTranslations } from "next-intl/server";
 
-export default function Contacts() {
+export default async function Contacts() {
+  const t = await getTranslations('contact.contactsPage')
+
   return (
     <section>
       <ContainerHero />
@@ -14,7 +17,7 @@ export default function Contacts() {
         <div className={style.contactWrapper}>
           <Image src={img1} alt="iconFon" className={style.imageContact} />
           <div className={style.contactContent}>
-            <Contact />
+            <Contact title={t('title')} description={t("description")} />
           </div>
         </div>
       </div>

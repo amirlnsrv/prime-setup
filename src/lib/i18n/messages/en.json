@@ -102,6 +102,10 @@
       "title": "Start your journey to the UAE today",
       "description": "We are here to answer your questions and help with starting a business in the UAE."
     },
+    "contactsPage": {
+      "title": "Всё, что вы хотели узнать — в одном месте",
+      "description": "Мы собрали ответы на самые распространённые вопросы от наших клиентов. Если не нашли нужной информации — напишите нам, и мы поможем."
+    },
     "contacts": {
       "emailAlt": "Email icon",
       "phoneAlt": "Phone icon"

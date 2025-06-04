@@ -7,13 +7,14 @@ import { Contact } from "@/components/Contact";
 import { getTranslations } from "next-intl/server";
 
 const FAQPage = async () => {
+  const tHero = await getTranslations("hero.faq");
   const t = await getTranslations("faq");
   return (
     <>
       <Hero
         imgUrl="/assets/images/faqHeroBg.jpg"
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
+        title={tHero("title")}
+        subtitle={tHero("subtitle")}
       />
       <section className={styles.search}>
         <Input
@@ -24,8 +25,8 @@ const FAQPage = async () => {
       </section>
       <QuestionsAnswers />
       <Contact
-        title={t("contact.title")} // например "Остались вопросы?"
-        description={t("contact.description")} // "Мы с радостью проконсультируем вас лично."
+        title={t("contact.title")}
+        description={t("contact.description")}
       />
     </>
   );
