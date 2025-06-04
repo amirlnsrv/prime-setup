@@ -1,5 +1,8 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
+import AddIcon from "#/icons/addIcon.svg";
+import PostIcon from "#/icons/postIcon.svg";
 const Button = dynamic(() => import("@/ui/Button"));
 import styles from "./AdminActions.module.scss";
 export default function AdminActions() {
@@ -10,26 +13,14 @@ export default function AdminActions() {
         value="Добавить статью"
         className={styles.button}
       >
-        {/* <Image
-            src="/assets/icons/addIcon.svg"
-            alt="addImg"
-            width={20}
-            height={20}
-          /> */}
-        <div className={styles.icon} />
+        <Image src={AddIcon} alt="addImg" width={20} height={20} />
       </Button>
       <Button
         link="/admin/published"
         value="Опубликовано"
         className={styles.button}
       >
-        {/* <Image
-            src="/assets/icons/postIcon.svg"
-            alt="postImg"
-            width={20}
-            height={20}
-          /> */}
-        <div className={styles.icon} />
+        <Image src={PostIcon} alt="postImg" width={20} height={20} />
       </Button>
     </div>
   );

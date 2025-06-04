@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./ClientCard.module.scss";
-
+import Star from "#/icons/star.svg";
 export const ClientCard = () => {
   return (
     <div className={styles.client__card}>
@@ -18,11 +18,41 @@ export const ClientCard = () => {
         of Letraset sheets containing Lorem
       </p>
       <div className={styles.stars}>
-        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
-        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
-        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
-        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
-        <Image width={30} height={30} className={styles.star} src="assets/icons/star.svg" alt="star" />
+        <Image
+          width={30}
+          height={30}
+          className={styles.star}
+          src={Star}
+          alt="star"
+        />
+        <Image
+          width={30}
+          height={30}
+          className={styles.star}
+          src={Star}
+          alt="star"
+        />
+        <Image
+          width={30}
+          height={30}
+          className={styles.star}
+          src={Star}
+          alt="star"
+        />
+        <Image
+          width={30}
+          height={30}
+          className={styles.star}
+          src={Star}
+          alt="star"
+        />
+        <Image
+          width={30}
+          height={30}
+          className={styles.star}
+          src={Star}
+          alt="star"
+        />
       </div>
     </div>
   );

@@ -66,6 +66,7 @@ import styles from "./FAQ.module.scss";
 import { faqData } from "./FAQ.helper";
 import { PrimaryButton } from "@/ui/PrimaryButton";
 import { useTranslations } from "next-intl";
+import ArrowDown from "#/icons/arrowDown.svg";
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -93,7 +94,7 @@ export function FAQ() {
                     }
                   >
                     <Image
-                      src="/assets/icons/arrowDown.svg"
+                      src={ArrowDown}
                       alt="arrow"
                       className={styles.icon}
                       width={100}

@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./Input.module.scss";
 import Image from "next/image";
-
+import SearchIcon from "#/icons/search.svg";
 interface InputProps extends React.HTMLProps<HTMLInputElement> {
   label?: string;
   error?: string;
@@ -33,10 +33,10 @@ export const Input: React.FC<InputProps> = ({
         {error && <p className={styles.errorText}>{error}</p>}
         <button className={styles.search}>
           <Image
-          className={styles.searchIcon}
+            className={styles.searchIcon}
             width={30}
             height={30}
-            src="/assets/icons/search.svg"
+            src={SearchIcon}
             alt="search icon"
           />
           <span>{inButton}</span>

@@ -5,6 +5,7 @@ import styles from "./UsefulCard.module.scss";
 import Image from "next/image";
 import edit from "#/icons/editIcon.svg";
 import trash from "#/icons/trashIcon.svg";
+import RightArrow from "#/icons/rightArrow.svg";
 
 type Props = {
   titleTxt: string;
@@ -76,7 +77,7 @@ export default function UsefulCard({
             className={styles.arrow}
             width={20}
             height={20}
-            src="/assets/icons/rightArrow.svg"
+            src={RightArrow}
             alt="arrow"
           />
         </Link>

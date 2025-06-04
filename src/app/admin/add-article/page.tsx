@@ -5,6 +5,7 @@ import styles from "./AddArticle.module.scss";
 import Image from "next/image";
 import Modal from "../components/Modal/Modal";
 import Button from "@/ui/Button";
+import EmtyIcon from "#/icons/emptyIcon.svg";
 
 export default function AddArticle() {
   const [previewImage, setPreviewImage] = useState<string | null>(null);
@@ -41,12 +42,7 @@ export default function AddArticle() {
           {previewImage ? (
             <Image src={previewImage} alt="Обложка статьи" fill />
           ) : (
-            <Image
-              src="/assets/icons/emptyIcon.svg"
-              alt="Заглушка"
-              width={100}
-              height={100}
-            />
+            <Image src={EmtyIcon} alt="Заглушка" width={100} height={100} />
           )}
           <label className={styles.imageLabel} htmlFor="picture">
             <span>Загрузите изображение для статьи</span>
