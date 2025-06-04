@@ -5,6 +5,7 @@ import React from "react";
 import { QuestionsAnswers } from "./components/QuestionsAnswers";
 import { Contact } from "@/components/Contact";
 import { getTranslations } from "next-intl/server";
+import faqHeroBg from "#/images/faqHeroBg.jpg";
 
 const FAQPage = async () => {
   const t = await getTranslations("faqPage");
@@ -12,7 +13,7 @@ const FAQPage = async () => {
   return (
     <>
       <Hero
-        imgUrl="/assets/images/faqHeroBg.jpg"
+        imgUrl={faqHeroBg}
         title={t("title1")}
         subtitle={t("subtitle")}
       />

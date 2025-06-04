@@ -5,6 +5,7 @@ import styles from "./BlogCards.module.scss";
 import { Input } from "@/ui/Input/Input";
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import smallArrow from "#/icons/smallArrow.svg";
 import dynamic from "next/dynamic";
 
 const UsefulCard = dynamic(() => import("@/ui/UsefulCard/UsefulCard"),{
@@ -56,7 +57,7 @@ export default function BlogCards() {
             width={10}
             height={20}
             className={styles.arrow}
-            src="/assets/icons/smallArrow.svg"
+            src={smallArrow}
             alt="arrow"
           />
         </button>

@@ -2,7 +2,7 @@ import style from "./Contact.module.scss";
 import facebook from "#/icons/Facebook-Icon.svg";
 import twiter from "#/icons/Twiter.svg";
 import instagram from "#/icons/Instagram-Icon.svg";
-import link from "#/icons/LinkedIn-Icon.svg";
+import link from "#/icons/linkedInBlue.svg";
 import youtube from "#/icons/Youtube-IconBlue.svg";
 import email from "#/icons/email.svg";
 import tell from "#/icons/tell.svg";
