@@ -4,28 +4,28 @@ import styles from "./Faq.module.scss";
 import React from "react";
 import { QuestionsAnswers } from "./components/QuestionsAnswers";
 import { Contact } from "@/components/Contact";
+import { getTranslations } from "next-intl/server";
 
-const FAQPage = () => {
+const FAQPage = async () => {
+  const t = await getTranslations("faq");
   return (
     <>
       <Hero
         imgUrl="/assets/images/faqHeroBg.jpg"
-        title="Всё, что вы хотели узнать — в одном месте
-"
-        subtitle="Мы собрали ответы на самые распространённые вопросы от наших клиентов. Если не нашли нужной информации — напишите нам, и мы поможем."
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
       />
       <section className={styles.search}>
         <Input
-          title="Ищете конкретный вопрос?"
-          placeholder="Введите чтобы начать поиск..."
-          inButton="Поиск"
+          title={t("search.title")}
+          placeholder={t("search.placeholder")}
+          inButton={t("search.button")}
         />
       </section>
       <QuestionsAnswers />
       <Contact
-        title="Остались вопросы?"
-        description="Мы с радостью проконсультируем вас лично.
-"
+        title={t("contact.title")} // например "Остались вопросы?"
+        description={t("contact.description")} // "Мы с радостью проконсультируем вас лично."
       />
     </>
   );

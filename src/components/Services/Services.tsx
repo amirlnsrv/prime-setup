@@ -15,24 +15,11 @@ export async function Services() {
         <p className={stylle.serverP}>{t("serverP")}</p>
       </div>
       <Link href="/services">
-      <div className={stylle.sectionContainerIcon}>
-        {mockdataSectiom.map((item, index) => (
-          <div key={item.id} className={stylle.card}>
-            <div className={stylle.cardInner}>
-              <div className={stylle.cardFront}>
-                <Image
-                  src={item.img}
-                  alt={"img"}
-                  className={stylle.icon}
-                  width={48}
-                  height={48}
-                />
-
-                <h5 className={stylle.title}>{t(`items.${index}.title`)}</h5>
-              </div>
-
-              <div className={stylle.cardBack}>
-                <div className={stylle.iconWrap}>
+        <div className={stylle.sectionContainerIcon}>
+          {mockdataSectiom.map((item, index) => (
+            <div key={item.id} className={stylle.card}>
+              <div className={stylle.cardInner}>
+                <div className={stylle.cardFront}>
                   <Image
                     src={item.img}
                     alt={"img"}
@@ -40,27 +27,39 @@ export async function Services() {
                     width={48}
                     height={48}
                   />
+
+                  <h5 className={stylle.title}>{t(`items.${index}.title`)}</h5>
                 </div>
-                <h4 className={stylle.subTitle}>
-                  {t(`items.${index}.description`)}
-                </h4>
-                <button className={stylle.cardBtn}>{t("btn1")}</button>
+
+                <div className={stylle.cardBack}>
+                  <div className={stylle.iconWrap}>
+                    <Image
+                      src={item.img}
+                      alt={"img"}
+                      className={stylle.icon}
+                      width={48}
+                      height={48}
+                    />
+                  </div>
+                  <h4 className={stylle.subTitle}>
+                    {t(`items.${index}.description`)}
+                  </h4>
+                  <button className={stylle.cardBtn}>{t("btn1")}</button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-          </Link>
+          ))}
+        </div>
+      </Link>
 
       <div className={stylle.primaryContainer}>
-      <Link href="/services">
-          <PrimaryButton className={stylle.primaryBtn} value={t("btn3")}   />
-          </Link>
+        <Link href="/services">
+          <PrimaryButton className={stylle.primaryBtn} value={t("btn3")} />
+        </Link>
       </div>
       <Link href="/services">
-        <button className={stylle.btn} >{t("btn2")}</button >
-        </Link>
-
+        <button className={stylle.btn}>{t("btn2")}</button>
+      </Link>
     </section>
   );
 }

@@ -95,10 +95,13 @@
   "contact": {
     "workingHours": {
       "title": "Working Hours",
-      "schedule": ["Monday to Friday: 8:30–17:30", "Saturday: 10:00–14:00"]
+      "scheduleWeekdays": "Monday to Friday: 8:30–17:30",
+      "scheduleWeekenddays": "Saturday: 10:00–14:00"
     },
-    "title": "Contact Us",
-    "description": "We are ready to answer your questions.",
+    "main": {
+      "title": "Start your journey to the UAE today",
+      "description": "We are here to answer your questions and help with starting a business in the UAE."
+    },
     "contacts": {
       "emailAlt": "Email icon",
       "phoneAlt": "Phone icon"

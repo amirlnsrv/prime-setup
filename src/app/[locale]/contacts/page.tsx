@@ -5,15 +5,11 @@ import style from "./Contacts.page.module.scss";
 import { ContainerHero } from "@/components/ContainerHero";
 import { ContactTime } from "@/components/ContactTime/ContactTime";
 
-
-
-
-
 export default function Contacts() {
   return (
     <section>
-<ContainerHero/>
-<ContactTime/>
+      <ContainerHero />
+      <ContactTime />
       <div className={style.container}>
         <div className={style.contactWrapper}>
           <Image src={img1} alt="iconFon" className={style.imageContact} />

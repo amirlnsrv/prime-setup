@@ -4,24 +4,20 @@ import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
 
-export function Contact() {
+type ContactProps = {
+  title: string;
+  description: string;
+  icons?: string[];
+};
+
+export function Contact({ title, description, icons }: ContactProps) {
   const t = useTranslations("contact");
-
-  const scheduleObj = t("workingHours.schedule"); 
-
-  const scheduleItems = Array.isArray(scheduleObj)
-    ? scheduleObj
-    : [t("workingHours.schedule1"), t("workingHours.schedule2")].filter(
-        Boolean
-      );
-
 
   const contacts = {
     email: { href: "mailto:info.xyz@gmail.com", text: "info.xyz@gmail.com" },
     phone: { href: "tel:+996476924", text: "+996 476-924" },
   };
 
-  // Настройки формы
   const formFields = {
     firstName: true,
     lastName: true,
@@ -36,14 +32,13 @@ export function Contact() {
       <div className={styles.contactSection}>
         <div className={styles.container}>
           <div className={styles.left}>
-            <h2 className={styles.title}>{t("title")}</h2>
-            <p className={styles.description}>{t("description")}</p>
+            <h2 className={styles.title}>{title}</h2>
+            <p className={styles.description}>{description}</p>
 
             <div className={styles.infoBlock}>
               <h3 className={styles.hoursTitle}>{t("workingHours.title")}</h3>
-              {scheduleItems.map((item, i) => (
-                <p key={i}>{item}</p>
-              ))}
+              <p>{t("workingHours.scheduleWeekdays")}</p>
+              <p>{t("workingHours.scheduleWeekenddays")}</p>
             </div>
 
             <div className={styles.contactLinks}>
@@ -74,6 +69,20 @@ export function Contact() {
                 </div>
               )}
             </div>
+
+            {icons && (
+              <div className={styles.iconsBlock}>
+                {icons.map((icon, index) => (
+                  <Image
+                    key={index}
+                    src={icon}
+                    alt={`icon-${index}`}
+                    width={30}
+                    height={30}
+                  />
+                ))}
+              </div>
+            )}
           </div>
 
           <form className={styles.form}>
