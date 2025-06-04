@@ -3,6 +3,7 @@ import { yourCompanyLogos } from "./OurPartner.helpers";
 import Image from "next/image";
 import downborder from "#/images/downborder.svg";
 import { getTranslations } from "next-intl/server";
+import bg from "#/images/pngwing.svg"
 
 export async function OurPartners() {
 
@@ -11,6 +12,7 @@ export async function OurPartners() {
   return (
     <section className={styles.ourPartners}>
       <div className={styles.top}>
+        <Image className={styles.bg} src={bg} width={100} height={100} alt="background"/>
         <h1>{t("title")}</h1>
         <div className={styles.slider}>
           <div className={styles.track}>

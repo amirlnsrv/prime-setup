@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import logo from "#/icons/logo.svg";
 import { useTranslations } from "next-intl";
 
 const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"), {
@@ -38,7 +39,7 @@ export default function Header() {
         <div className={styles.headerInner}>
           <div className={styles.logo} onClick={() => navigation.push("/")}>
             <Image
-              src="/assets/icons/logo.svg"
+              src={logo}
               width={44}
               height={46}
               alt="logo"

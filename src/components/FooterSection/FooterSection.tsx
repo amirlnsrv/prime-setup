@@ -1,6 +1,19 @@
 import Image from "next/image";
 import styles from "./FooterSection.module.scss";
 import { getTranslations } from "next-intl/server";
+import logoIcon from "#/icons/logo.svg";
+import facebook from "#/icons/Facebook-IconWhite.svg";
+import twitter from "#/icons/Twitter-Icon.svg";
+import instagram from "#/icons/InstagramWhite.svg";
+// import linkedinWhite from "#/icons/linkedinWhite.svg";
+import youtube from "#/icons/Youtube-Icon.svg";
+import emailWhite from "#/icons/emailWhite.svg";
+import tel from "#/icons/tel.svg";
+import facebookBlue from "#/icons/Facebook-Icon.svg";
+import twitterBlue from "#/icons/Twiter.svg";
+import instagramBlue from "#/icons/Instagram-Icon.svg";
+// import linkedinBlue from "#/icons/linkedInBlue.svg";
+import youtubeBlue from "#/icons/Youtube-IconBlue.svg";
 export async function FooterSection() {
   const t = await getTranslations("footerSection");
 
@@ -11,7 +24,7 @@ export async function FooterSection() {
         <div className={styles.up}>
           <div className={styles.logo}>
             <Image
-              src="/assets/icons/logo.svg"
+              src={logoIcon}
               alt={t("alt")}
               width={100}
               height={100}
@@ -24,35 +37,35 @@ export async function FooterSection() {
             </p>
             <div className={styles.appIcons}>
               <Image
-                src="/assets/icons/Facebook-Icon (1).svg"
+                src={facebook}
                 alt={t("alt")}
                 width={30}
                 height={30}
               />
 
               <Image
-                src="/assets/icons/Twitter-Icon.svg"
+                src={twitter}
                 alt={t("alt")}
                 width={30}
                 height={30}
               />
 
               <Image
-                src="/assets/icons/InstagramWhite.svg"
+                src={instagram}
                 alt={t("alt")}
                 width={30}
                 height={30}
               />
 
-              <Image
-                src="/assets/icons/linkedinWhite.svg"
+              {/* <Image
+                src={linkedinWhite}
                 alt={t("alt")}
                 width={30}
                 height={30}
-              />
+              /> */}
 
               <Image
-                src="/assets/icons/Youtube-Icon.svg"
+                src={youtube}
                 alt={t("alt")}
                 width={30}
                 height={30}
@@ -78,7 +91,7 @@ export async function FooterSection() {
             <p className={styles.title}>{t("title4")}</p>
             <div className={styles.contacts}>
               <Image
-                src="/assets/icons/emailWhite.svg"
+                src={emailWhite}
                 alt={t("alt")}
                 width={15}
                 height={15}
@@ -88,7 +101,7 @@ export async function FooterSection() {
             <br />
             <div className={styles.contacts}>
               <Image
-                src="/assets/icons/tel.svg"
+                src={tel}
                 alt={t("alt")}
                 width={15}
                 height={15}
@@ -101,35 +114,35 @@ export async function FooterSection() {
         <hr />
         <div className={styles.appIconsDown}>
           <Image
-            src="/assets/icons/Facebook-Icon.svg"
+            src={facebookBlue}
             alt={t("alt")}
             width={30}
             height={30}
           />
 
           <Image
-            src="/assets/icons/Twitter-Icon.svg"
+            src={twitterBlue}
             alt={t("alt")}
             width={30}
             height={30}
           />
 
           <Image
-            src="/assets/icons/Instagram-Icon.svg"
+            src={instagramBlue}
             alt={t("alt")}
             width={30}
             height={30}
           />
 
-          <Image
-            src="/assets/icons/Linkedin-Icon.svg"
+          {/* <Image
+            src={linkedinBlue}
             alt={t("alt")}
             width={30}
             height={30}
-          />
+          /> */}
 
           <Image
-            src="/assets/icons/Youtube-Icon.svg"
+            src={youtubeBlue}
             alt={t("alt")}
             width={30}
             height={30}

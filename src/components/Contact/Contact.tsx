@@ -2,6 +2,8 @@
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
+import phone from "#/icons/Component.svg"
+import mail from "#/icons/Group.svg"
 
 export function Contact({
   title = "Свяжитесь с нами",
@@ -46,7 +48,7 @@ export function Contact({
               {contacts.email && (
                 <div className={styles.tel}>
                   <Image
-                    src="/assets/icons/Component.svg"
+                    src={phone}
                     alt="Иконка email"
                     width={30}
                     height={30}
@@ -59,7 +61,7 @@ export function Contact({
               {contacts.phone && (
                 <div className={styles.email}>
                   <Image
-                    src="/assets/icons/Group.svg"
+                    src={mail}
                     alt="Иконка телефона"
                     width={30}
                     height={30}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Telegram.module.scss";
 import { getTranslations } from "next-intl/server";
+import tg from '#/icons/telegram.svg'
 
 export default async function Telegram() {
 
@@ -12,7 +13,7 @@ export default async function Telegram() {
         width={40}
         height={40}
         className={styles.telegramIcon}
-        src="/assets/icons/telegram.svg"
+        src={tg}
         alt="tg"
       />
       <p>
