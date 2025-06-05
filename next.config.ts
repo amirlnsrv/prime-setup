@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
       {
         source: "/api/:path*",
         // destination: `${process.env.BASE_URL}/:path*`,
-        destination: `${process.env.BASE_URL}/:path*` || "",
+        destination: `${process.env.BASE_URL}/:path*`,
       },
     ];
   },
