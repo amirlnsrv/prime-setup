@@ -6,6 +6,12 @@ import { ContainerHero } from "@/components/ContainerHero";
 import { ContactTime } from "@/components/ContactTime/ContactTime";
 import { getTranslations } from "next-intl/server";
 
+import Facebook from "#/icons/Facebook.svg";
+import Twitter from "#/icons/Twitter.svg";
+import Instagram from "#/icons/Instagram.svg";
+import Linkedin from "#/icons/LinkedIn.svg";
+import Youtube from "#/icons/Youtube.svg";
+
 export default async function Contacts() {
   const t = await getTranslations("contactTime");
 
@@ -22,27 +28,27 @@ export default async function Contacts() {
               description={t("descriptionContact")}
               icons={[
                 {
-                  src: "/assets/Facebook.svg",
+                  src: Facebook,
                   href: "https://facebook.com",
                   alt: "Facebook",
                 },
                 {
-                  src: "/assets/Twitter.svg",
+                  src: Twitter,
                   href: "https://twitter.com",
                   alt: "Twitter",
                 },
                 {
-                  src: "/assets/Instagram.svg",
+                  src: Instagram,
                   href: "https://instagram.com",
                   alt: "Instagram",
                 },
                 {
-                  src: "/assets/Linkedin.svg",
+                  src: Linkedin,
                   href: "https://linkedin.com",
                   alt: "Linkedin",
                 },
                 {
-                  src: "/assets/Youtube.svg",
+                  src: Youtube,
                   href: "https://youtube.com",
                   alt: "Youtube",
                 },
