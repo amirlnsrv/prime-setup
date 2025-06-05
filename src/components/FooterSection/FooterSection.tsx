@@ -150,6 +150,7 @@ export async function FooterSection() {
         </div>
       </footer>
       <div className="line"></div>
+
     </div>
   );
 }
