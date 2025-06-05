@@ -103,7 +103,8 @@ export function FooterBottom() {
       </div>
 
       <div className={styles.copyright}>
-        ©2025 PRIME SETUP. Все права защищены.
+        <hr />
+        <p> 2025 PRIME SETUP. Все права защищены.</p>
       </div>
     </footer>
   );
