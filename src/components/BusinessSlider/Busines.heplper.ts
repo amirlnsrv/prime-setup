@@ -1,8 +1,8 @@
-const img1 = "/assets/icons/img1.svg";
-const img2 = "/assets/icons/img2.svg";
-const img3 = "/assets/icons/img3.svg";
-const img4 = "/assets/icons/img4.svg";
-const img5 = "/assets/icons/img5.svg";
+import img1 from "#/icons/img1.svg";
+import img2 from "#/icons/img2.svg";
+import img3 from "#/icons/img3.svg";
+import img4 from "#/icons/img4.svg";
+import img5 from "#/icons/img5.svg";
 
 export const BusinessSlider = [
   {

@@ -5,6 +5,8 @@ import styles from "./UsefulCard.module.scss";
 import Image from "next/image";
 import edit from "#/icons/editIcon.svg";
 import trash from "#/icons/trashIcon.svg";
+import rightArrow from "#/icons/rightArrow.svg";
+import elipse from "#/images/elipse.svg";
 
 type Props = {
   titleTxt: string;
@@ -20,7 +22,7 @@ export default function UsefulCard({
   onClick,
 }: Props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isAdmin = true;
+  const isAdmin = false;
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -76,7 +78,7 @@ export default function UsefulCard({
             className={styles.arrow}
             width={20}
             height={20}
-            src="/assets/icons/rightArrow.svg"
+            src={rightArrow}
             alt="arrow"
           />
         </Link>
@@ -85,21 +87,21 @@ export default function UsefulCard({
       <Image
         width={150}
         height={150}
-        src="/assets/images/elipse.svg"
+        src={elipse}
         alt="elipse"
         className={styles.elipse_right}
       />
       <Image
         width={150}
         height={150}
-        src="/assets/images/elipse.svg"
+        src={elipse}
         alt="elipse"
         className={styles.elipse_bottom}
       />
       <Image
         width={150}
         height={150}
-        src="/assets/images/elipse.svg"
+        src={elipse}
         alt="elipse"
         className={styles.elipse_left}
       />

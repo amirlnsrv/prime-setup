@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "./FAQ.module.scss";
 import { faqData } from "./FAQ.helper";
 import { PrimaryButton } from "@/ui/PrimaryButton";
+import arrowDown from "#/icons/arrowDown.svg";
 import { useTranslations } from "next-intl";
 
 export function FAQ() {
@@ -32,7 +33,7 @@ export function FAQ() {
                     }
                   >
                     <Image
-                      src="/assets/icons/arrowDown.svg"
+                      src={arrowDown}
                       alt="arrow"
                       className={styles.icon}
                       width={100}

@@ -3,6 +3,8 @@ import { useTranslations } from "next-intl";
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
+import phone from "#/icons/Component.svg"
+import mail from "#/icons/Group.svg"
 
 type IconItem = {
   src: string;
@@ -57,7 +59,7 @@ export function Contact({
               {contacts.email && (
                 <div className={styles.tel}>
                   <Image
-                    src="/assets/icons/Component.svg"
+                    src={mail}
                     alt={t("contacts.emailAlt")}
                     width={30}
                     height={30}
@@ -70,7 +72,7 @@ export function Contact({
               {contacts.phone && (
                 <div className={styles.email}>
                   <Image
-                    src="/assets/icons/Group.svg"
+                    src={phone}
                     alt={t("contacts.phoneAlt")}
                     width={30}
                     height={30}
