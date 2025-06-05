@@ -22,6 +22,7 @@ const SuccessShared = dynamic(
 
 export default async function Home() {
   const tHeroMain = await getTranslations("hero.main");
+  const tContactMain = await getTranslations("contact.main");
 
   return (
     <>
@@ -49,7 +50,10 @@ export default async function Home() {
       <SuccessShared />
       <UsefulArticles />
       <FAQ />
-      <Contact />
+      <Contact
+        title={tContactMain("title")}
+        description={tContactMain("description")}
+      />
     </>
   );
 }

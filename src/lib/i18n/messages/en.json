@@ -92,9 +92,46 @@
     "answer6": "Yes, in free zones and in some mainland cases.",
     "button": "Read all answers"
   },
+  "contact": {
+    "workingHours": {
+      "title": "Working Hours",
+      "scheduleWeekdays": "Monday to Friday: 8:30–17:30",
+      "scheduleWeekenddays": "Saturday: 10:00–14:00"
+    },
+    "main": {
+      "title": "Start your journey to the UAE today",
+      "description": "We are here to answer your questions and help with starting a business in the UAE."
+    },
+    "contactsPage": {
+      "title": "Всё, что вы хотели узнать — в одном месте",
+      "description": "Мы собрали ответы на самые распространённые вопросы от наших клиентов. Если не нашли нужной информации — напишите нам, и мы поможем."
+    },
+    "contacts": {
+      "emailAlt": "Email icon",
+      "phoneAlt": "Phone icon"
+    },
+    "contactTime": {
+      "title5": "jhgdf"
+    },
+    "form": {
+      "buttonText": "Send",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "How can we help?",
+      "placeholders": {
+        "firstName": "Enter your first name",
+        "lastName": "Enter your last name",
+        "email": "Enter your email address",
+        "phone": "Enter your phone number",
+        "message": "Enter your message"
+      }
+    }
+  },
   "contactTime": {
-    "titleh2": "Let's Get Started",
-    "title2": "We are happy to personally consult you.",
+    "titleContact": "Let's Get Started",
+    "descriptionContact": "We are happy to personally consult you.",
     "titleTime": "Business Hours",
     "time": "Monday to Friday",
     "time2": "from 8:30 AM to 5:30 PM,",

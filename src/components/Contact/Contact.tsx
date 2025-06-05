@@ -1,32 +1,35 @@
 "use client";
+
 import { ChangeEvent, FormEvent, useState } from "react";
+import { useTranslations } from "next-intl";  // для перевода
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
 import phone from "#/icons/Component.svg";
 import mail from "#/icons/Group.svg";
 
-export function Contact({
-  title = "Свяжитесь с нами",
-  description = "Мы готовы ответить на ваши вопросы.",
-  workingHours = {
-    title: "Рабочие часы",
-    schedule: ["С понедельника по пятницу: 8:30–17:30", "Суббота: 10:00–14:00"],
-  },
-  contacts = {
+type IconItem = {
+  src: string;
+  href: string;
+  alt?: string;
+};
+
+type ContactProps = {
+  title: string;
+  description: string;
+  icons?: IconItem[];
+  className?: string;
+};
+
+export function Contact({ title, description, icons, className }: ContactProps) {
+  const t = useTranslations("contact");
+
+  const contacts = {
     email: { href: "mailto:info.xyz@gmail.com", text: "info.xyz@gmail.com" },
     phone: { href: "tel:+996476924", text: "+996 476-924" },
-  },
-  formFields = {
-    firstName: true,
-    lastName: true,
-    email: true,
-    phone: true,
-    message: true,
-  },
-  buttonText = "Отправить",
-  className = "wrapper",
-}) {
+  };
+
+  // состояние формы
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -35,11 +38,13 @@ export function Contact({
     message: "",
   });
 
+  // обработка изменений в форме
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // отправка формы
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Отправляемые данные:", formData);
@@ -60,7 +65,7 @@ export function Contact({
   };
 
   return (
-    <div className={styles[className] || styles.wrapper}>
+    <div className={`${styles.wrapper} ${className || ""}`}>
       <div className={styles.rightLine}></div>
       <div className={styles.contactSection}>
         <div className={styles.container}>
@@ -68,21 +73,18 @@ export function Contact({
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.description}>{description}</p>
 
-            {workingHours && (
-              <div className={styles.infoBlock}>
-                <h3 className={styles.hoursTitle}>{workingHours.title}</h3>
-                {workingHours.schedule.map((item, index) => (
-                  <p key={index}>{item}</p>
-                ))}
-              </div>
-            )}
+            <div className={styles.infoBlock}>
+              <h3 className={styles.hoursTitle}>{t("workingHours.title")}</h3>
+              <p>{t("workingHours.scheduleWeekdays")}</p>
+              <p>{t("workingHours.scheduleWeekenddays")}</p>
+            </div>
 
             <div className={styles.contactLinks}>
               {contacts.email && (
                 <div className={styles.tel}>
                   <Image
-                    src={phone}
-                    alt="Иконка email"
+                    src={mail}
+                    alt={t("contacts.emailAlt")}
                     width={30}
                     height={30}
                   />
@@ -94,8 +96,8 @@ export function Contact({
               {contacts.phone && (
                 <div className={styles.email}>
                   <Image
-                    src={mail}
-                    alt="Иконка телефона"
+                    src={phone}
+                    alt={t("contacts.phoneAlt")}
                     width={30}
                     height={30}
                   />
@@ -105,80 +107,95 @@ export function Contact({
                 </div>
               )}
             </div>
+
+            {icons && (
+              <div className={styles.iconsBlock}>
+                {icons.map((icon, index) => (
+                  <a
+                    key={index}
+                    href={icon.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.iconLink}
+                  >
+                    <Image
+                      src={icon.src}
+                      alt={icon.alt || `icon-${index}`}
+                      width={30}
+                      height={30}
+                    />
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
 
           <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.row}>
-              {formFields.firstName && (
-                <label className={styles.inp}>
-                  Имя
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="Введите полное имя"
-                    className={styles.input}
-                    value={formData.firstName}
-                    onChange={handleChange}
-                  />
-                </label>
-              )}
-              {formFields.lastName && (
-                <label className={styles.inp}>
-                  Фамилия
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Введите полную фамилию"
-                    className={styles.input}
-                    value={formData.lastName}
-                    onChange={handleChange}
-                  />
-                </label>
-              )}
+              <label className={styles.inp}>
+                {t("form.firstName")}
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder={t("form.placeholders.firstName")}
+                  className={styles.input}
+                  value={formData.firstName}
+                  onChange={handleChange}
+                />
+              </label>
+
+              <label className={styles.inp}>
+                {t("form.lastName")}
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder={t("form.placeholders.lastName")}
+                  className={styles.input}
+                  value={formData.lastName}
+                  onChange={handleChange}
+                />
+              </label>
             </div>
 
-            {formFields.email && (
-              <label className={styles.inp}>
-                Адрес электронной почты
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Введите адрес электронной почты"
-                  className={styles.inputFull}
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-              </label>
-            )}
+            <label className={styles.inp}>
+              {t("form.email")}
+              <input
+                type="email"
+                name="email"
+                placeholder={t("form.placeholders.email")}
+                className={styles.inputFull}
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </label>
 
-            {formFields.phone && (
-              <label className={styles.inp}>
-                Номер телефона
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Введите номер телефона"
-                  className={styles.inputFull}
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-              </label>
-            )}
+            <label className={styles.inp}>
+              {t("form.phone")}
+              <input
+                type="tel"
+                name="phone"
+                placeholder={t("form.placeholders.phone")}
+                className={styles.inputFull}
+                value={formData.phone}
+                onChange={handleChange}
+              />
+            </label>
 
-            {formFields.message && (
-              <label className={styles.inp}>
-                Чем мы можем помочь?
-                <textarea
-                  name="message"
-                  placeholder="Введите ваше сообщение"
-                  className={styles.textarea}
-                  value={formData.message}
-                  onChange={handleChange}
-                ></textarea>
-              </label>
-            )}
+            <label className={styles.inp}>
+              {t("form.message")}
+              <textarea
+                name="message"
+                placeholder={t("form.placeholders.message")}
+                className={styles.textarea}
+                value={formData.message}
+                onChange={handleChange}
+              />
+            </label>
 
-            <ExtraButton className={styles.submit} value={buttonText} />
+            <ExtraButton
+              className={styles.submit}
+              value={t("form.buttonText")}
+            />
           </form>
         </div>
       </div>
