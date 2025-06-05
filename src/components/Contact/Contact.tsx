@@ -1,9 +1,10 @@
 "use client";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
-import phone from "#/icons/Component.svg"
-import mail from "#/icons/Group.svg"
+import phone from "#/icons/Component.svg";
+import mail from "#/icons/Group.svg";
 
 export function Contact({
   title = "Свяжитесь с нами",
@@ -26,6 +27,38 @@ export function Contact({
   buttonText = "Отправить",
   className = "wrapper",
 }) {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Отправляемые данные:", formData);
+
+    try {
+      const response = await fetch("/api/contacts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) throw new Error(`Ошибка: ${response.status}`);
+      const data = await response.json();
+      console.log("Успешно отправлено:", data);
+    } catch (error) {
+      console.error("Ошибка при отправке:", error);
+    }
+  };
+
   return (
     <div className={styles[className] || styles.wrapper}>
       <div className={styles.rightLine}></div>
@@ -74,16 +107,18 @@ export function Contact({
             </div>
           </div>
 
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.row}>
               {formFields.firstName && (
                 <label className={styles.inp}>
                   Имя
                   <input
                     type="text"
+                    name="firstName"
                     placeholder="Введите полное имя"
                     className={styles.input}
-                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
                   />
                 </label>
               )}
@@ -92,42 +127,53 @@ export function Contact({
                   Фамилия
                   <input
                     type="text"
+                    name="lastName"
                     placeholder="Введите полную фамилию"
                     className={styles.input}
-                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
                   />
                 </label>
               )}
             </div>
+
             {formFields.email && (
               <label className={styles.inp}>
                 Адрес электронной почты
                 <input
                   type="email"
+                  name="email"
                   placeholder="Введите адрес электронной почты"
                   className={styles.inputFull}
-                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </label>
             )}
+
             {formFields.phone && (
               <label className={styles.inp}>
                 Номер телефона
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="Введите номер телефона"
                   className={styles.inputFull}
-                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                 />
               </label>
             )}
+
             {formFields.message && (
               <label className={styles.inp}>
                 Чем мы можем помочь?
                 <textarea
+                  name="message"
                   placeholder="Введите ваше сообщение"
                   className={styles.textarea}
-                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
               </label>
             )}

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import AdminActions from "../components/AdminActions";
 import styles from "./AddArticle.module.scss";
 import Image from "next/image";
+import emptyIcon from "#/icons/emptyIcon.svg";
 import Modal from "../components/Modal/Modal";
 import Button from "@/ui/Button";
 
@@ -42,8 +43,8 @@ export default function AddArticle() {
             <Image src={previewImage} alt="Обложка статьи" fill />
           ) : (
             <Image
-              src="/assets/icons/emptyIcon.svg"
-              alt="Заглушка"
+              src={emptyIcon}
+              alt="image"
               width={100}
               height={100}
             />
