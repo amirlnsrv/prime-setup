@@ -7,27 +7,24 @@ import { Contact } from "@/components/Contact";
 import { getTranslations } from "next-intl/server";
 
 const FAQPage = async () => {
-  const tHero = await getTranslations("hero.faq");
-  const t = await getTranslations("faq");
+  const t = await getTranslations("faqPage");
+
   return (
     <>
       <Hero
         imgUrl="/assets/images/faqHeroBg.jpg"
-        title={tHero("title")}
-        subtitle={tHero("subtitle")}
+        title={t("title1")}
+        subtitle={t("subtitle")}
       />
       <section className={styles.search}>
         <Input
-          title={t("search.title")}
-          placeholder={t("search.placeholder")}
-          inButton={t("search.button")}
+          title={t("title2")}
+          placeholder={t("placeholder")}
+          inButton={t("inButton")}
         />
       </section>
       <QuestionsAnswers />
-      <Contact
-        title={t("contact.title")}
-        description={t("contact.description")}
-      />
+      <Contact title={t("title3")} description={t("description")} />
     </>
   );
 };

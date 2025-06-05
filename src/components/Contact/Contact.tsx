@@ -4,13 +4,25 @@ import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
 
+type IconItem = {
+  src: string;
+  href: string;
+  alt?: string;
+};
+
 type ContactProps = {
   title: string;
   description: string;
-  icons?: string[];
+  icons?: IconItem[];
+  className?: string;
 };
 
-export function Contact({ title, description, icons }: ContactProps) {
+export function Contact({
+  title,
+  description,
+  icons,
+  className,
+}: ContactProps) {
   const t = useTranslations("contact");
 
   const contacts = {
@@ -27,7 +39,7 @@ export function Contact({ title, description, icons }: ContactProps) {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${className || ""}`}>
       <div className={styles.rightLine}></div>
       <div className={styles.contactSection}>
         <div className={styles.container}>
@@ -73,13 +85,20 @@ export function Contact({ title, description, icons }: ContactProps) {
             {icons && (
               <div className={styles.iconsBlock}>
                 {icons.map((icon, index) => (
-                  <Image
+                  <a
                     key={index}
-                    src={icon}
-                    alt={`icon-${index}`}
-                    width={30}
-                    height={30}
-                  />
+                    href={icon.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.iconLink}
+                  >
+                    <Image
+                      src={icon.src}
+                      alt={icon.alt || `icon-${index}`}
+                      width={30}
+                      height={30}
+                    />
+                  </a>
                 ))}
               </div>
             )}

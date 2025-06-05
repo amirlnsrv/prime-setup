@@ -1,48 +1,25 @@
-import React from 'react';
-import styles from './QuestionsAnswers.module.scss';
-export default function QuestionsAnswers() {
+import React from "react";
+import styles from "./QuestionsAnswers.module.scss";
+import { getTranslations } from "next-intl/server";
+export default async function QuestionsAnswers() {
+  const t = await getTranslations("questionsAnswers");
+  const items = (await t.raw("items")) as Array<{
+    question: string;
+    answer: string;
+  }>;
+
+  console.log(items);
   return (
     <section className={styles.faqSection}>
       <h4 className={styles.title}>Вопросы и ответы</h4>
-		<div className={styles.faqContainer}>
-			<div className={styles.faqItem}>
-      	  <h5>1. Можно ли иностранцу открыть бизнес в Дубае?</h5>
-      	  <p>Да, иностранцы могут владеть 100% бизнеса в свободных экономических зонах и ряде mainland-юрисдикций.</p>
-      	</div>
-			<div className={styles.faqItem}>
-      	  <h5>2. Сколько времени занимает регистрация компании?</h5>
-      	  <p>Процесс занимает от 3 до 15 рабочих дней в зависимости от юрисдикции и предоставленных документов.</p>
-      	</div>
-			<div className={styles.faqItem}>
-      	  <h5>2. Сколько времени занимает регистрация компании?</h5>
-      	  <p>Процесс занимает от 3 до 15 рабочих дней в зависимости от юрисдикции и предоставленных документов.</p>
-      	</div>
-			<div className={styles.faqItem}>
-      	  <h5>2. Сколько времени занимает регистрация компании?</h5>
-      	  <p>Процесс занимает от 3 до 15 рабочих дней в зависимости от юрисдикции и предоставленных документов.</p>
-      	</div>
-			<div className={styles.faqItem}>
-      	  <h5>2. Сколько времени занимает регистрация компании?</h5>
-      	  <p>Процесс занимает от 3 до 15 рабочих дней в зависимости от юрисдикции и предоставленных документов.</p>
-      	</div>
-			<div className={styles.faqItem}>
-      	  <h5>2. Сколько времени занимает регистрация компании?</h5>
-      	  <p>Процесс занимает от 3 до 15 рабочих дней в зависимости от юрисдикции и предоставленных документов.</p>
-      	</div>
-			<div className={styles.faqItem}>
-      	  <h5>2. Сколько времени занимает регистрация компании?</h5>
-      	  <p>Процесс занимает от 3 до 15 рабочих дней в зависимости от юрисдикции и предоставленных документов.</p>
-      	</div>
-			<div className={styles.faqItem}>
-      	  <h5>2. Сколько времени занимает регистрация компании?</h5>
-      	  <p>Процесс занимает от 3 до 15 рабочих дней в зависимости от юрисдикции и предоставленных документов.</p>
-      	</div>
-			<div className={styles.faqItem}>
-      	  <h5>2. Сколько времени занимает регистрация компании?</h5>
-      	  <p>Процесс занимает от 3 до 15 рабочих дней в зависимости от юрисдикции и предоставленных документов.</p>
-      	</div>
-		</div>
+      <div className={styles.faqContainer}>
+        {items.map((item, idx) => (
+          <div key={idx} className={styles.faqItem}>
+            <h5>{item.question}</h5>
+            <p>{item.answer}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
-

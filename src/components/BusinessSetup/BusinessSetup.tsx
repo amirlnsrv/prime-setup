@@ -1,23 +1,20 @@
 import { ExtraButton } from "@/ui/ExtraButton";
 
 import styles from "./BusinessSetup.module.scss";
+import { getTranslations } from "next-intl/server";
 
-export function BusinessSetup() {
+export async function BusinessSetup() {
+  const t = await getTranslations("businessSetup");
+
   return (
     <section className={styles.wrapper}>
       <div className={styles.container}>
         <h2 className={styles.title}>
-          Откройте бизнес в ОАЭ с{" "}
-          <span className={styles.accent}>PRIME SETUP</span> уже сегодня
+          {t("title")} <span className={styles.accent}>{t("accent")} </span>
+          {t("title2")}
         </h2>
-        <p className={styles.subtitle}>
-          Мы поможем вам на каждом этапе — от регистрации до открытия
-          банковского счёта. Начните свой путь к успеху вместе с нами!
-        </p>
-        <ExtraButton
-          value="Бесплатная консультация"
-          className={styles.button}
-        />
+        <p className={styles.subtitle}>{t("subtitle")}</p>
+        <ExtraButton value={t("value")} className={styles.button} />
       </div>
     </section>
   );

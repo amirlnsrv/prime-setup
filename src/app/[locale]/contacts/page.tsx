@@ -7,7 +7,7 @@ import { ContactTime } from "@/components/ContactTime/ContactTime";
 import { getTranslations } from "next-intl/server";
 
 export default async function Contacts() {
-  const t = await getTranslations('contact.contactsPage')
+  const t = await getTranslations("contactTime");
 
   return (
     <section>
@@ -17,7 +17,37 @@ export default async function Contacts() {
         <div className={style.contactWrapper}>
           <Image src={img1} alt="iconFon" className={style.imageContact} />
           <div className={style.contactContent}>
-            <Contact title={t('title')} description={t("description")} />
+            <Contact
+              title={t("titleContact")}
+              description={t("descriptionContact")}
+              icons={[
+                {
+                  src: "/assets/Facebook.svg",
+                  href: "https://facebook.com",
+                  alt: "Facebook",
+                },
+                {
+                  src: "/assets/Twitter.svg",
+                  href: "https://twitter.com",
+                  alt: "Twitter",
+                },
+                {
+                  src: "/assets/Instagram.svg",
+                  href: "https://instagram.com",
+                  alt: "Instagram",
+                },
+                {
+                  src: "/assets/Linkedin.svg",
+                  href: "https://linkedin.com",
+                  alt: "Linkedin",
+                },
+                {
+                  src: "/assets/Youtube.svg",
+                  href: "https://youtube.com",
+                  alt: "Youtube",
+                },
+              ]}
+            />
           </div>
         </div>
       </div>
