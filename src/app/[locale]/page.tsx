@@ -19,6 +19,7 @@ const UsefulArticles = dynamic(
 const SuccessShared = dynamic(
   () => import("@/components/SuccessShared/SuccessShared")
 );
+const AuthModal = dynamic(() => import("@/components/AuthModal/AuthModal"));
 
 export default async function Home() {
   const tHeroMain = await getTranslations("hero.main");
@@ -26,6 +27,7 @@ export default async function Home() {
 
   return (
     <>
+      <AuthModal visible={false}/>
       <Hero
         imgUrl={HeroBg}
         title={tHeroMain("title")}
