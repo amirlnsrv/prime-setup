@@ -4,9 +4,7 @@ import styles from "./WhyTrustUs.module.scss";
 export async function WhyTrustUs() {
   const t = await getTranslations("whyTrustUs");
 
-  
   const items = await t.raw("items");
-
 
   return (
     <section className={styles.container}>
