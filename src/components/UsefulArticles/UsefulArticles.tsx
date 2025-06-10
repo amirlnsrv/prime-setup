@@ -1,20 +1,21 @@
 "use client";
 
-import { UsefulCard } from "@/ui/UsefulCard";
 import styles from "./UsefulArticles.module.scss";
 import { PrimaryButton } from "@/ui/PrimaryButton";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
 
+const UsefulCard = dynamic(() => import("@/ui/UsefulCard/UsefulCard"));
 
 export default function UsefulArticles() {
-  const t = useTranslations("UsefulArticles")
+  const t = useTranslations("UsefulArticles");
   const cards = [1, 2, 3];
 
   return (
@@ -23,7 +24,7 @@ export default function UsefulArticles() {
       <p>{t("subtitle")}</p>
       <div className={styles.bg}>
         <Swiper
-           slidesPerView="auto"
+          slidesPerView="auto"
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -36,12 +37,12 @@ export default function UsefulArticles() {
           }}
           breakpoints={{
             0: {
-                slidesPerView: 1,
-                centeredSlides: true,
-                pagination: {
-                  enabled: true,
-                },
+              slidesPerView: 1,
+              centeredSlides: true,
+              pagination: {
+                enabled: true,
               },
+            },
             850: {
               slidesPerView: 2,
               centeredSlides: false,
@@ -55,13 +56,17 @@ export default function UsefulArticles() {
               pagination: {
                 enabled: false,
               },
-            }
+            },
           }}
           className={styles.swiperContainer}
         >
           {cards.map((_, index) => (
             <SwiperSlide key={index} className={styles.swiperSlide}>
-              <UsefulCard buttonTxt={t("card.button")} subtitleTxt={t("card.subtitle")} titleTxt={t("card.title")}/>
+              <UsefulCard
+                buttonTxt={t("card.button")}
+                subtitleTxt={t("card.subtitle")}
+                titleTxt={t("card.title")}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

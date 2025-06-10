@@ -3,22 +3,31 @@ import { FAQ } from "@/components/FAQ";
 import { Benefits } from "@/components/Benefits";
 import { Hero } from "@/components/Hero";
 import { OurPartners } from "@/components/OurPartners";
-import { SuccessShared } from "@/components/SuccessShared";
 
 import { Services } from "@/components/Services/Services";
 
 import { WhyPrimeSetup } from "@/components/WhyPrimeSetup";
-import { UsefulArticles } from "@/components/UsefulArticles";
 import { Swiper } from "@/components/Swiper/Swiper";
 
 import HeroBg from "#/images/heroBg.jpg";
 import { getTranslations } from "next-intl/server";
+import dynamic from "next/dynamic";
+
+const UsefulArticles = dynamic(
+  () => import("@/components/UsefulArticles/UsefulArticles")
+);
+const SuccessShared = dynamic(
+  () => import("@/components/SuccessShared/SuccessShared")
+);
+const AuthModal = dynamic(() => import("@/components/AuthModal/AuthModal"));
 
 export default async function Home() {
   const tHeroMain = await getTranslations("hero.main");
+  const tContactMain = await getTranslations("contact.main");
 
   return (
     <>
+      <AuthModal visible={false}/>
       <Hero
         imgUrl={HeroBg}
         title={tHeroMain("title")}
@@ -26,6 +35,8 @@ export default async function Home() {
         inlineStyles={{
           inner: {
             maxWidth: "608px",
+            left: "auto",
+            transform: "translateY(-50%)",
           },
           content: {
             textAlign: "left",
@@ -41,7 +52,10 @@ export default async function Home() {
       <SuccessShared />
       <UsefulArticles />
       <FAQ />
-      <Contact />
+      <Contact
+        title={tContactMain("title")}
+        description={tContactMain("description")}
+      />
     </>
   );
 }

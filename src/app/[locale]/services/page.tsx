@@ -1,16 +1,23 @@
+import { Contact } from "@/components/Contact";
 import { Hero } from "@/components/Hero";
-import { RangeOfServices } from "./components/RangeOfServices/RangeOfServices";
 import ServicesHeroBg from "#/images/servicesHeroBg.jpg";
+import { getTranslations } from "next-intl/server";
 
-export default function Services() {
+export default async function Services() {
+  const tHeroServices = await getTranslations("hero.services");
+
   return (
     <>
       <Hero
         imgUrl={ServicesHeroBg}
-        title="Все услуги для запуска и развития бизнеса в ОАЭ — в одном месте"
-        subtitle="Мы предлагаем комплексное сопровождение бизнеса в ОАЭ — от идеи до полноценного запуска и развития. Наша команда помогает предпринимателям на каждом этапе, обеспечивая юридическую чистоту, прозрачность и максимальную эффективность процессов."
+        title={tHeroServices("title")}
+        subtitle={tHeroServices("subtitle")}
       />
-      <RangeOfServices />
+      <Contact
+        title="Связаться с нами"
+        description="Мы рады помочь вам — напишите или позвоните"
+       
+      />
     </>
   );
 }

@@ -31,9 +31,10 @@ export default async function RootLayout({
     notFound();
   }
 
+  
+
   return (
     <html lang={locale}>
-      {/* Динамически устанавливаем язык */}
       <body>
         <NextIntlClientProvider>
           <Telegram />

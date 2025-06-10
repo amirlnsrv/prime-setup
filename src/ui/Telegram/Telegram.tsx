@@ -1,18 +1,23 @@
 import Image from "next/image";
 import styles from "./Telegram.module.scss";
+import { getTranslations } from "next-intl/server";
+import tg from '#/icons/telegram.svg'
 
-export default function Telegram() {
+export default async function Telegram() {
+
+  const t = await getTranslations("telegram")
+
   return (
     <button className={styles.tg}>
       <Image
         width={40}
         height={40}
         className={styles.telegramIcon}
-        src="/assets/icons/telegram.svg"
+        src={tg}
         alt="tg"
       />
       <p>
-        Нужна помощь? <br /> Свяжитесь с нами по чату
+        {t("title")} <br /> {t("subtitle")} 
       </p>
     </button>
   );

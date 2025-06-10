@@ -10,10 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  //   img{
-  //     z-index: -1;
-  //   }
 }
 
 .imageContact {
@@ -30,4 +26,8 @@
 }
 
 @media (max-width: 1148px) {
+}
+
+.bgWrapper{
+  background: #ffffff70;
 }

@@ -37,4 +37,25 @@
             opacity: 1;
         }
     }
+
+    @media (max-width: 768px) {
+        padding: 12px;
+        width: 55px;
+        height: 55px;
+        column-gap: 20px;
+
+        .telegramIcon{
+            width: 28px !important;
+            height: 28px !important;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        &:hover {
+            width: 260px;
+            height: 55px;
+        }
+    }
 }

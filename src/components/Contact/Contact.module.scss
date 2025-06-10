@@ -3,6 +3,11 @@
   z-index: 1;
   background-color: #fff;
 }
+
+.bgWrapper{
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
 .contactSection {
   width: 100%;
   min-height: 763px;
@@ -10,6 +15,12 @@
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
+}
+
+.iconsBlock {
+  display: flex;
+  gap: 16px;
+  margin: 20px 0;
 }
 
 .rightLine {
@@ -115,6 +126,7 @@
 
 .row {
   display: flex;
+  justify-content: space-between;
   gap: 20px;
 }
 

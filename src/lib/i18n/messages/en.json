@@ -1,59 +1,420 @@
 {
-	"header": {
-		"about": "About",
-		"services": "Services",
-		"blog": "Blog",
-		"faq": "FAQ",
-		"contacts": "Contacts",
-		"button": "Leave a request"
-	},
-	"hero": {
-		"button": "Book a Free Consultation",
-		"main": {
-			"title": "Start Your Business Setup in Dubai with Confidence",
-			"subtitle": "Prime Setup offers clear, step-by-step support for business setup in Dubai. From company registration to licensing and ongoing assistance, we guide you through each stage.",
-			"button": "Book a Free Consultation"
-		},
-		"blog": {
-			"title": "Useful articles and tips",
-			"subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
-		}
-	},
-	"WhyPrimeSetup": {
-		"title": "Why Choose Prime Setup for Business Setup in Dubai",
-		"subtitle": "Setting up a business in Dubai is a major step-Prime Setup makes it simple, secure, and efficient. With over 15 years of experience, we have helped hundreds of entrepreneurs and companies establish themselves in the UAE, guiding them through every legal and administrative detail so they can focus on growth.",
-		"button": "Learn more about us"
-	},
-	"SuccessShared": {
-		"title": "Successes shared by our clients",
-		"button": "Leave a review",
-		"modal": {
-			"title": "Enter your name",
-			"subtitle": "Share your opinion about our service",
-			"buttonCencel": "Cancel",
-			"buttonSend": "Send"
-		}
-	},
-	"OurPartners": {
-		"title": "Our partners"
-	},
-	"UsefulArticles": {
-		"title": "Useful articles and tips",
-		"subtitle": "Stay up to date with the latest news on UAE business, visas, licenses and more.",
-		"card":{
-			"title": "How to open a company in Dubai: Step-by-step instructions",
-			"subtitle": "Starting a business in Dubai is easy. We tell you where to start, what documents you need and how long the registration process takes.",
-			"button": "Read more",
-			"blog": {
-				"buttonNext": "Next",
-				"buttonPrevious": "Previous",
-				"input": {
-					"title": "What are you interested in?",
-					"placeholder": "Enter to start searching...",
-					"button": "Search"
-				}
-			}
-		},
-		"button": "View all articles"
-	}
+  "header": {
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "button": "Leave a request",
+    "burger": {
+      "about": "About",
+      "services": "Services",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "contacts": "Contacts"
+    }
+  },
+  "hero": {
+    "button": "Book a Free Consultation",
+    "main": {
+      "title": "Start Your Business Setup in Dubai with Confidence",
+      "subtitle": "Prime Setup offers clear, step-by-step support for business setup in Dubai. From company registration to licensing and ongoing assistance, we guide you through each stage.",
+      "button": "Book a Free Consultation"
+    },
+    "blog": {
+      "title": "Useful articles and tips",
+      "subtitle": "We share useful information based on real experience working with entrepreneurs. Learn about the intricacies of company registration, taxes, visas and much more."
+    },
+    "services": {
+      "title": "All services for starting and developing a business in the UAE - in one place",
+      "subtitle": "We offer comprehensive business support in the UAE — from the idea to full launch and development. Our team helps entrepreneurs at every stage, ensuring legal purity, transparency and maximum efficiency of processes."
+    },
+    "contacts": {
+      "title": "We are ready to help you start a business in the UAE - just write to us.",
+      "subtitle": "We are always in touch and happy to answer any questions."
+    }
+  },
+  "WhyPrimeSetup": {
+    "title": "Why Choose Prime Setup for Business Setup in Dubai",
+    "subtitle": "Setting up a business in Dubai is a major step-Prime Setup makes it simple, secure, and efficient. With over 15 years of experience, we have helped hundreds of entrepreneurs and companies establish themselves in the UAE, guiding them through every legal and administrative detail so they can focus on growth.",
+    "button": "Learn more about us"
+  },
+  "SuccessShared": {
+    "title": "Successes shared by our clients",
+    "button": "Leave a review",
+    "modal": {
+      "title": "Enter your name",
+      "subtitle": "Share your opinion about our service",
+      "buttonCencel": "Cancel",
+      "buttonSend": "Send"
+    }
+  },
+  "OurPartners": {
+    "title": "Our partners"
+  },
+  "UsefulArticles": {
+    "title": "Useful articles and tips",
+    "subtitle": "Stay up to date with the latest news on UAE business, visas, licenses and more.",
+    "card": {
+      "title": "How to open a company in Dubai: Step-by-step instructions",
+      "subtitle": "Starting a business in Dubai is easy. We tell you where to start, what documents you need and how long the registration process takes.",
+      "button": "Read more",
+      "blog": {
+        "buttonNext": "Next",
+        "buttonPrevious": "Previous",
+        "input": {
+          "title": "What are you interested in?",
+          "placeholder": "Enter to start searching...",
+          "button": "Search"
+        }
+      }
+    },
+    "button": "View all articles"
+  },
+  "telegram": {
+    "title": "Need help?",
+    "subtitle": "Contact us via chat"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Here are answers to common questions",
+    "question1": "Why should I start a business in Dubai?",
+    "answer1": "Dubai offers tax advantages, a stable economy, and a strategic location.",
+    "question2": "How to open a business in Dubai?",
+    "answer2": "Choose a zone, company type, get a license, and open a bank account.",
+    "question3": "What types of business licenses are available in Dubai?",
+    "answer3": "Commercial, professional, and industrial — depending on the business activity.",
+    "question4": "What are the main steps to starting a company in Dubai?",
+    "answer4": "Choose jurisdiction, register the company, get licensed, and open a bank account.",
+    "question5": "How much does it cost to start a business in Dubai?",
+    "answer5": "Cost depends on zone and activity type, starting from $5,000.",
+    "question6": "Can foreigners own 100% of their business in Dubai?",
+    "answer6": "Yes, in free zones and in some mainland cases.",
+    "button": "Read all answers"
+  },
+  "contact": {
+    "workingHours": {
+      "title": "Working Hours",
+      "scheduleWeekdays": "Monday to Friday: 8:30–17:30",
+      "scheduleWeekenddays": "Saturday: 10:00–14:00"
+    },
+    "main": {
+      "title": "Start your journey to the UAE today",
+      "description": "We are here to answer your questions and help with starting a business in the UAE."
+    },
+    "contactsPage": {
+      "title": "Всё, что вы хотели узнать — в одном месте",
+      "description": "Мы собрали ответы на самые распространённые вопросы от наших клиентов. Если не нашли нужной информации — напишите нам, и мы поможем."
+    },
+    "contacts": {
+      "emailAlt": "Email icon",
+      "phoneAlt": "Phone icon"
+    },
+    "contactTime": {
+      "title5": "jhgdf"
+    },
+    "form": {
+      "buttonText": "Send",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "How can we help?",
+      "placeholders": {
+        "firstName": "Enter your first name",
+        "lastName": "Enter your last name",
+        "email": "Enter your email address",
+        "phone": "Enter your phone number",
+        "message": "Enter your message"
+      }
+    }
+  },
+  "contactTime": {
+    "titleContact": "Let's Get Started",
+    "descriptionContact": "We are happy to personally consult you.",
+    "titleTime": "Business Hours",
+    "time": "Monday to Friday",
+    "time2": "from 8:30 AM to 5:30 PM,",
+    "sub": "Saturday",
+    "time3": "10:00 AM – 2:00 PM",
+    "adress": "Office address:",
+    "business": "Prime Business Setup",
+    "adress2": "Sheikh Zayed Road, Dubai, UAE"
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": "15 Years of Experience",
+        "description": "Since 2009, we’ve been helping companies enter the UAE market."
+      },
+      {
+        "title": "Comprehensive Solutions",
+        "description": "All business services in one place—from licensing to bank accounts."
+      },
+      {
+        "title": "Personalized Approach",
+        "description": "Solutions tailored to your business specifics and goals."
+      },
+      {
+        "title": "Fast Registration",
+        "description": "Start your business in as little as 48 hours."
+      },
+      {
+        "title": "24/7 Support",
+        "description": "Responsive assistance and consultation anytime."
+      },
+      {
+        "title": "Trusted Partners",
+        "description": "Banks, government agencies, and services for your convenience and safety."
+      }
+    ]
+  },
+  "services": {
+    "serverH2": "Services that cover everything — from registration to operations",
+    "serverP": "You can choose an individual service or trust us with a full turnkey solution. We adapt to your goals and budget.",
+    "items": [
+      {
+        "title": "Company registration in the UAE",
+        "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+      },
+      {
+        "title": "Opening bank accounts",
+        "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+      },
+      {
+        "title": "Obtaining licenses",
+        "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+      },
+      {
+        "title": "Virtual offices and coworking spaces",
+        "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+      },
+      {
+        "title": "Tax consulting",
+        "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+      },
+      {
+        "title": "Accounting support",
+        "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+      },
+      {
+        "title": "Visas for investors and employees",
+        "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+      },
+      {
+        "title": "Full business support",
+        "description": "We offer turnkey business solutions: companies in free zones, mainland, and offshore."
+      }
+    ],
+    "btn1": "Learn more",
+    "btn2": "Explore our services",
+    "btn3": "Explore our services"
+  },
+  "swiper": {
+    "titleh2": "How the company setup process works — step by step",
+    "items": [
+      {
+        "title": "Free Consultation",
+        "description": "We start with a consultation to understand your goals and objectives. We discuss which business structures suit you best and suggest the optimal option for registration. You’ll receive all the information you need to make a decision."
+      },
+      {
+        "title": "Personalized Solution",
+        "description": "Based on the consultation, we develop a tailored plan that meets your needs. We select the right license, prepare documents, and set deadlines. All actions are agreed upon with you at each step."
+      },
+      {
+        "title": "Document Collection & Preparation",
+        "description": "We collect and verify all necessary documents to ensure your business is registered without delays. We complete all forms, applications, and notarize them if needed."
+      },
+      {
+        "title": "Company Registration",
+        "description": "Once documents are ready, we submit them to the appropriate authorities for registration. We monitor the process and keep you updated at every stage. In the end, you receive your license and official confirmations."
+      },
+      {
+        "title": "Post-Registration Support",
+        "description": "After registration, we continue to support you. We help open a bank account, arrange visas for staff, and provide accounting and legal assistance. Your business will grow without extra hassle."
+      }
+    ]
+  },
+  "servicesPage": {
+    "title": "Full range of services for starting and developing a business in the UAE",
+    "items": [
+      {
+        "title": "Company Registration in UAE",
+        "content": "We help register businesses in any jurisdiction: Mainland, Free Zone or Offshore. We provide consultation, prepare documents and fully support the process until obtaining the registration certificate."
+      },
+      {
+        "title": "Bank Account Opening",
+        "content": "We support you at all stages of opening corporate and personal accounts in UAE banks. We help choose the right bank, prepare documents and pass the interview."
+      },
+      {
+        "title": "License Acquisition",
+        "content": "We arrange obtaining all types of business licenses: commercial, professional, industrial and freelance. We handle interactions with regulatory authorities and document processing."
+      },
+      {
+        "title": "Virtual Offices and Coworking",
+        "content": "We provide legal addresses, help rent virtual offices, coworking spaces and physical spaces for your business that meet the requirements of your chosen license."
+      },
+      {
+        "title": "Tax Consulting",
+        "content": "We consult on UAE tax legislation, including VAT system registration, planning and compliance with all obligations to government authorities."
+      },
+      {
+        "title": "Accounting Support",
+        "content": "We provide professional accounting services: reporting, financial analysis, document preparation and support during audits. Everything strictly according to legal requirements."
+      },
+      {
+        "title": "Visas for Investors and Employees",
+        "content": "We assist in obtaining residence visas for business owners, employees and their family members. We help with Emirates ID, medical certificates and visa renewals."
+      },
+      {
+        "title": "Full Business Support",
+        "content": "Comprehensive support at every stage: from idea to scaling. We handle all administrative and organizational matters so you can focus on growing your business."
+      }
+    ]
+  },
+  "blog2": {
+    "h2": "How to Start a Business in Dubai: Step-by-Step Guide",
+    "textAlign": "Publication Date: April 20, 2025",
+    "name": "Ritesh Sharma",
+    "user": "(author)",
+    "name2": "Jacob Joy Matthew",
+    "resent": "(reviewer)",
+    "dubaiText": "Dubai is one of the most attractive cities for doing business thanks to its flexible economy, low taxes, and favorable legal system. In this article, we’ll walk you through how to open a business in Dubai step by step, what to watch out for, and what to avoid.",
+    "blue1": "Step 1: Choose the Jurisdiction Type",
+    "three": "There are three main types of registration in the UAE:",
+    "free": "Free Zone — beneficial for foreign entrepreneurs, allows 100% ownership of the business.",
+    "mainland": "Mainland — suitable if you want to work directly with local companies and government entities.",
+    "offshore": "Offshore — for international operations and tax planning, but not suitable for operating within the UAE.",
+    "blue2": "Step 2: Choose Your Business Activity",
+    "text": "Every business needs a license, which depends on the field of activity:",
+    "div1": "Commercial",
+    "div2": "Professional",
+    "div3": "Industrial",
+    "div4": "Media, IT, Finance, etc.",
+    "div5": "It’s important to specify the correct field, otherwise you may face rejections or limitations.",
+    "blue3": "Step 3: Choose a Free Zone or Regulatory Authority",
+    "text1": "If you choose a Free Zone, you’ll need to determine which zone suits your business. For example:",
+    "text2": "DMCC — trade, precious metals, cryptocurrency",
+    "text3": "IFZA — low registration costs",
+    "text4": "DIFC — finance, banking, investments",
+    "step4Title": "Step 4: Prepare Your Documents",
+    "documentsListTitle": "Standard set:",
+    "document1": "Passport copy",
+    "document2": "Resume (in some zones)",
+    "document3": "Company name",
+    "document4": "Business plan",
+    "document5": "Office lease (virtual or physical)",
+    "blue5": "Step 5: Submit Application and Get a License",
+    "text12": "You submit documents online or via a registered agent. Processing time: from 3 to 15 business days. After that, you receive your license and can start operations.",
+    "blue6": "Additionally: Bank Account & Visas",
+    "bank": "After registration, you can open a corporate bank account and apply for an investor visa, as well as employee visas if you plan to hire staff.",
+    "h2Like": "You may also like"
+  },
+  "about": {
+    "title": "Start a Business in the UAE with Trusted Experts",
+    "subtitle": "We don’t just consult — we guide your success from the very first step. Our team helps entrepreneurs from around the world set up a business in the UAE quickly, transparently, and stress-free. We know where to start and how to avoid mistakes, because we’ve already helped hundreds of clients through this journey."
+  },
+  "weAreTeam": {
+    "title": "Who Is Behind PRIME SETUP?",
+    "description": "We are a team of experts in business consulting, legal support, and financial services. With over 10 years of experience, hundreds of successful cases, and deep knowledge of doing business in the UAE, we know how to deliver results."
+  },
+  "ourMission": {
+    "head": "What Drives Us?",
+    "title1": "Our Mission:",
+    "description1": "To help entrepreneurs launch and grow their businesses in the UAE by creating a simple and secure environment for getting started.",
+    "title2": "Our Values:",
+    "description2": "Responsibility — we support every step of the way, from the idea to the first clients. Speed and efficiency — we work promptly, meeting deadlines and complying with regulations."
+  },
+  "meetOurTeam": {
+    "title": "Meet Our Team",
+    "subtitle": "We believe that behind every successful business are people. That’s why we take pride in our team of experts who do everything to make launching your business in the UAE simple, secure, and successful."
+  },
+  "whyTrustUs": {
+    "title1": "Why Hundreds of",
+    "title2": "Entrepreneurs Trust Us",
+    "items": [
+      "500+ companies launched — across various sectors and zones",
+      "Experience with international clients — we speak your language",
+      "Comprehensive approach — from registration to accounting and visas",
+      "Personal account manager — always in touch and ready to help",
+      "No hidden fees — only transparent terms"
+    ]
+  },
+  "faqPage": {
+    "title1": "Everything You Wanted to Know — in One Place",
+    "subtitle": "We’ve collected answers to the most frequently asked questions from our clients. If you didn’t find the information you need — contact us and we’ll be happy to help.",
+    "title2": "Looking for a specific question?",
+    "placeholder": "Type to start searching...",
+    "inButton": "Search",
+    "title3": "Still have questions?",
+    "description": "We’ll be happy to consult you personally."
+  },
+  "questionsAnswers": {
+    "title": "Questions & Answers",
+    "items": [
+      {
+        "question": "1. Can a foreigner start a business in Dubai?",
+        "answer": "Yes, foreigners can own 100% of a business in free economic zones and in several mainland jurisdictions."
+      },
+      {
+        "question": "2. How long does it take to register a company?",
+        "answer": "The process takes from 3 to 15 working days depending on the jurisdiction and the documents provided."
+      },
+      {
+        "question": "3. What documents are required to open a company?",
+        "answer": "Usually a passport copy, visa, business plan, and proof of address are required."
+      },
+      {
+        "question": "4. What business zones exist in the UAE?",
+        "answer": "Free zones, mainland, and offshore — each with its own rules and benefits."
+      },
+      {
+        "question": "5. Is a local partner required?",
+        "answer": "Not in free zones. In some mainland jurisdictions — yes, but 100% foreign ownership is often possible."
+      },
+      {
+        "question": "6. Can I open a business remotely?",
+        "answer": "Yes, registration is possible remotely via online document submission and video verification."
+      },
+      {
+        "question": "7. Is it mandatory to rent an office?",
+        "answer": "Some free zones offer virtual offices, while others require a physical space."
+      },
+      {
+        "question": "8. Can I get a visa when opening a company?",
+        "answer": "Yes, as a business owner you can apply for a UAE residence visa."
+      },
+      {
+        "question": "9. What types of licenses are available?",
+        "answer": "Commercial, professional, and industrial — depending on your activity."
+      },
+      {
+        "question": "10. What are the typical setup costs?",
+        "answer": "Costs vary by zone and activity but usually start from $3,500–$5,000."
+      }
+    ]
+  },
+  "businessSetup": {
+    "title": "Start your business in the UAE with",
+    "accent": "PRIME SETUP",
+    "title2": "today",
+    "subtitle": "We’ll support you at every step — from registration to opening a bank account. Start your journey to success with us!",
+    "value": "Free consultation"
+  },
+  "footerSection": {
+    "alt": "My image",
+    "prime": "PRIME SETUP",
+    "title2": "Sections",
+    "p1": "About Us",
+    "p2": "Services",
+    "p3": "Blog",
+    "p4": "FAQ",
+    "p5": "Contacts",
+    "title3": "Working Hours",
+    "p6": "Monday to Friday",
+    "p7": "8:30 AM – 5:30 PM",
+    "p8": "Saturday",
+    "p9": "10:00 AM – 2:00 PM",
+    "title4": "Contact Us"
+  }
 }

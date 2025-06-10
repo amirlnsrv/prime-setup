@@ -10,7 +10,7 @@
 
 .sectionContainer {
   height: auto;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
 }
 .title {
   font-family: var(--font7);
@@ -33,13 +33,10 @@
   width: 100%;
 }
 .containerBenefits .img {
-  display: block;
   margin: 0 auto;
 }
 
 .img {
-  width: 100px;
-  height: 100px;
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -74,7 +71,6 @@
   height: 50px;
   display: none;
   margin: 0 auto;
-  // margin-bottom: 10px;
 }
 
 .backgroundImage {
@@ -122,12 +118,13 @@
   .containerBenefits {
     padding: 80px;
     gap: 20px;
+    margin: -40px auto;
   }
 }
 
 @media (max-width: 695px) {
   .img {
-    opacity: 0;
+    display: none;
   }
   .img2 {
     display: block;
@@ -163,6 +160,7 @@
   .containerBenefits {
     gap: 20px;
     row-gap: 10px;
+    margin: 5px;
   }
 }
 
