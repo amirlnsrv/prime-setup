@@ -11,8 +11,7 @@ import { FooterWrapper } from "@/components/FooterWrapper/FooterWrapper";
 import { ReactNode } from "react";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 
-export const metadata: Metadata =
- {
+export const metadata: Metadata = {
   title: "Dubai Consalting",
   description: "lending and investment company",
 };
@@ -31,6 +30,8 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  
 
   return (
     <html lang={locale}>

@@ -83,6 +83,9 @@ html[lang="ru"] .button::before {
         width: 90%;
         border-radius: 0 0 100% 100%;
       }
+      @media (max-width: 450px) {
+        height: 450px;
+      }
     }
 
     &:hover .arrow {

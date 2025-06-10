@@ -1,10 +1,12 @@
 "use client";
-import { useTranslations } from "next-intl";
+
+import { ChangeEvent, FormEvent, useState } from "react";
+import { useTranslations } from "next-intl";  // для перевода
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
-import phone from "#/icons/Component.svg"
-import mail from "#/icons/Group.svg"
+import phone from "#/icons/Component.svg";
+import mail from "#/icons/Group.svg";
 
 type IconItem = {
   src: string;
@@ -19,12 +21,7 @@ type ContactProps = {
   className?: string;
 };
 
-export function Contact({
-  title,
-  description,
-  icons,
-  className,
-}: ContactProps) {
+export function Contact({ title, description, icons, className }: ContactProps) {
   const t = useTranslations("contact");
 
   const contacts = {
@@ -32,12 +29,39 @@ export function Contact({
     phone: { href: "tel:+996476924", text: "+996 476-924" },
   };
 
-  const formFields = {
-    firstName: true,
-    lastName: true,
-    email: true,
-    phone: true,
-    message: true,
+  // состояние формы
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  // обработка изменений в форме
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // отправка формы
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Отправляемые данные:", formData);
+
+    try {
+      const response = await fetch("/api/contacts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) throw new Error(`Ошибка: ${response.status}`);
+      const data = await response.json();
+      console.log("Успешно отправлено:", data);
+    } catch (error) {
+      console.error("Ошибка при отправке:", error);
+    }
   };
 
   return (
@@ -106,63 +130,67 @@ export function Contact({
             )}
           </div>
 
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.row}>
-              {formFields.firstName && (
-                <label className={styles.inp}>
-                  {t("form.firstName")}
-                  <input
-                    type="text"
-                    placeholder={t("form.placeholders.firstName")}
-                    className={styles.input}
-                    name="firstName"
-                  />
-                </label>
-              )}
-              {formFields.lastName && (
-                <label className={styles.inp}>
-                  {t("form.lastName")}
-                  <input
-                    type="text"
-                    placeholder={t("form.placeholders.lastName")}
-                    className={styles.input}
-                    name="lastName"
-                  />
-                </label>
-              )}
+              <label className={styles.inp}>
+                {t("form.firstName")}
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder={t("form.placeholders.firstName")}
+                  className={styles.input}
+                  value={formData.firstName}
+                  onChange={handleChange}
+                />
+              </label>
+
+              <label className={styles.inp}>
+                {t("form.lastName")}
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder={t("form.placeholders.lastName")}
+                  className={styles.input}
+                  value={formData.lastName}
+                  onChange={handleChange}
+                />
+              </label>
             </div>
-            {formFields.email && (
-              <label className={styles.inp}>
-                {t("form.email")}
-                <input
-                  type="email"
-                  placeholder={t("form.placeholders.email")}
-                  className={styles.inputFull}
-                  name="email"
-                />
-              </label>
-            )}
-            {formFields.phone && (
-              <label className={styles.inp}>
-                {t("form.phone")}
-                <input
-                  type="tel"
-                  placeholder={t("form.placeholders.phone")}
-                  className={styles.inputFull}
-                  name="phone"
-                />
-              </label>
-            )}
-            {formFields.message && (
-              <label className={styles.inp}>
-                {t("form.message")}
-                <textarea
-                  placeholder={t("form.placeholders.message")}
-                  className={styles.textarea}
-                  name="message"
-                ></textarea>
-              </label>
-            )}
+
+            <label className={styles.inp}>
+              {t("form.email")}
+              <input
+                type="email"
+                name="email"
+                placeholder={t("form.placeholders.email")}
+                className={styles.inputFull}
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </label>
+
+            <label className={styles.inp}>
+              {t("form.phone")}
+              <input
+                type="tel"
+                name="phone"
+                placeholder={t("form.placeholders.phone")}
+                className={styles.inputFull}
+                value={formData.phone}
+                onChange={handleChange}
+              />
+            </label>
+
+            <label className={styles.inp}>
+              {t("form.message")}
+              <textarea
+                name="message"
+                placeholder={t("form.placeholders.message")}
+                className={styles.textarea}
+                value={formData.message}
+                onChange={handleChange}
+              />
+            </label>
 
             <ExtraButton
               className={styles.submit}

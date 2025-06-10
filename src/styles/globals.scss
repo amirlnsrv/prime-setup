@@ -5,6 +5,10 @@ body {
   background: var(--cvet-fona);
 }
 
+main{
+  overflow-x: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
