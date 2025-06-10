@@ -29,7 +29,6 @@ export function Contact({ title, description, icons, className }: ContactProps) 
     phone: { href: "tel:+996476924", text: "+996 476-924" },
   };
 
-  // состояние формы
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
