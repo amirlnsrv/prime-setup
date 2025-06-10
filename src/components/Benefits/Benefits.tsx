@@ -10,16 +10,11 @@ export async function Benefits() {
   return (
     <section className={stylly.sectionContainer}>
       <div className={stylly.backgroundImage}>
-        <Image
-          src={bg}
-          fill
-          alt="background"
-          objectFit="cover"
-        />
+        <Image src={bg} fill alt="background" objectFit="cover" />
       </div>
 
       <div className={stylly.containerBenefits}>
-        {mockdataIcon.map((item,index) => (
+        {mockdataIcon.map((item, index) => (
           <div key={item.id} className={stylly.cardContainer}>
             <Image
               src={item.icon}
@@ -36,7 +31,9 @@ export async function Benefits() {
               className={stylly.img2}
             />
             <h3 className={stylly.title}>{t(`items.${index}.title`)}</h3>
-            <p className={stylly.description}>{t(`items.${index}.description`)}</p>
+            <p className={stylly.description}>
+              {t(`items.${index}.description`)}
+            </p>
           </div>
         ))}
       </div>

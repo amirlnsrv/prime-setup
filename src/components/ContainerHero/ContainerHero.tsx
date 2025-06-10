@@ -8,21 +8,11 @@ export async function ContainerHero() {
 
   return (
     <section className={style.heroSection}>
-      <Image
-        src={img}
-        alt="img"
-        fill
-        className={style.bgImage}
-        priority
-      />
+      <Image src={img} alt="img" fill className={style.bgImage} priority />
       <div className={style.titleContainer}>
-        <h1 className={style.title}>
-        {t("title")}
-        </h1>
+        <h1 className={style.title}>{t("title")}</h1>
         <div>
-          <p className={style.title2}>
-          {t("subtitle")}
-          </p>
+          <p className={style.title2}>{t("subtitle")}</p>
         </div>
       </div>
     </section>

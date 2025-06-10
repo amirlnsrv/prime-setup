@@ -209,7 +209,7 @@
     transform: none;
     opacity: 1;
     visibility: visible;
-   
+
     padding: 5px;
     overflow: hidden;
     margin-bottom: -30px;
@@ -225,7 +225,7 @@
   }
 
   .wrapper {
-    position: relative; 
+    position: relative;
   }
 }
 
@@ -236,7 +236,7 @@
     padding: 20px;
   }
 }
-  // --------------------------------------------
+// --------------------------------------------
 @media (max-width: 540px) {
   .navButton {
     position: static;
@@ -246,7 +246,7 @@
     padding: 3px;
     // opacity: 1;
     // visibility: visible;
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 
   .prev,

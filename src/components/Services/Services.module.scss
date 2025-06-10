@@ -167,6 +167,7 @@ html[lang="ru"] .primaryBtn::before {
   overflow: hidden;
   border-radius: 12px;
   gap: 22px;
+  cursor: pointer;
 }
 
 .cardInner {
@@ -234,7 +235,6 @@ html[lang="ru"] .primaryBtn::before {
 
 .cardBtn {
   border-radius: 8px;
-  //   padding: 10px;
   width: 280px;
   height: 41px;
   background: #fff;
@@ -313,9 +313,6 @@ html[lang="ru"] .primaryBtn::before {
   width: 878px;
 }
 
-.card {
-  cursor: pointer;
-}
 @media (max-width: 876px) {
   .serverH2 {
     max-width: 1300px;

@@ -2,8 +2,8 @@
 import { ExtraButton } from "@/ui/ExtraButton";
 import styles from "./Contact.module.scss";
 import Image from "next/image";
-import phone from "#/icons/Component.svg"
-import mail from "#/icons/Group.svg"
+import phone from "#/icons/Component.svg";
+import mail from "#/icons/Group.svg";
 
 export function Contact({
   title = "Свяжитесь с нами",
@@ -24,7 +24,7 @@ export function Contact({
     message: true,
   },
   buttonText = "Отправить",
-  className = "wrapper",
+  className = "bgWrapper",
 }) {
   return (
     <div className={styles[className] || styles.wrapper}>

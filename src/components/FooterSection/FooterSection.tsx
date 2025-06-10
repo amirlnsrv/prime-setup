@@ -23,12 +23,7 @@ export async function FooterSection() {
         <div className={styles.top}></div>
         <div className={styles.up}>
           <div className={styles.logo}>
-            <Image
-              src={logoIcon}
-              alt={t("alt")}
-              width={100}
-              height={100}
-            />
+            <Image src={logoIcon} alt={t("alt")} width={100} height={100} />
             <p className={styles.prime}>{t("prime")} </p>
             <p className={styles.title}>BUSINESS BEGINS HERE</p>
             <p className={styles.txt}>
@@ -36,26 +31,11 @@ export async function FooterSection() {
               the UAE.
             </p>
             <div className={styles.appIcons}>
-              <Image
-                src={facebook}
-                alt={t("alt")}
-                width={30}
-                height={30}
-              />
+              <Image src={facebook} alt={t("alt")} width={30} height={30} />
 
-              <Image
-                src={twitter}
-                alt={t("alt")}
-                width={30}
-                height={30}
-              />
+              <Image src={twitter} alt={t("alt")} width={30} height={30} />
 
-              <Image
-                src={instagram}
-                alt={t("alt")}
-                width={30}
-                height={30}
-              />
+              <Image src={instagram} alt={t("alt")} width={30} height={30} />
 
               {/* <Image
                 src={linkedinWhite}
@@ -64,12 +44,7 @@ export async function FooterSection() {
                 height={30}
               /> */}
 
-              <Image
-                src={youtube}
-                alt={t("alt")}
-                width={30}
-                height={30}
-              />
+              <Image src={youtube} alt={t("alt")} width={30} height={30} />
             </div>
           </div>
           <div className={styles.footerNav}>
@@ -90,22 +65,12 @@ export async function FooterSection() {
           <div className={styles.contactUs}>
             <p className={styles.title}>{t("title4")}</p>
             <div className={styles.contacts}>
-              <Image
-                src={emailWhite}
-                alt={t("alt")}
-                width={15}
-                height={15}
-              />
+              <Image src={emailWhite} alt={t("alt")} width={15} height={15} />
               <a>info.xyz@gmail.com</a>
             </div>
             <br />
             <div className={styles.contacts}>
-              <Image
-                src={tel}
-                alt={t("alt")}
-                width={15}
-                height={15}
-              />
+              <Image src={tel} alt={t("alt")} width={15} height={15} />
               <a>+996 476-924</a>
             </div>
           </div>
@@ -113,26 +78,11 @@ export async function FooterSection() {
 
         <hr />
         <div className={styles.appIconsDown}>
-          <Image
-            src={facebookBlue}
-            alt={t("alt")}
-            width={30}
-            height={30}
-          />
+          <Image src={facebookBlue} alt={t("alt")} width={30} height={30} />
 
-          <Image
-            src={twitterBlue}
-            alt={t("alt")}
-            width={30}
-            height={30}
-          />
+          <Image src={twitterBlue} alt={t("alt")} width={30} height={30} />
 
-          <Image
-            src={instagramBlue}
-            alt={t("alt")}
-            width={30}
-            height={30}
-          />
+          <Image src={instagramBlue} alt={t("alt")} width={30} height={30} />
 
           {/* <Image
             src={linkedinBlue}
@@ -141,12 +91,7 @@ export async function FooterSection() {
             height={30}
           /> */}
 
-          <Image
-            src={youtubeBlue}
-            alt={t("alt")}
-            width={30}
-            height={30}
-          />
+          <Image src={youtubeBlue} alt={t("alt")} width={30} height={30} />
         </div>
       </footer>
       <div className="line"></div>

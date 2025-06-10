@@ -5,7 +5,7 @@ import img from "#/images/blog2.png";
 import { getTranslations } from "next-intl/server";
 import dynamic from "next/dynamic";
 
-const UsefulCard = dynamic(() => import("@/ui/UsefulCard/UsefulCard"))
+const UsefulCard = dynamic(() => import("@/ui/UsefulCard/UsefulCard"));
 
 export default async function Blog2() {
   const t = await getTranslations("UsefulArticles");

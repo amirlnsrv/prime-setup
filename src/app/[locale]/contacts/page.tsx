@@ -14,7 +14,7 @@ export default function Contacts() {
         <div className={style.contactWrapper}>
           <Image src={img1} alt="iconFon" className={style.imageContact} />
           <div className={style.contactContent}>
-            <Contact />
+            <Contact className='bgWrapper'  />
           </div>
         </div>
       </div>
