@@ -31,6 +31,8 @@ export default async function RootLayout({
     notFound();
   }
 
+  
+
   return (
     <html lang={locale}>
       <body>

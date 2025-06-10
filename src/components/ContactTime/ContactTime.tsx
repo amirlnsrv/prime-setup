@@ -20,10 +20,9 @@ export async function ContactTime() {
       </div>
       <div className={style.sectionContainer}>
         <div className={style.container}>
-          <h2 className={style.title}>{tr("titleh2")}</h2>
-          <p className={style.title2}>{tr("title2")}</p>
+          <h2 className={style.title}>{tr("titleContact")}</h2>
+          <p className={style.title2}>{tr("descriptionContact")}</p>
         </div>
-
         <div className={style.container}>
           <h2 className={style.title}>{tr("titleTime")}</h2>
           <div>

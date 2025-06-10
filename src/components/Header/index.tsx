@@ -1,14 +1,14 @@
 "use client";
 
-import Link from "next/link";
 import styles from "./Header.module.scss";
 import Button from "@/ui/Button";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useState, useTransition } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import logo from "#/icons/logo.svg";
 import { useTranslations } from "next-intl";
+import { PageTransitionLoader } from "../PageLoader";
 
 const LanguageSelector = dynamic(() => import("@/ui/LanguageSelector"), {
   ssr: false,
@@ -19,6 +19,9 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const navigation = useRouter();
   const t = useTranslations("header");
+  const pathname = usePathname();
+  const [loading, setLoading] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,30 +32,50 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setLoading(true);
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, [pathname]);
+
+  const handleNavigation = (url: string) => {
+    if (url === pathname) {
+      return;
+    }
+  
+    setLoading(true);
+    startTransition(() => {
+      navigation.push(url);
+    });
+  };
+
   return (
     <header
       className={`${styles.header} ${
         scrolled ? styles.scrolled : styles.transparent
       }`}
     >
+      {(loading || isPending) && <PageTransitionLoader />}
       <div className="container">
         <div className={styles.headerInner}>
-          <div className={styles.logo} onClick={() => navigation.push("/")}>
-            <Image
-              src={logo}
-              width={44}
-              height={46}
-              alt="logo"
-            />
+          <div
+            className={styles.logo}
+            onClick={() => handleNavigation("/")}
+            style={{ cursor: "pointer" }}
+          >
+            <Image src={logo} width={44} height={46} alt="logo" />
             <p className={styles.logoTitle}>PRIME SETUP</p>
             <p className={styles.logoSubtitle}>BUSINESS BEGINS HERE</p>
           </div>
           <nav className={styles.nav}>
-            <Link href="/about">{t("about")}</Link>
-            <Link href="/services">{t("services")}</Link>
-            <Link href="/blog">{t("blog")}</Link>
-            <Link href="/faq">{t("faq")}</Link>
-            <Link href="/contacts">{t("contacts")}</Link>
+            <a onClick={() => handleNavigation("/about")}>{t("about")}</a>
+            <a onClick={() => handleNavigation("/services")}>{t("services")}</a>
+            <a onClick={() => handleNavigation("/blog")}>{t("blog")}</a>
+            <a onClick={() => handleNavigation("/faq")}>{t("faq")}</a>
+            <a onClick={() => handleNavigation("/contacts")}>{t("contacts")}</a>
           </nav>
           <div className={styles.btns}>
             <LanguageSelector />

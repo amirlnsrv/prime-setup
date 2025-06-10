@@ -1,0 +1,25 @@
+.footerDown{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;  
+  bottom: 0;
+  z-index: 10;
+  padding-bottom: 10px;
+
+  hr{
+    margin: auto;
+    width: 85%;
+    height: 1px;
+    background: #fff;
+  }
+
+  p{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #fff;
+    line-height: 19px;
+    margin: 20px;
+  }
+}
