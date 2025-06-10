@@ -21,6 +21,5 @@ export const BusinessSlider = [
     id: 4,
     imag: img4,
   },
-  { id: 5,
-     imag: img5 },
+  { id: 5, imag: img5 },
 ];

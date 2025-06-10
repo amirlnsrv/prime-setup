@@ -24,6 +24,7 @@ export default async function Contacts() {
           <Image src={img1} alt="iconFon" className={style.imageContact} />
           <div className={style.contactContent}>
             <Contact
+              className={style.bgWrapper}
               title={t("titleContact")}
               description={t("descriptionContact")}
               icons={[

@@ -17,9 +17,7 @@ export async function Swiper() {
           className={styles.img}
         />
         <div className={styles.containerTitel}>
-          <h2 className={styles.titleh2}>
-            {t("titleh2")}
-          </h2>
+          <h2 className={styles.titleh2}>{t("titleh2")}</h2>
         </div>
         <div className={styles.swiperWrapper}>
           <BusinessSwiper />

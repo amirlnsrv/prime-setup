@@ -1,57 +1,53 @@
 .sectionContainer {
-    position: relative;
-    z-index: 2;
-  }
-  
-  
-  .svg1 {
-    rotate: 83deg;
-    position: absolute;
-    top: -170px;
-  left: 45%;
-    border: 7px solid #fff;
-    border-radius: 50px;
-    width: clamp(150px, 25vw, 253px);
-    height: clamp(150px, 25vw, 253px);
-    transition: transform 0.8s ease-in-out;
-  }
-  
-  .svg2 {
-    rotate: 66deg;
-    border: 7px solid #fff;
-    border-radius: 50px;
-    width: clamp(150px, 25vw, 253px);
-    height: clamp(150px, 25vw, 253px);
-    position: absolute;
-    // bottom: 480px;
-    top: -130px;
-    right: -70px;
-    transition: transform 0.8s ease-in-out;
-  }
-  
-  
-  .svg3 {
-    position: absolute;
-    rotate: 109deg;
-    border: 7px solid #fff;
-    border-radius: 63px;
-    width: clamp(180px, 28vw, 270px);
-    height: clamp(200px, 40vw, 333px);
-    transition: transform 0.8s ease-in-out;
-  top: 380px;
-    right: -30px;
-    z-index: -15;
-  }
+  position: relative;
+  z-index: 2;
+}
 
-@media(max-width:1100px){
+.svg1 {
+  rotate: 83deg;
+  position: absolute;
+  top: -170px;
+  left: 45%;
+  border: 7px solid #fff;
+  border-radius: 50px;
+  width: clamp(150px, 25vw, 253px);
+  height: clamp(150px, 25vw, 253px);
+  transition: transform 0.8s ease-in-out;
+}
+
+.svg2 {
+  rotate: 66deg;
+  border: 7px solid #fff;
+  border-radius: 50px;
+  width: clamp(150px, 25vw, 253px);
+  height: clamp(150px, 25vw, 253px);
+  position: absolute;
+  top: -130px;
+  right: -70px;
+  transition: transform 0.8s ease-in-out;
+}
+
+.svg3 {
+  position: absolute;
+  rotate: 109deg;
+  border: 7px solid #fff;
+  border-radius: 63px;
+  width: clamp(180px, 28vw, 270px);
+  height: clamp(200px, 40vw, 333px);
+  transition: transform 0.8s ease-in-out;
+  top: 380px;
+  right: -30px;
+  z-index: -15;
+}
+
+@media (max-width: 1100px) {
   .svg3 {
     top: 330px;
     right: -20px;
   }
 }
 
-
-@media(max-width:981px){
+@media (max-width: 981px) {
   .svg3 {
     bottom: -200px;
     right: 20px;
@@ -59,95 +55,90 @@
   }
 }
 
-
-@media(max-width:963px){
+@media (max-width: 963px) {
   .svg2 {
-    top: -100px; 
+    top: -100px;
     border: 3px solid #fff;
   }
-  
-    .svg1 {
-      border: 3px solid #fff;
+
+  .svg1 {
+    border: 3px solid #fff;
 
     left: 35%;
-    }
-    .svg3{
+  }
+  .svg3 {
     top: 250px;
-      border: 3px solid #fff;
-    }
+    border: 3px solid #fff;
+  }
 }
 
-@media(max-width:791px){
+@media (max-width: 791px) {
   .svg2 {
-    top: -60px; 
+    top: -60px;
   }
-  
-    .svg1 {
-      top: -100px;
+
+  .svg1 {
+    top: -100px;
     left: 35%;
-    }
-    .svg3{
+  }
+  .svg3 {
     top: 240px;
-    }
+  }
 }
 
-@media(max-width:675px){
+@media (max-width: 675px) {
   .svg2 {
-    top: -60px; 
+    top: -60px;
   }
-  
-    .svg1 {
-      top: -100px;
+
+  .svg1 {
+    top: -100px;
     left: 35%;
-    }
-    .svg3{
+  }
+  .svg3 {
     top: 170px;
     right: -12px;
-    }
-}
-
-
-@media(max-width:535px){
-  .svg2 {
-    top: -90px; 
   }
-  
-    .svg1 {
-      top: -120px;
-    left: 35%;
-    }
-    .svg3{
-    top: 150px;
-    } 
 }
 
-@media(max-width:489px){
-  .svg3{
+@media (max-width: 535px) {
+  .svg2 {
+    top: -90px;
+  }
+
+  .svg1 {
+    top: -120px;
+    left: 35%;
+  }
+  .svg3 {
+    top: 150px;
+  }
+}
+
+@media (max-width: 489px) {
+  .svg3 {
     top: 160px;
     right: -12px;
-    } 
+  }
 
-    .svg2 {
-      top: -100px; 
-    }
-    
-      .svg1 {
-        top: -130px;
-      left: 25%;
-      }
+  .svg2 {
+    top: -100px;
+  }
+
+  .svg1 {
+    top: -130px;
+    left: 25%;
+  }
 }
 
-
-@media(max-width:415px){
-  .svg3{
+@media (max-width: 415px) {
+  .svg3 {
     right: -28px;
-    } 
+  }
 }
 
-@media(max-width:405px){
-  .svg3{
+@media (max-width: 405px) {
+  .svg3 {
     top: 150px;
-    } 
+  }
 }
-
-
